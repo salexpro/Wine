@@ -1,0 +1,21 @@
+doctype html
+html(lang="ru")
+    include includes/head
+    body
+        main.wrap
+            include includes/header
+            section.content
+                .main_inner
+                    .main_video
+                        .main_video_container
+                            img(src="/img/video_placeholder.png", alt="")
+                            a(href="#").main_video_button
+                                img(src="/img/play_button.png", alt="Програти")
+                        a(href="#").button
+                            | Як це працює? 
+                            img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAj0lEQVQoU42QPQ5BARAGZ47lCrQqanolBQkJKkSioKFQ0rqHuI9PnjwvfhrbbWayu9+aZA/c1AVfZZIOsAbG6uydWzRJWsABmKvDl/CEpdAEihUbYKDeK1gKdeAM7IDeByyFGnABjv/DJA3gBGw/xiZ5P6iv5hWlXUaZqqMqSpIusAImP09IUoS/qsvv9z0AKAo9Kp30A4MAAAAASUVORK5CYII=", alt="")
+                    .main_content
+                        p.header_primary ОСОБИСТІ ВІДЕО ПОВІДОМЛЕННЯ НА ПЛЯШЦІ – НОВИЙ СПОСІБ ДИВУВАТИ ДРУЗІВ ТА ДАРУВАТИ ЕМОЦІЇ!
+                        a(href="#").button.hollow Відправляй зараз
+            include includes/footer
+        script(src="/js/app.min.js")

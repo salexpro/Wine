@@ -1,0 +1,75 @@
+.button{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-image: linear-gradient(260deg, #ff0056 0%, #870010 50%, #ff0056 100%);
+    img{
+        margin-top: -3px;
+    }
+}
+
+.head{ 
+    text-transform: uppercase;
+    > .row{
+        height: 150px;
+    }
+    &_logo{
+        width: 210px;
+        height: 200px;
+        padding-top: 30px;
+        text-align: center;
+        border-radius: 5px;
+        background: $white;
+        align-self: flex-start;
+    }
+    &_lang{
+        font-size: 12px;
+        li:last-child a{
+            padding-right: 0;
+        }
+    }
+}
+
+.menu{
+    a{
+        color: $black;
+    }
+}
+
+.content{
+    padding-top: 50px;
+    background: linear-gradient(165deg, #8e0131 0%, rgb(60, 9, 26) 40%, rgb(86, 0, 29) 70%, rgb(75, 0, 20) 100%);
+    // background-image: url(/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main{
+    &_inner{
+        @include flex-grid-row(null,1630px);
+        @include flex-grid-column();
+        flex-wrap:nowrap;
+        align-items: center;
+        padding-top: 113px;
+    }
+    &_video{
+        &_container{
+            position: relative;
+            margin-bottom: 105px;
+            > *:not(img){
+                position: absolute;
+            }
+        }
+        &_button{
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        .button{
+            width: 100%;
+        }
+    }
+    &_content{
+        padding-left: 60px;
+    }
+}
