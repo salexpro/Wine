@@ -31,6 +31,12 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/blog.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/blog.html",
+		"oF": 0
+		},
 	"\/bower.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -3972,6 +3978,14 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/blog.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/blog_item.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/blog_item.html",
 		"oF": 0,
 		"oS": 0
 		},
