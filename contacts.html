@@ -22,7 +22,7 @@
               <li><a href="/about.html">Про сервіс</a></li>
               <li><a href="/terms.html">Умови використання</a></li>
               <li><a href="/blog.html">Блог</a></li>
-              <li><a href="/contacts.html">Контакти</a></li>
+              <li class="active"><a href="/contacts.html">Контакти</a></li>
             </ul>
           </nav>
           <ul class="large-2 align-right menu head_lang">
@@ -32,18 +32,34 @@
           </ul>
         </div>
       </header>
-      <section class="content main">
-        <div class="main_inner">
-          <div class="main_video">
-            <div class="main_video_container"><img src="/img/video_placeholder.png" alt=""><a href="#" class="main_video_button"><img src="/img/play_button.png" alt="Програти"></a></div><a href="/about.html" class="button">Як це працює? <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAj0lEQVQoU42QPQ5BARAGZ47lCrQqanolBQkJKkSioKFQ0rqHuI9PnjwvfhrbbWayu9+aZA/c1AVfZZIOsAbG6uydWzRJWsABmKvDl/CEpdAEihUbYKDeK1gKdeAM7IDeByyFGnABjv/DJA3gBGw/xiZ5P6iv5hWlXUaZqqMqSpIusAImP09IUoS/qsvv9z0AKAo9Kp30A4MAAAAASUVORK5CYII=" alt=""></a>
-          </div>
-          <div class="main_content">
-            <p class="header primary">ОСОБИСТІ ВІДЕО ПОВІДОМЛЕННЯ НА ПЛЯШЦІ – НОВИЙ СПОСІБ ДИВУВАТИ ДРУЗІВ ТА ДАРУВАТИ ЕМОЦІЇ!</p><a href="#" class="button hollow large">Відправляй зараз</a>
+      <section class="content contacts">
+        <div class="row">
+          <p class="small-12 column header primary">КОНТАКТИ</p>
+          <p class="column small-12">Тел.:​ +38 098 98 240 20 Електронна пошта: messageonwine@gmail.com</p>
+          <div class="small-12 row">
+            <div class="large-6 column">
+              <div id="map"></div>
+            </div>
+            <div class="large-6 column">
+              <p>Зворотній зв'язок</p>
+              <form action="">
+                <input type="text" placeholder="Ім‘я">
+                <input type="text" placeholder="Email">
+                <textarea rows="6" placeholder="Ваше повідомлення"></textarea>
+                <div class="row align-middle">
+                  <div class="column"></div>
+                  <div class="column">
+                    <input type="submit" value="ВІДПРАВИТИ" class="button">
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
       <footer class="footer">MESSAGEONWINE.COM</footer>
     </main>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsMLQTnngdlMhgFJfPqUoYrrvqz1BIZaE&amp;callback=initMap" async defer></script>
     <script src="/js/app.min.js"></script>
   </body>
 </html>
