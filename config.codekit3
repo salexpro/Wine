@@ -3885,19 +3885,17 @@
 		"oAP": "\/favicon.ico",
 		"oF": 0
 		},
+	"\/how.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/how.html",
+		"oF": 0
+		},
 	"\/img\/bg.jpg": {
 		"ft": 16384,
 		"iS": 190033,
 		"oA": 0,
 		"oAP": "\/img\/bg.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/layer-15-copy.png": {
-		"ft": 32768,
-		"iS": 119940,
-		"oA": 0,
-		"oAP": "\/img\/layer-15-copy.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -3931,6 +3929,30 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
+	"\/jade\/blog.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/blog.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/contacts.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/contacts.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/how.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/how.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/jade\/includes\/footer.jade": {
 		"cOD": 1,
 		"ft": 512,
@@ -3963,6 +3985,14 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/jade\/terms.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/terms.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/js\/app.js": {
 		"ft": 64,
 		"mi": 1,
@@ -3970,6 +4000,15 @@
 		"oAP": "\/js\/app.min.js",
 		"oF": 0,
 		"sC": 0,
+		"tS": 0
+		},
+	"\/js\/app.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/app.min.min.js",
+		"oF": 0,
+		"sC": 1,
 		"tS": 0
 		},
 	"\/manifest.json": {

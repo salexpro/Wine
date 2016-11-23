@@ -5,14 +5,30 @@ header.head
                 img(src="/img/logo.jpg", alt="Message on wine")
         nav.large-7.column.align-middle.head_nav
             ul.menu.align-justify
-                li.active
-                    a(href="#") Про СЕРВІС             
-                li
-                    a(href="#") Умови використання              
-                li
-                    a(href="#") Блог              
-                li
-                    a(href="#") Контакти 
+                if (active=='how')
+                    li.active
+                        a(href="/how.html") Про сервіс
+                else
+                    li
+                        a(href="/how.html") Про сервіс
+                if (active=='terms')
+                    li.active
+                        a(href="/terms.html") Умови використання
+                else
+                    li
+                        a(href="/terms.html") Умови використання
+                if (active=='blog')
+                    li.active
+                        a(href="/blog.html") Блог
+                else
+                    li
+                        a(href="/blog.html") Блог
+                if (active=='contacts')
+                    li.active
+                        a(href="/contacts.html") Контакти
+                else
+                    li
+                        a(href="/contacts.html") Контакти
         ul.large-2.align-right.menu.head_lang
             li.active
                 a(href="#") Укр
