@@ -37,6 +37,12 @@
 		"oAP": "\/blog.html",
 		"oF": 0
 		},
+	"\/blog_read.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/blog_read.html",
+		"oF": 0
+		},
 	"\/bower.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -3903,11 +3909,67 @@
 		"oAP": "\/favicon.ico",
 		"oF": 0
 		},
+	"\/img\/app_store.jpg": {
+		"ft": 16384,
+		"iS": 8112,
+		"oA": 0,
+		"oAP": "\/img\/app_store.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/arrange.png": {
+		"ft": 32768,
+		"iS": 67333,
+		"oA": 0,
+		"oAP": "\/img\/arrange.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/bg.jpg": {
 		"ft": 16384,
 		"iS": 190033,
 		"oA": 0,
 		"oAP": "\/img\/bg.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/bottle.png": {
+		"ft": 32768,
+		"iS": 41623,
+		"oA": 0,
+		"oAP": "\/img\/bottle.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/bottle_big.png": {
+		"ft": 32768,
+		"iS": 156844,
+		"oA": 0,
+		"oAP": "\/img\/bottle_big.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/bottle_min.png": {
+		"ft": 32768,
+		"iS": 47771,
+		"oA": 0,
+		"oAP": "\/img\/bottle_min.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/google_play.jpg": {
+		"ft": 16384,
+		"iS": 6262,
+		"oA": 0,
+		"oAP": "\/img\/google_play.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/label.jpg": {
+		"ft": 16384,
+		"iS": 34794,
+		"oA": 0,
+		"oAP": "\/img\/label.jpg",
 		"oF": 0,
 		"opt": 0
 		},
@@ -3927,27 +3989,11 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/img\/play_button.png": {
+	"\/img\/play.png": {
 		"ft": 32768,
 		"iS": 3849,
 		"oA": 0,
-		"oAP": "\/img\/play_button.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/steps\/arrange.png": {
-		"ft": 32768,
-		"iS": 67333,
-		"oA": 0,
-		"oAP": "\/img\/steps\/arrange.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/steps\/select.png": {
-		"ft": 32768,
-		"iS": 47771,
-		"oA": 0,
-		"oAP": "\/img\/steps\/select.png",
+		"oAP": "\/img\/play.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -3958,6 +4004,14 @@
 		"oAP": "\/img\/video_placeholder.png",
 		"oF": 0,
 		"opt": 1
+		},
+	"\/img\/wine_types.jpg": {
+		"ft": 16384,
+		"iS": 333249,
+		"oA": 0,
+		"oAP": "\/img\/wine_types.jpg",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/index.html": {
 		"ft": 8192,
@@ -3973,6 +4027,14 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/jade\/add_video.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/add_video.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/jade\/blog.jade": {
 		"cOD": 1,
 		"ft": 512,
@@ -3981,11 +4043,19 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/jade\/blog_item.jade": {
+	"\/jade\/blog_read.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "\/blog_item.html",
+		"oAP": "\/blog_read.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/check.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/check.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -3994,6 +4064,14 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/contacts.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/error.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/error.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -4029,11 +4107,75 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/jade\/order.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/order.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/pay_fail.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/pay_fail.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/pay_success.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/pay_success.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/plan.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/plan.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/process.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/process.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/select.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/select.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/jade\/terms.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/terms.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/total.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/total.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/videogallery.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/videogallery.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -4070,6 +4212,12 @@
 		"oAP": "\/mstile-150x150.png",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/order.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/order.html",
+		"oF": 0
 		},
 	"\/safari-pinned-tab.svg": {
 		"ft": 2097152,

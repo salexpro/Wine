@@ -1,1 +1,85 @@
 footer.footer MESSAGEONWINE.COM
+if active=='order'
+    .reveal.large.reveal_how#how(data-reveal data-close-on-click="true" data-animation-out="fade-out")
+        p.header.primary
+            | Як це працює
+        .row
+            .column
+                img(src="/img/wine_types.jpg", alt="Типи вин")
+            .column
+                .reveal_how_step
+                    .reveal_how_step_inner
+                        p Завантаж безкоштовний додаток Looksar
+                        a(href="#")
+                            img(src="/img/app_store.jpg", alt="App Store") 
+                        a(href="#") 
+                            img(src="/img/google_play.jpg", alt="Google Play")
+                .reveal_how_step
+                    .reveal_how_step_inner
+                        p Введи цей код
+                        input(type="text" value="RTHL" readonly)
+                .reveal_how_step
+                    .reveal_how_step_inner
+                        p Наведи смартфон на етикетку пляшки
+                        img(src="/img/label.jpg", alt="Етикетка")
+        button.close-button(type="button" data-close aria-label="Закрити вікно")
+            span(aria-hidden="true") &#215;
+    
+    .reveal.large.reveal_info#info(data-reveal data-close-on-click="true" data-animation-out="fade-out")
+        p.row.header.primary
+            | Вино Chateau d'Armailhac, Pauillac AOC 5-me Grand Cru Classe, 2010
+        .row
+            .large-2.column
+                img(src="/img/bottle_big.png", alt="Пляшка")
+            .large-10.column
+                table
+                    tr
+                        td
+                            | Вино:
+                        td
+                            | Красное, сухое
+                    tr
+                        td
+                            | Регион:
+                        td
+                            | Франция, Бордо, Пойяк
+                    tr
+                        td
+                            | Производитель:
+                        td
+                            | Франция, Бордо, Пойяк
+                    tr
+                        td
+                            | Крепость:
+                        td
+                            | 12,5%
+                    tr
+                        td
+                            | Объем:
+                        td
+                            | 750 мл.
+                    tr
+                        th(colspan="2") 
+                            p.header.secondary Дегустационные заметки
+                    tr
+                        td
+                            | Цвет:
+                        td
+                            | Вино интенсивного, темного, почти черного цвета.
+                    tr
+                        td
+                            | Вкус:
+                        td
+                            | Полнотелое вино обладает мощным вкусом с красивыми округлыми танинами и фруктовыми нотками на фоне нюансов ванили, обжаренного кофе и орехов. 
+                    tr
+                        td
+                            | Аромат:
+                        td
+                            | Во фруктовом аромате вина доминируют оттенки темной вишни, украшенные нюансами поджаренных тостов.
+                    tr
+                        td
+                            | Гастрономические сочетания:
+                        td
+                            | Вино рекомендуется подавать к дичи, баранине под соусом и выдержанным сырам.
+        button.close-button(type="button" data-close aria-label="Закрити вікно")
+            span(aria-hidden="true") &#215;

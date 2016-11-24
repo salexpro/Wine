@@ -274,12 +274,12 @@ $callout-link-tint: 30%;
 // ----------------
 
 $closebutton-position: right top;
-$closebutton-offset-horizontal: 1rem;
-$closebutton-offset-vertical: 0.5rem;
+$closebutton-offset-horizontal: 0;
+$closebutton-offset-vertical: 0;
 $closebutton-size: 2em;
 $closebutton-lineheight: 1;
-$closebutton-color: $dark-gray;
-$closebutton-color-hover: $black;
+$closebutton-color: $white;
+$closebutton-color-hover: #42091c;
 
 // 15. Drilldown
 // -------------
@@ -453,8 +453,8 @@ $progress-radius: $global-radius;
 $reveal-background: $white;
 $reveal-width: 600px;
 $reveal-max-width: $global-width;
-$reveal-padding: $global-padding;
-$reveal-border: 1px solid $medium-gray;
+$reveal-padding: 60px;
+$reveal-border: 0;
 $reveal-radius: $global-radius;
 $reveal-zindex: 1005;
 $reveal-overlay-background: rgba($black, 0.45);

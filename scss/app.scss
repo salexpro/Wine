@@ -2,7 +2,7 @@
 
 @import 'settings';
 @import 'foundation';
-// @import 'motion-ui';
+@import 'motion-ui';
 
 @include foundation-global-styles;
 // @include foundation-grid;
@@ -17,7 +17,7 @@
 // @include foundation-breadcrumbs;
 // @include foundation-button-group;
 // @include foundation-callout;
-// @include foundation-close-button;
+@include foundation-close-button;
 @include foundation-menu;
 // @include foundation-menu-icon;
 // @include foundation-drilldown-menu;
@@ -34,7 +34,7 @@
 // @include foundation-meter-element;
 // @include foundation-slider;
 // @include foundation-sticky;
-// @include foundation-reveal;
+@include foundation-reveal;
 // @include foundation-switch;
 // @include foundation-table;
 // @include foundation-tabs;

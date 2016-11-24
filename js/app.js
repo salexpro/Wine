@@ -1,4 +1,4 @@
-// $(document).foundation();
+$(document).foundation();
 
 var geocoder;
 var map;
