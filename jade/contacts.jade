@@ -11,7 +11,7 @@ html(lang="ru")
                     p.column.small-12 Тел.:​ +38 098 98 240 20 Електронна пошта: messageonwine@gmail.com
                     .small-12.row
                         .large-6.column
-                            #map
+                            .contacts_map
                         .large-6.column
                             p Зворотній зв'язок
                             form(action="")
@@ -23,5 +23,3 @@ html(lang="ru")
                                     .column
                                         input.button(type="submit" value="ВІДПРАВИТИ")
             include includes/footer
-        script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsMLQTnngdlMhgFJfPqUoYrrvqz1BIZaE&callback=initMap" async defer)
-        script(src="/js/app.min.js")

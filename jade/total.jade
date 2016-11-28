@@ -1,0 +1,85 @@
+- var active = 'total'
+doctype html
+html(lang="ru")
+    include includes/head
+    body
+        main.wrap
+            include includes/header
+            section.content.delivery.total
+                .row
+                    .small-12.column.order_steps
+                        .order_step.selected
+                            | Оберіть що саме подарувати
+                        .order_step.selected
+                            | Додайте відеоповідомлення
+                        .order_step.selected
+                            | Оплата та відправка
+                    .small-12.row.column
+                        .large-6.column
+                            .total_order
+                                p.total_order_title
+                                    | Ваше замовлення:
+                                p.total_order_product
+                                    | Вино Chateau d'Armailhac, Pauillac AOC 5-me Grand Cru Classe, 2010
+                                .row.column
+                                    .large-10
+                                        table
+                                            tr
+                                                td Ціна за пляшку:
+                                                td 356 грн
+                                            tr
+                                                td Кількість пляшок:
+                                                td 1
+                                            tr
+                                                td Доставка:
+                                                td 
+                                                    | 35 грн
+                                                    a.help(data-open="")
+                                                        img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAACCklEQVQ4T53UTYiNYRQH8N8ZH/nYjLLCDonRKB8pbFjYkNHUvZesZtRIrBGjGaKQhQ0LCzMWYu6dpJBClFiMUMiKpY8FMfkImebROx/ee2dm5a1n8fac8z/n//+f84QxX9I8j0nbiU1YgJn4gTe4wcCVcPVtdVpU/ySFncQJzMZT9KEf9ViNFfiE/aF8YTT3H0hSOkY6hHukDiqPgjQamAgKa4kj2EAcDz3t2f0QSFJqIWXIF5ixJ3T/GkszBytMJ86ihWgNPV2RFOYSz0kvmbUxnP+TJxTXktbgJQ23Q+fgcNHCVOI2llLXGElxH05iXSg/GgmaRBxEdr4NaxJnWHwgB8oKeDikT1J4QMxkyao8YNscBrOA6/xqZ9op7GBgUbj6YbhQZx2vnhDfsk4yu66F8t6cRtsUPs1h9vuMXlLsJRqZvDJc+lpFN9OmKQP5TJwbVbrW8kz40mlSG6k5VO7U3hePY/eEneSVSvNJj0m7QqV3/GCWzpG2TKhJDrK1nilFvl8Mt37XdlGryTh3qjppIh3GgVC+O4ZKtTtDTryYeE5KmxnsIPaF8v1a4fszfRqoWzZ2YrtIe0LlZ57QWTdq/cgMVU1sagmV7v/ZnaNYj2OhnFEd3p0q31tHpjfb4mdEH+kLMYuUbfFyfBzRaPwW50DZezJ5G2kTsTB/T9Jr4ibpcqi8qy7+F1jM0mtUEmuLAAAAAElFTkSuQmCC", alt="?")
+                                            tr
+                                                td План переглядів:
+                                                td 399 грн. / 500 переглядів
+                                        .total_order_price
+                                            | ДО СПЛАТИ : 790 ГРН
+                                    .large-1
+                                        img(src="/img/bottle.png", alt="Пляшка")
+                            .total_delivery
+                                p.total_delivery_title
+                                    | Доставка:
+                                table
+                                    tr
+                                        td Область:
+                                        td Житомирська
+                                    tr
+                                        td Місто:
+                                        td Житомир
+                                    tr
+                                        td Адреса:
+                                        td вул. Княжий затон 16, кв.16
+                                    tr
+                                        td Номер відділення НП:
+                                        td 26
+                                    tr
+                                        td Ім'я:
+                                        td Івано Алесандр Георгиевич
+                                    tr
+                                        td Телефон:
+                                        td +380674352234
+                        .large-6.column.total_payment
+                            p.total_payment_title
+                                | Спосіб оплати
+                            img(src="//placehold.it/280x140/7a012a/FFF", alt="")
+                            | &nbsp; 
+                            img(src="//placehold.it/280x140/7a012a/FFF", alt="")
+                            .total_user
+                                .total_user_select
+                                    input(type="radio" name="type" id="new" value="new")
+                                    label(for="new") Новий користувач
+                                    input(type="radio" name="type" id="registered" value="registered" checked)
+                                    label(for="registered") Вже маю аккаунт
+                                input(type="text" placeholder="Твоя email адреса")
+                                input(type="text" placeholder="Твій пароль")
+                                input(type="text" placeholder="Підтверди пароль" class="hide")
+                    //button.button ЗАПЛАТИТИ
+                    a.button(href="/pay_success.html") ЗАПЛАТИТИ
+            include includes/footer

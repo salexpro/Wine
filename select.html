@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Message on wine</title>
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#991a37">
+    <meta name="theme-color" content="#991a37">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&amp;amp;subset=cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400&amp;amp;subset=cyrillic">
+    <link rel="stylesheet" href="/css/app.css">
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="head">
+        <div class="row column align-justify align-middle">
+          <div class="head_logo"><a href="/"><img src="/img/logo.jpg" alt="Message on wine"></a></div>
+          <nav class="large-7 column align-middle head_nav">
+            <ul class="menu align-justify">
+              <li><a href="/about.html">Про сервіс</a></li>
+              <li><a href="/terms.html">Умови використання</a></li>
+              <li><a href="/blog.html">Блог</a></li>
+              <li><a href="/contacts.html">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="large-2 align-right menu head_lang">
+            <li class="active"><a href="#">Укр</a></li>
+            <li><a href="#">Eng</a></li>
+            <li><a href="#">Рус</a></li>
+          </ul>
+        </div>
+      </header>
+      <section class="content delivery select">
+        <div class="row">
+          <div class="small-12 column order_steps">
+            <div class="order_step selected">Оберіть що саме подарувати</div>
+            <div class="order_step selected">Додайте відеоповідомлення</div>
+            <div class="order_step">Оплата та відправка</div>
+          </div>
+          <p class="small-12 column header primary"><span>Класний вибір! </span>Тепер давай зробимо повідомлення!</p>
+          <p class="column select_hint">Для того, щоб ми зробили відеоповідомлення на обраній вами пляшці нам потрібен відеоролик, який буде на ній програватись.<br>Задля цього, будь ласка, оберіть один з наведених нижче способів надання відео.</p>
+          <div class="small-12 row">
+            <div class="large-2 column select_product"><img src="/img/bottle_select.png" alt="Пляшка"></div>
+            <div class="column select_video"><a href="/videogallery.html" class="button simple">заразвибрати відео з нашої галереї</a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAARCAYAAAAlpHdJAAAArklEQVRIS8XVTQ6CMBCG4Y+QcB5iPJCuYNkj9AhuYeWBlHAUL0A1JdFI7c/MQHH2nedddQr8cQprdzjqBje9V0eHg2owXGa8R10blKcWd5U7wMIVzPWM8THjewV8w9b84LkDXPgHzxXgg7341gEhOIhvFRCDo/jagBScxKUBFJiEcwOoMBmnBnBgFp4K4MJsPBQggUW4GyCFxfg74IlSVZiUPRKSg7T42yUL1rx5AeDugRL1hL79AAAAAElFTkSuQmCC" alt="Стрiлка донизу">
+              <p>В нашій відео галереї ви можете знайти вже готові відео привітання для будь-якого випадку життя. Просто оберіть тематику вашого свята (день народження, новий рік, святий миколай і т.д.), та виберіть відео, котре підходить вам більш за все</p>
+            </div>
+            <div class="column shrink">
+              <hr>
+            </div>
+            <div class="column select_video"><a href="#" class="button simple">створити нове відео зараз</a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAARCAYAAAAlpHdJAAAArklEQVRIS8XVTQ6CMBCG4Y+QcB5iPJCuYNkj9AhuYeWBlHAUL0A1JdFI7c/MQHH2nedddQr8cQprdzjqBje9V0eHg2owXGa8R10blKcWd5U7wMIVzPWM8THjewV8w9b84LkDXPgHzxXgg7341gEhOIhvFRCDo/jagBScxKUBFJiEcwOoMBmnBnBgFp4K4MJsPBQggUW4GyCFxfg74IlSVZiUPRKSg7T42yUL1rx5AeDugRL1hL79AAAAAElFTkSuQmCC" alt="Стрiлка донизу">
+              <p>Скористайтесь нашим онлайн відео редактором щоб створити прямо зараз чудове відео привітання. Але задля цього вам потрібно мати веб камеру на свому компьютері.</p>
+            </div>
+            <div class="column shrink">
+              <hr>
+            </div>
+            <div class="column select_video">
+              <input type="file" id="uplvideo" class="hide">
+              <label for="uplvideo" class="button simple">в мене є готове відео!  завантажити</label><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAARCAYAAAAlpHdJAAAArklEQVRIS8XVTQ6CMBCG4Y+QcB5iPJCuYNkj9AhuYeWBlHAUL0A1JdFI7c/MQHH2nedddQr8cQprdzjqBje9V0eHg2owXGa8R10blKcWd5U7wMIVzPWM8THjewV8w9b84LkDXPgHzxXgg7341gEhOIhvFRCDo/jagBScxKUBFJiEcwOoMBmnBnBgFp4K4MJsPBQggUW4GyCFxfg74IlSVZiUPRKSg7T42yUL1rx5AeDugRL1hL79AAAAAElFTkSuQmCC" alt="Стрiлка донизу">
+              <p>
+                 
+                Ви можета самі створти своє унікальне відео і використати його в якості вітального послання на обраному продукті.<br><br>Для завантаження допускаються файли:<br>- mpg4, .mov, .avi<br>- Не більше 50 Мб.   
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">MESSAGEONWINE.COM</footer>
+      <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+      <script src="/bower_components/foundation-sites/dist/foundation.min.js"></script>
+      <script src="/js/app.min.js"></script>
+    </main>
+  </body>
+</html>

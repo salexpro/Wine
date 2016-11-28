@@ -1,0 +1,21 @@
+- var active = 'fail'
+doctype html
+html(lang="ru")
+    include includes/head
+    body
+        main.wrap
+            include includes/header
+            section.content.delivery.status
+                .row.status_content
+                    p.small-12.column.header.primary
+                        | Вибачте, але нажаль під час оплати сталася помилка і ми не отримали оплату за ваше замовлення
+                    .small-12.column.fail_text
+                        | Спробуйте, будь ласка, ще раз, або напишіть нам листа на messageonwine@gmail.com і ми будимо перевіряти вашу проблему
+                    .small-12.column.row.align-center.delivery_pager.fail_buttons
+                        .column.shrink
+                            button.button.hollow
+                                | відмінити
+                        .column.shrink
+                            button.button.hollow
+                                | ОплатИТИ
+            include includes/footer

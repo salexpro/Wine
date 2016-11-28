@@ -11,7 +11,7 @@ function initMap() {
     geocoder = new google.maps.Geocoder();
 
     // Create a map object and specify the DOM element for display.
-    var map = new google.maps.Map(document.getElementById('map'), {
+    var map = new google.maps.Map($('.contacts_map')[0], {
         // center: { lat: -34.397, lng: 150.644 },
         scrollwheel: false,
         zoom: 15,
@@ -36,3 +36,7 @@ function initMap() {
     map.mapTypes.set('wine', styledMap);
     map.setMapTypeId('wine');
 }
+
+$('.total_user_select [type="radio"]').change(function(){
+    $('.total_user input:last').toggleClass('hide');
+})

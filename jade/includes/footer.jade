@@ -11,9 +11,9 @@ if active=='order'
                     .reveal_how_step_inner
                         p Завантаж безкоштовний додаток Looksar
                         a(href="#")
-                            img(src="/img/app_store.jpg", alt="App Store") 
+                            img(src="/img/app_store.png", alt="App Store") 
                         a(href="#") 
-                            img(src="/img/google_play.jpg", alt="Google Play")
+                            img(src="/img/google_play.png", alt="Google Play")
                 .reveal_how_step
                     .reveal_how_step_inner
                         p Введи цей код
@@ -24,7 +24,7 @@ if active=='order'
                         img(src="/img/label.jpg", alt="Етикетка")
         button.close-button(type="button" data-close aria-label="Закрити вікно")
             span(aria-hidden="true") &#215;
-    
+if active=='order'||active=='delivery'
     .reveal.large.reveal_info#info(data-reveal data-close-on-click="true" data-animation-out="fade-out")
         p.row.header.primary
             | Вино Chateau d'Armailhac, Pauillac AOC 5-me Grand Cru Classe, 2010
@@ -83,3 +83,39 @@ if active=='order'
                             | Вино рекомендуется подавать к дичи, баранине под соусом и выдержанным сырам.
         button.close-button(type="button" data-close aria-label="Закрити вікно")
             span(aria-hidden="true") &#215;
+if active=='delivery'
+    .reveal.large.reveal_more#more(data-reveal data-close-on-click="true" data-animation-out="fade-out")
+        .reveal_more_content
+            p.header.primary Якщо ви хочете зробити замовлення на білше ніж 10 пляшок, зв'яжіться будь ласка з нами за електронною адресою що наведена нижче.
+            .reveal_more_mail
+                img(src="data:image/png;base64,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", alt="")
+                a(href="mailto:messageonwine@gmail.com" target="_blank") messageonwine@gmail.com
+        button.close-button(type="button" data-close aria-label="Закрити вікно")
+            span(aria-hidden="true") &#215;
+if active=='plan'
+    .reveal.large.reveal_why#why(data-reveal data-close-on-click="true" data-animation-out="fade-out")
+        p.header.primary Чому це платне?
+        .reveal_why_content
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula ipsum ac elementum lobortis. Quisque vel ornare ligula. Mauris feugiat ultrices nisl vel vehicula. Fusce in velit a massa tristique pulvinar id quis magna. Nunc orci sem, faucibus nec dignissim et, elementum sed odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut vel est sed metus laoreet sollicitudin eu nec augue.
+            br
+            br
+            | Curabitur porta turpis non nisl fermentum, vel vulputate velit congue. Donec interdum turpis lorem. Nullam laoreet dui a purus sollicitudin, eu aliquet sapien efficitur. Suspendisse potenti. Nunc venenatis egestas arcu ac fringilla. Donec vitae sagittis diam. Cras ac neque auctor, facilisis lorem ut, pellentesque dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            br
+            br
+            | Etiam erat dui, molestie id sem vel, laoreet elementum dolor. Sed a elit non mauris dapibus condimentum quis id velit. Proin lobortis sed nunc id posuere. Cras laoreet enim eget mollis placerat. Ut sit amet libero justo. Sed porttitor gravida dui, in posuere nisi efficitur ac. Donec mattis pretium ornare. Aliquam ultrices mollis nunc vel hendrerit. Duis pulvinar tristique magna nec dictum. Aliquam sodales ornare nisi sit amet commodo. Duis convallis mollis viverra. Suspendisse a lacus purus.
+            br
+            br
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula ipsum ac elementum lobortis. Quisque vel ornare ligula. Mauris feugiat ultrices nisl vel vehicula. Fusce in velit a massa tristique pulvinar id quis magna. Nunc orci sem, faucibus nec dignissim et, elementum sed odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut vel est sed metus laoreet sollicitudin eu nec augue.Curabitur porta turpis non nisl fermentum, vel vulputate velit congue. Donec interdum turpis lorem. Nullam laoreet dui a purus sollicitudin, eu aliquet sapien efficitur. 
+            br
+            br
+            | Suspendisse potenti. Nunc venenatis egestas arcu ac fringilla. Donec vitae sagittis diam. Cras ac neque auctor, facilisis lorem ut, pellentesque dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            br
+            br
+            | Etiam erat dui, molestie id sem vel, laoreet elementum dolor. Sed a elit non mauris dapibus condimentum quis id velit. Proin lobortis sed nunc id posuere. Cras laoreet enim eget mollis placerat. Ut sit amet libero justo. Sed porttitor gravida dui, in posuere nisi efficitur ac. Donec mattis pretium ornare. Aliquam ultrices mollis nunc vel hendrerit. Duis pulvinar tristique magna nec dictum. Aliquam sodales ornare nisi sit amet commodo. Duis convallis mollis viverra. Suspendisse a lacus purus.
+        button.close-button(type="button" data-close aria-label="Закрити вікно")
+            span(aria-hidden="true") &#215;
+script(src="/bower_components/jquery/dist/jquery.min.js")
+script(src="/bower_components/foundation-sites/dist/foundation.min.js")
+if active=='contacts'
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsMLQTnngdlMhgFJfPqUoYrrvqz1BIZaE&callback=initMap" async defer)
+script(src="/js/app.min.js")

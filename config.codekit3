@@ -3871,6 +3871,12 @@
 		"oAP": "\/browserconfig.xml",
 		"oF": 0
 		},
+	"\/check.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/check.html",
+		"oF": 0
+		},
 	"\/contacts.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -3886,6 +3892,18 @@
 		"oAP": "\/css\/app-min.css",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/delivery.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/delivery.html",
+		"oF": 0
+		},
+	"\/error.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/error.html",
+		"oF": 0
 		},
 	"\/favicon-16x16.png": {
 		"ft": 32768,
@@ -3909,11 +3927,11 @@
 		"oAP": "\/favicon.ico",
 		"oF": 0
 		},
-	"\/img\/app_store.jpg": {
-		"ft": 16384,
-		"iS": 8112,
+	"\/img\/app_store.png": {
+		"ft": 32768,
+		"iS": 5168,
 		"oA": 0,
-		"oAP": "\/img\/app_store.jpg",
+		"oAP": "\/img\/app_store.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -3949,6 +3967,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/bottle_check.png": {
+		"ft": 32768,
+		"iS": 72860,
+		"oA": 0,
+		"oAP": "\/img\/bottle_check.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/bottle_min.png": {
 		"ft": 32768,
 		"iS": 47771,
@@ -3957,11 +3983,19 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/img\/google_play.jpg": {
-		"ft": 16384,
-		"iS": 6262,
+	"\/img\/bottle_select.png": {
+		"ft": 32768,
+		"iS": 82029,
 		"oA": 0,
-		"oAP": "\/img\/google_play.jpg",
+		"oAP": "\/img\/bottle_select.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/google_play.png": {
+		"ft": 32768,
+		"iS": 6549,
+		"oA": 0,
+		"oAP": "\/img\/google_play.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -3973,6 +4007,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/label.png": {
+		"ft": 32768,
+		"iS": 9561,
+		"oA": 0,
+		"oAP": "\/img\/label.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/logo.jpg": {
 		"ft": 16384,
 		"iS": 17851,
@@ -3981,11 +4023,27 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/marker.jpg": {
+		"ft": 16384,
+		"iS": 17564,
+		"oA": 0,
+		"oAP": "\/img\/marker.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/marker.png": {
 		"ft": 32768,
 		"iS": 2258,
 		"oA": 0,
 		"oAP": "\/img\/marker.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/nova_poshta.png": {
+		"ft": 32768,
+		"iS": 5891,
+		"oA": 0,
+		"oAP": "\/img\/nova_poshta.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -4064,6 +4122,14 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/contacts.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/delivery.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/delivery.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -4219,6 +4285,30 @@
 		"oAP": "\/order.html",
 		"oF": 0
 		},
+	"\/pay_fail.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/pay_fail.html",
+		"oF": 0
+		},
+	"\/pay_success.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/pay_success.html",
+		"oF": 0
+		},
+	"\/plan.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/plan.html",
+		"oF": 0
+		},
+	"\/process.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/process.html",
+		"oF": 0
+		},
 	"\/safari-pinned-tab.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -4268,10 +4358,28 @@
 		"oS": 2,
 		"uL": 1
 		},
+	"\/select.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/select.html",
+		"oF": 0
+		},
 	"\/terms.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/terms.html",
+		"oF": 0
+		},
+	"\/total.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/total.html",
+		"oF": 0
+		},
+	"\/videogallery.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/videogallery.html",
 		"oF": 0
 		}
 	},

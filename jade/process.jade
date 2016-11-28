@@ -1,0 +1,21 @@
+- var active = 'process'
+doctype html
+html(lang="ru")
+    include includes/head
+    body
+        main.wrap
+            include includes/header
+            section.content.delivery.status
+                .row.status_content
+                    p.small-12.column.header.primary
+                        | Нажаль ваше відео ще знаходиться в обробці
+                    .small-12.column.fail_text
+                        | Будь ласка, спробуйте оновити сторінку через 30-60 секунд
+                    .small-12.column.row.align-center.delivery_pager.fail_buttons
+                        .column.shrink
+                            a.button.hollow(href="/check.html")
+                                | НАЗАД
+                        .column.shrink
+                            button.button.hollow
+                                | ОНОВИТИ
+            include includes/footer

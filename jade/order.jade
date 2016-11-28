@@ -10,8 +10,7 @@ mixin item(type)
             img(src="/img/bottle.png", alt="Бутылка")
             .order_item_price
                 | ЦІНА: 1399.50 грн
-            a.button(href="/delivery.html")
-                img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAABfElEQVQ4T53UP4jPcRzH8cebFDH5NxlkMoqbFJeNnGK6m+Q25U9SYlJMlAUTA+oWWYi78aQrZ2GwyEgZCJOBEm+99f1e3+6+P9fPZ/u+P6/38/P+8+obBpzMnMQZbMN73IyIW33y6Atm5slKwgxmsReHcS4iri3OWQLJzI14g6cRMdEmZOZdHMH2iPjYBfVBduEFxiPiYQdyAI+rqoio+4XTB9mJeUxExKMOZH8DGV0Cyczj2ITf+I63eICKr8VmfMUX3KsKm2Gvwwp8jsx8jt2d6kp0CtdR21iPbziGs038fgOotPmCXMLFDqQEU6jyTzTixO2mnXrkaEd/uSAH8QTd+fzA6p71V7trOvGCjxVkC141vQ/y3qD4J4z8fT0z57BnWALmImK0hVzB+f+AXI2ICy1krJnLsJxDETHdQrbiJTYMQSnvjETEuxayCs8W+WU5XvlrX0T8XFhrZt5oTLZccntfv4bT9dGF7MAd1Mp//YO0Eh8wGRGvS/cHMv99F5LVyOYAAAAASUVORK5CYII=", alt="")
+            a.button.left.cart(href="/delivery.html")
                 | Придбати
 doctype html
 html(lang="ru")
@@ -54,6 +53,3 @@ html(lang="ru")
                         +item('C')
                         +item('C')
             include includes/footer
-        script(src="/bower_components/jquery/dist/jquery.min.js")
-        script(src="/bower_components/foundation-sites/dist/foundation.min.js")
-        script(src="/js/app.min.js")

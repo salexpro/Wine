@@ -1,0 +1,30 @@
+- var active = 'error'
+doctype html
+html(lang="ru")
+    include includes/head
+    body
+        main.wrap
+            include includes/header
+            section.content.delivery.status.error
+                .row.status_content
+                    p.small-12.column.header.primary
+                        | Відео чомусь не працює
+                    .small-12.column.error_reasons
+                        ol
+                            li.reveal_how_step
+                                .reveal_how_step_inner
+                                    p Перевір, будь ласка, чи достатньо світла там, де ти є
+                            li.reveal_how_step
+                                .reveal_how_step_inner
+                                    p В мобільному працює інтернет? Якщо ні - тобі потрібен wi-fi або 3G
+                            li.reveal_how_step
+                                .reveal_how_step_inner
+                                    p 
+                                        | Перевір, чи правильно введений код  -  RTHL 
+                                        a(href="/check.html") ПЕРЕВІРИТИ ВІДЕО ЩЕ РАЗ
+                            li.reveal_how_step
+                                .reveal_how_step_inner
+                                    p Якщо ти впевнений, що все перевірив і відео не працює, напиши, будь ласка, нам листа на messageonwine@gmail.com
+                    .small-12.column.error_back
+                        a.button.hollow(href="/check.html") повернутись
+            include includes/footer
