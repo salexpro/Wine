@@ -22,7 +22,10 @@ $('.total_user_select [type="radio"]').change(function(){
     $('.total_user input:last').toggleClass('hide');
 })
 
-//Карта
+// Custom select 
+$('.order_filter select').select7();
+
+// Карта
 var geocoder;
 var map;
 
