@@ -3,24 +3,25 @@ doctype html
 html(lang="ru")
     include includes/head
     body
-        main.wrap
-            include includes/header
-            section.content.blog
-                .row.column
-                    .breadcrumbs
-                            a(href="/") Головна
-                            img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAj0lEQVQoU42QPQ5BARAGZ47lCrQqanolBQkJKkSioKFQ0rqHuI9PnjwvfhrbbWayu9+aZA/c1AVfZZIOsAbG6uydWzRJWsABmKvDl/CEpdAEihUbYKDeK1gKdeAM7IDeByyFGnABjv/DJA3gBGw/xiZ5P6iv5hWlXUaZqqMqSpIusAImP09IUoS/qsvv9z0AKAo9Kp30A4MAAAAASUVORK5CYII=", alt="")
-                            a(href="/blog.html") Блог
-                            img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAj0lEQVQoU42QPQ5BARAGZ47lCrQqanolBQkJKkSioKFQ0rqHuI9PnjwvfhrbbWayu9+aZA/c1AVfZZIOsAbG6uydWzRJWsABmKvDl/CEpdAEihUbYKDeK1gKdeAM7IDeByyFGnABjv/DJA3gBGw/xiZ5P6iv5hWlXUaZqqMqSpIusAImP09IUoS/qsvv9z0AKAo9Kp30A4MAAAAASUVORK5CYII=", alt="")
-                            | Назва публікації
-                    .blog_item.full
-                        .blog_item_title(href="/blog_item.html")
-                            | Назва публікації має бути тут і може бути досить довгою і навіть в декілька рядків... Назва публікації має бути тут і може бути досить довгою
-                        .blog_item_date
-                            | 30 вересня 2016 р.
-                        img(src="//placehold.it/1170x500/7a012a/FFF", alt="")
-                        .blog_item_brief
-                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra leo quam, consectetur suscipit arcu bibendum in. Pellentesque pharetra est quis libero condimentum, rutrum volutpat odio accumsan. Donec eget felis ut est fringilla iaculis molestie sit amet metus. Sed pellentesque hendrerit tellus non posuere. Sed odio urna, sodales id elit eu, aliquam ornare justo. Aliquam sapien nisl, auctor sit amet augue id, tempor ullamcorper orci. Suspendisse rhoncus convallis ipsum. Nunc sit amet viverra orci. In pulvinar pulvinar velit, facilisis gravida erat blandit vel. Etiam consequat, dui vitae aliquet mollis, nunc ligula egestas nibh, an vitae tincidunt lectus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra leo quam, consectetur suscipit arcu bibendum in. Pellentesque pharetra est quis libero condimentum, rutrum volutpat odio accumsan. 
-                            p Donec eget felis ut est fringilla iaculis molestie sit amet metus. Sed pellentesque hendrerit tellus non posuere. Sed odio urna, sodales id elit eu, aliquam ornare justo. Aliquam sapien nisl, auctor sit amet augue id, tempor ullamcorper orci. Suspendisse rhoncus convallis ipsum. Nunc sit amet viverra orci. In pulvinar pulvinar velit, facilisis gravida erat blandit vel. Etiam consequat, dui vitae aliquet mollis, nunc ligula egestas nibh, an vitae tincidunt lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            p Aliquam viverra leo quam, consectetur suscipit arcu bibendum in. Pellentesque pharetra est quis libero condimentum, rutrum volutpat odio accumsan. Donec eget felis ut est fringilla iaculis molestie sit amet metus. Sed pellentesque hendrerit tellus non posuere. Sed odio urna, sodales id elit eu, aliquam ornare justo. Aliquam sapien nisl, auctor sit amet augue id, tempor ullamcorper orci. Suspendisse rhoncus convallis ipsum. Nunc sit amet viverra orci. In pulvinar pulvinar velit, facilisis gravida erat blandit vel. Etiam consequat, dui vitae aliquet mollis, nunc ligula egestas nibh, an vitae tincidunt lectus.
-            include includes/footer
+        main.wrap.off-canvas-wrapper
+            .off-canvas-wrapper-inner(data-off-canvas-wrapper)
+                include includes/header
+                section.content.blog
+                    .row
+                        .small-12.column.breadcrumbs
+                                a(href="/") Головна
+                                img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAj0lEQVQoU42QPQ5BARAGZ47lCrQqanolBQkJKkSioKFQ0rqHuI9PnjwvfhrbbWayu9+aZA/c1AVfZZIOsAbG6uydWzRJWsABmKvDl/CEpdAEihUbYKDeK1gKdeAM7IDeByyFGnABjv/DJA3gBGw/xiZ5P6iv5hWlXUaZqqMqSpIusAImP09IUoS/qsvv9z0AKAo9Kp30A4MAAAAASUVORK5CYII=", alt="")
+                                a(href="/blog.html") Блог
+                                img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAj0lEQVQoU42QPQ5BARAGZ47lCrQqanolBQkJKkSioKFQ0rqHuI9PnjwvfhrbbWayu9+aZA/c1AVfZZIOsAbG6uydWzRJWsABmKvDl/CEpdAEihUbYKDeK1gKdeAM7IDeByyFGnABjv/DJA3gBGw/xiZ5P6iv5hWlXUaZqqMqSpIusAImP09IUoS/qsvv9z0AKAo9Kp30A4MAAAAASUVORK5CYII=", alt="")
+                                | Назва публікації
+                        .small-12.column.blog_item.full
+                            .blog_item_title(href="/blog_item.html")
+                                | Назва публікації має бути тут і може бути досить довгою і навіть в декілька рядків... Назва публікації має бути тут і може бути досить довгою
+                            .blog_item_date
+                                | 30 вересня 2016 р.
+                            img(src="//placehold.it/1170x500/7a012a/FFF", alt="")
+                            .blog_item_brief
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra leo quam, consectetur suscipit arcu bibendum in. Pellentesque pharetra est quis libero condimentum, rutrum volutpat odio accumsan. Donec eget felis ut est fringilla iaculis molestie sit amet metus. Sed pellentesque hendrerit tellus non posuere. Sed odio urna, sodales id elit eu, aliquam ornare justo. Aliquam sapien nisl, auctor sit amet augue id, tempor ullamcorper orci. Suspendisse rhoncus convallis ipsum. Nunc sit amet viverra orci. In pulvinar pulvinar velit, facilisis gravida erat blandit vel. Etiam consequat, dui vitae aliquet mollis, nunc ligula egestas nibh, an vitae tincidunt lectus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra leo quam, consectetur suscipit arcu bibendum in. Pellentesque pharetra est quis libero condimentum, rutrum volutpat odio accumsan. 
+                                p Donec eget felis ut est fringilla iaculis molestie sit amet metus. Sed pellentesque hendrerit tellus non posuere. Sed odio urna, sodales id elit eu, aliquam ornare justo. Aliquam sapien nisl, auctor sit amet augue id, tempor ullamcorper orci. Suspendisse rhoncus convallis ipsum. Nunc sit amet viverra orci. In pulvinar pulvinar velit, facilisis gravida erat blandit vel. Etiam consequat, dui vitae aliquet mollis, nunc ligula egestas nibh, an vitae tincidunt lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                p Aliquam viverra leo quam, consectetur suscipit arcu bibendum in. Pellentesque pharetra est quis libero condimentum, rutrum volutpat odio accumsan. Donec eget felis ut est fringilla iaculis molestie sit amet metus. Sed pellentesque hendrerit tellus non posuere. Sed odio urna, sodales id elit eu, aliquam ornare justo. Aliquam sapien nisl, auctor sit amet augue id, tempor ullamcorper orci. Suspendisse rhoncus convallis ipsum. Nunc sit amet viverra orci. In pulvinar pulvinar velit, facilisis gravida erat blandit vel. Etiam consequat, dui vitae aliquet mollis, nunc ligula egestas nibh, an vitae tincidunt lectus.
+                include includes/footer

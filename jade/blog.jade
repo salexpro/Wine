@@ -13,53 +13,54 @@ doctype html
 html(lang="ru")
     include includes/head
     body
-        main.wrap
-            include includes/header
-            section.content.blog
-                .row
-                    .small-12.column.breadcrumbs
-                        a(href="/") Головна
-                        img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAj0lEQVQoU42QPQ5BARAGZ47lCrQqanolBQkJKkSioKFQ0rqHuI9PnjwvfhrbbWayu9+aZA/c1AVfZZIOsAbG6uydWzRJWsABmKvDl/CEpdAEihUbYKDeK1gKdeAM7IDeByyFGnABjv/DJA3gBGw/xiZ5P6iv5hWlXUaZqqMqSpIusAImP09IUoS/qsvv9z0AKAo9Kp30A4MAAAAASUVORK5CYII=", alt="")
-                        | Блог
-                    article.large-8.column.article
-                        +article('//placehold.it/770x300/7a012a/FFF')
-                        +article('//placehold.it/770x300/991a37/42091c')
-                        .pager
-                            a(href="#")
-                                img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAjUlEQVQoU4WQMQ4BYRBG3+c+G/fQUm5BQyERVGsTEgpKhTNQbWuv4FifjPxkWWLKeZN534z4UraXQKZPZnsFbIDZG7S9AwpgKOnygLY7wB6YAiNJVfSVwBEYA31J9VMV8ATkQE/SrZnhLwxvrJ0AA0nX19oUKAYOrUBNh+0tUKZTzr+esAbmLZg0C6B7B10NOAu5pC6oAAAAAElFTkSuQmCC", alt="")
-                            b 1
-                            a(href="#") 2
-                            a(href="#") 3
-                            a(href="#") 4
-                            span ...
-                            a(href="#") 10
-                            a(href="#")
-                                img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAj0lEQVQoU42QPQ5BARAGZ47lCrQqanolBQkJKkSioKFQ0rqHuI9PnjwvfhrbbWayu9+aZA/c1AVfZZIOsAbG6uydWzRJWsABmKvDl/CEpdAEihUbYKDeK1gKdeAM7IDeByyFGnABjv/DJA3gBGw/xiZ5P6iv5hWlXUaZqqMqSpIusAImP09IUoS/qsvv9z0AKAo9Kp30A4MAAAAASUVORK5CYII=", alt="")
-                    aside.large-4.column.sidebar
-                        form.search(action="")
-                            input(type="text" placeholder="Шукати в блозі")
-                            input(type="submit" value="")
-                        .subscribe
-                            p.header.third Підписатись на новини
-                            form.subscribe_form(action="")
-                                input(type="text" placeholder="Ваш Email")
-                                input.button.small(type="submit" value="ПІДПИСАТИСЬ")
-                        .recent
-                            p.header.third Останні публікації
-                            .recent_list
-                                .recent_item
-                                    img(src="//placehold.it/80x70/991a37/42091c", alt="")
-                                    .recent_item_content
-                                        a(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                        | 2 вересня 2016
-                                .recent_item
-                                    img(src="//placehold.it/80x70/7a012a/FFF", alt="")
-                                    .recent_item_content
-                                        a(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                        | 2 вересня 2016
-                                .recent_item
-                                    img(src="//placehold.it/80x70/991a37/42091c", alt="")
-                                    .recent_item_content
-                                        a(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                        | 2 вересня 2016
-            include includes/footer
+        main.wrap.off-canvas-wrapper
+            .off-canvas-wrapper-inner(data-off-canvas-wrapper)
+                include includes/header
+                section.content.blog
+                    .row
+                        .small-12.column.breadcrumbs
+                            a(href="/") Головна
+                            img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAj0lEQVQoU42QPQ5BARAGZ47lCrQqanolBQkJKkSioKFQ0rqHuI9PnjwvfhrbbWayu9+aZA/c1AVfZZIOsAbG6uydWzRJWsABmKvDl/CEpdAEihUbYKDeK1gKdeAM7IDeByyFGnABjv/DJA3gBGw/xiZ5P6iv5hWlXUaZqqMqSpIusAImP09IUoS/qsvv9z0AKAo9Kp30A4MAAAAASUVORK5CYII=", alt="")
+                            | Блог
+                        article.small-12.medium-7.large-8.column.article
+                            +article('//placehold.it/770x300/7a012a/FFF')
+                            +article('//placehold.it/770x300/991a37/42091c')
+                            .pager
+                                a(href="#")
+                                    img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAjUlEQVQoU4WQMQ4BYRBG3+c+G/fQUm5BQyERVGsTEgpKhTNQbWuv4FifjPxkWWLKeZN534z4UraXQKZPZnsFbIDZG7S9AwpgKOnygLY7wB6YAiNJVfSVwBEYA31J9VMV8ATkQE/SrZnhLwxvrJ0AA0nX19oUKAYOrUBNh+0tUKZTzr+esAbmLZg0C6B7B10NOAu5pC6oAAAAAElFTkSuQmCC", alt="")
+                                b 1
+                                a(href="#") 2
+                                a(href="#") 3
+                                a(href="#") 4
+                                span ...
+                                a(href="#") 10
+                                a(href="#")
+                                    img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAj0lEQVQoU42QPQ5BARAGZ47lCrQqanolBQkJKkSioKFQ0rqHuI9PnjwvfhrbbWayu9+aZA/c1AVfZZIOsAbG6uydWzRJWsABmKvDl/CEpdAEihUbYKDeK1gKdeAM7IDeByyFGnABjv/DJA3gBGw/xiZ5P6iv5hWlXUaZqqMqSpIusAImP09IUoS/qsvv9z0AKAo9Kp30A4MAAAAASUVORK5CYII=", alt="")
+                        aside.small-12.medium-5.large-4.column.sidebar
+                            form.search(action="")
+                                input(type="text" placeholder="Шукати в блозі")
+                                input(type="submit" value="")
+                            .subscribe
+                                p.header.third Підписатись на новини
+                                form.subscribe_form(action="")
+                                    input(type="text" placeholder="Ваш Email")
+                                    input.button.small(type="submit" value="ПІДПИСАТИСЬ")
+                            .recent
+                                p.header.third Останні публікації
+                                .recent_list
+                                    .recent_item
+                                        img(src="//placehold.it/80x70/991a37/42091c", alt="")
+                                        .recent_item_content
+                                            a(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                            | 2 вересня 2016
+                                    .recent_item
+                                        img(src="//placehold.it/80x70/7a012a/FFF", alt="")
+                                        .recent_item_content
+                                            a(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                            | 2 вересня 2016
+                                    .recent_item
+                                        img(src="//placehold.it/80x70/991a37/42091c", alt="")
+                                        .recent_item_content
+                                            a(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                            | 2 вересня 2016
+                include includes/footer

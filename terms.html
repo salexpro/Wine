@@ -52,44 +52,46 @@
     <link rel="stylesheet" href="/css/app.css">
   </head>
   <body>
-    <main class="wrap">
-      <header class="head">
-        <div class="row column align-middle">
-          <div class="head_logo"><a href="/"><img src="/img/logo.jpg" alt="Message on wine"></a></div>
-          <div id="nav" data-off-canvas data-position="right" data-auto-focus="false" class="nav small-12 row align-justify">
-            <nav class="small-12 large-8 column align-middle head_nav">
-              <ul class="menu align-justify">
-                <li><a href="/about.html">Про сервіс</a></li>
-                <li class="active"><a href="/terms.html">Умови використання</a></li>
-                <li><a href="/blog.html">Блог</a></li>
-                <li><a href="/contacts.html">Контакти</a></li>
+    <main class="wrap off-canvas-wrapper">
+      <div data-off-canvas-wrapper class="off-canvas-wrapper-inner">
+        <header class="head">
+          <div class="row column align-middle">
+            <div class="head_logo"><a href="/"><img src="/img/logo.jpg" alt="Message on wine"></a></div>
+            <div id="nav" data-off-canvas data-position="right" data-auto-focus="false" class="nav small-12 row align-justify">
+              <nav class="small-12 large-8 column align-middle head_nav">
+                <ul class="menu align-justify">
+                  <li><a href="/about.html">Про сервіс</a></li>
+                  <li class="active"><a href="/terms.html">Умови використання</a></li>
+                  <li><a href="/blog.html">Блог</a></li>
+                  <li><a href="/contacts.html">Контакти</a></li>
+                </ul>
+              </nav>
+              <ul class="menu head_lang">
+                <li class="active"><a href="#">Укр</a></li>
+                <li><a href="#">Eng</a></li>
+                <li><a href="#">Рус</a></li>
               </ul>
-            </nav>
-            <ul class="menu head_lang">
-              <li class="active"><a href="#">Укр</a></li>
-              <li><a href="#">Eng</a></li>
-              <li><a href="#">Рус</a></li>
-            </ul>
+            </div>
+            <div data-toggle="nav" class="hide-for-large hamb">
+              <div class="hamb_inner"></div>
+            </div>
           </div>
-          <div data-toggle="nav" class="hide-for-large hamb">
-            <div class="hamb_inner"></div>
+        </header>
+        <section class="content terms">
+          <div class="row column">
+            <p class="header primary">TERMS AND CONDITIONS</p>
+            <p>The following terms of use have been established in order to provide understanding to any potential customers who may want to acquire the BoomEssays services.</p>
+            <p class="header secondary">PARTIES CONCERNED</p>
+            <p>‘You’ will refer to all persons who access our website, regardless of the reason, while ‘we’ will refer to the entire BoomEssays staff or people affiliated with our website.</p>
+            <p class="header secondary">TEXT AND/OR CONTENT</p>
+            <p>We will use ‘content’ or ‘text’ for anything that is housed by the BoomEssays website, regardless if it is text, images or graphics. User content will refer to anything published by users on our website, while third party content will refer to the texts published by affiliated</p>
           </div>
-        </div>
-      </header>
-      <section class="content terms">
-        <div class="row column">
-          <p class="header primary">TERMS AND CONDITIONS</p>
-          <p>The following terms of use have been established in order to provide understanding to any potential customers who may want to acquire the BoomEssays services.</p>
-          <p class="header secondary">PARTIES CONCERNED</p>
-          <p>‘You’ will refer to all persons who access our website, regardless of the reason, while ‘we’ will refer to the entire BoomEssays staff or people affiliated with our website.</p>
-          <p class="header secondary">TEXT AND/OR CONTENT</p>
-          <p>We will use ‘content’ or ‘text’ for anything that is housed by the BoomEssays website, regardless if it is text, images or graphics. User content will refer to anything published by users on our website, while third party content will refer to the texts published by affiliated</p>
-        </div>
-      </section>
-      <footer class="footer">MESSAGEONWINE.COM</footer>
-      <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-      <script src="/bower_components/foundation-sites/dist/foundation.min.js"></script>
-      <script src="/js/app.min.js"></script>
+        </section>
+        <footer class="footer">MESSAGEONWINE.COM</footer>
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="/bower_components/foundation-sites/dist/foundation.min.js"></script>
+        <script src="/js/app.min.js"></script>
+      </div>
     </main>
   </body>
 </html>

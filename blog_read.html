@@ -52,48 +52,50 @@
     <link rel="stylesheet" href="/css/app.css">
   </head>
   <body>
-    <main class="wrap">
-      <header class="head">
-        <div class="row column align-middle">
-          <div class="head_logo"><a href="/"><img src="/img/logo.jpg" alt="Message on wine"></a></div>
-          <div id="nav" data-off-canvas data-position="right" data-auto-focus="false" class="nav small-12 row align-justify">
-            <nav class="small-12 large-8 column align-middle head_nav">
-              <ul class="menu align-justify">
-                <li><a href="/about.html">Про сервіс</a></li>
-                <li><a href="/terms.html">Умови використання</a></li>
-                <li class="active"><a href="/blog.html">Блог</a></li>
-                <li><a href="/contacts.html">Контакти</a></li>
+    <main class="wrap off-canvas-wrapper">
+      <div data-off-canvas-wrapper class="off-canvas-wrapper-inner">
+        <header class="head">
+          <div class="row column align-middle">
+            <div class="head_logo"><a href="/"><img src="/img/logo.jpg" alt="Message on wine"></a></div>
+            <div id="nav" data-off-canvas data-position="right" data-auto-focus="false" class="nav small-12 row align-justify">
+              <nav class="small-12 large-8 column align-middle head_nav">
+                <ul class="menu align-justify">
+                  <li><a href="/about.html">Про сервіс</a></li>
+                  <li><a href="/terms.html">Умови використання</a></li>
+                  <li class="active"><a href="/blog.html">Блог</a></li>
+                  <li><a href="/contacts.html">Контакти</a></li>
+                </ul>
+              </nav>
+              <ul class="menu head_lang">
+                <li class="active"><a href="#">Укр</a></li>
+                <li><a href="#">Eng</a></li>
+                <li><a href="#">Рус</a></li>
               </ul>
-            </nav>
-            <ul class="menu head_lang">
-              <li class="active"><a href="#">Укр</a></li>
-              <li><a href="#">Eng</a></li>
-              <li><a href="#">Рус</a></li>
-            </ul>
-          </div>
-          <div data-toggle="nav" class="hide-for-large hamb">
-            <div class="hamb_inner"></div>
-          </div>
-        </div>
-      </header>
-      <section class="content blog">
-        <div class="row column">
-          <div class="breadcrumbs"><a href="/">Головна</a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAj0lEQVQoU42QPQ5BARAGZ47lCrQqanolBQkJKkSioKFQ0rqHuI9PnjwvfhrbbWayu9+aZA/c1AVfZZIOsAbG6uydWzRJWsABmKvDl/CEpdAEihUbYKDeK1gKdeAM7IDeByyFGnABjv/DJA3gBGw/xiZ5P6iv5hWlXUaZqqMqSpIusAImP09IUoS/qsvv9z0AKAo9Kp30A4MAAAAASUVORK5CYII=" alt=""><a href="/blog.html">Блог</a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAj0lEQVQoU42QPQ5BARAGZ47lCrQqanolBQkJKkSioKFQ0rqHuI9PnjwvfhrbbWayu9+aZA/c1AVfZZIOsAbG6uydWzRJWsABmKvDl/CEpdAEihUbYKDeK1gKdeAM7IDeByyFGnABjv/DJA3gBGw/xiZ5P6iv5hWlXUaZqqMqSpIusAImP09IUoS/qsvv9z0AKAo9Kp30A4MAAAAASUVORK5CYII=" alt="">Назва публікації</div>
-          <div class="blog_item full">
-            <div href="/blog_item.html" class="blog_item_title">Назва публікації має бути тут і може бути досить довгою і навіть в декілька рядків... Назва публікації має бути тут і може бути досить довгою</div>
-            <div class="blog_item_date">30 вересня 2016 р.</div><img src="//placehold.it/1170x500/7a012a/FFF" alt="">
-            <div class="blog_item_brief">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra leo quam, consectetur suscipit arcu bibendum in. Pellentesque pharetra est quis libero condimentum, rutrum volutpat odio accumsan. Donec eget felis ut est fringilla iaculis molestie sit amet metus. Sed pellentesque hendrerit tellus non posuere. Sed odio urna, sodales id elit eu, aliquam ornare justo. Aliquam sapien nisl, auctor sit amet augue id, tempor ullamcorper orci. Suspendisse rhoncus convallis ipsum. Nunc sit amet viverra orci. In pulvinar pulvinar velit, facilisis gravida erat blandit vel. Etiam consequat, dui vitae aliquet mollis, nunc ligula egestas nibh, an vitae tincidunt lectus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra leo quam, consectetur suscipit arcu bibendum in. Pellentesque pharetra est quis libero condimentum, rutrum volutpat odio accumsan. </p>
-              <p>Donec eget felis ut est fringilla iaculis molestie sit amet metus. Sed pellentesque hendrerit tellus non posuere. Sed odio urna, sodales id elit eu, aliquam ornare justo. Aliquam sapien nisl, auctor sit amet augue id, tempor ullamcorper orci. Suspendisse rhoncus convallis ipsum. Nunc sit amet viverra orci. In pulvinar pulvinar velit, facilisis gravida erat blandit vel. Etiam consequat, dui vitae aliquet mollis, nunc ligula egestas nibh, an vitae tincidunt lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <p>Aliquam viverra leo quam, consectetur suscipit arcu bibendum in. Pellentesque pharetra est quis libero condimentum, rutrum volutpat odio accumsan. Donec eget felis ut est fringilla iaculis molestie sit amet metus. Sed pellentesque hendrerit tellus non posuere. Sed odio urna, sodales id elit eu, aliquam ornare justo. Aliquam sapien nisl, auctor sit amet augue id, tempor ullamcorper orci. Suspendisse rhoncus convallis ipsum. Nunc sit amet viverra orci. In pulvinar pulvinar velit, facilisis gravida erat blandit vel. Etiam consequat, dui vitae aliquet mollis, nunc ligula egestas nibh, an vitae tincidunt lectus.</p>
+            </div>
+            <div data-toggle="nav" class="hide-for-large hamb">
+              <div class="hamb_inner"></div>
             </div>
           </div>
-        </div>
-      </section>
-      <footer class="footer">MESSAGEONWINE.COM</footer>
-      <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-      <script src="/bower_components/foundation-sites/dist/foundation.min.js"></script>
-      <script src="/js/app.min.js"></script>
+        </header>
+        <section class="content blog">
+          <div class="row">
+            <div class="small-12 column breadcrumbs"><a href="/">Головна</a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAj0lEQVQoU42QPQ5BARAGZ47lCrQqanolBQkJKkSioKFQ0rqHuI9PnjwvfhrbbWayu9+aZA/c1AVfZZIOsAbG6uydWzRJWsABmKvDl/CEpdAEihUbYKDeK1gKdeAM7IDeByyFGnABjv/DJA3gBGw/xiZ5P6iv5hWlXUaZqqMqSpIusAImP09IUoS/qsvv9z0AKAo9Kp30A4MAAAAASUVORK5CYII=" alt=""><a href="/blog.html">Блог</a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAj0lEQVQoU42QPQ5BARAGZ47lCrQqanolBQkJKkSioKFQ0rqHuI9PnjwvfhrbbWayu9+aZA/c1AVfZZIOsAbG6uydWzRJWsABmKvDl/CEpdAEihUbYKDeK1gKdeAM7IDeByyFGnABjv/DJA3gBGw/xiZ5P6iv5hWlXUaZqqMqSpIusAImP09IUoS/qsvv9z0AKAo9Kp30A4MAAAAASUVORK5CYII=" alt="">Назва публікації</div>
+            <div class="small-12 column blog_item full">
+              <div href="/blog_item.html" class="blog_item_title">Назва публікації має бути тут і може бути досить довгою і навіть в декілька рядків... Назва публікації має бути тут і може бути досить довгою</div>
+              <div class="blog_item_date">30 вересня 2016 р.</div><img src="//placehold.it/1170x500/7a012a/FFF" alt="">
+              <div class="blog_item_brief">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra leo quam, consectetur suscipit arcu bibendum in. Pellentesque pharetra est quis libero condimentum, rutrum volutpat odio accumsan. Donec eget felis ut est fringilla iaculis molestie sit amet metus. Sed pellentesque hendrerit tellus non posuere. Sed odio urna, sodales id elit eu, aliquam ornare justo. Aliquam sapien nisl, auctor sit amet augue id, tempor ullamcorper orci. Suspendisse rhoncus convallis ipsum. Nunc sit amet viverra orci. In pulvinar pulvinar velit, facilisis gravida erat blandit vel. Etiam consequat, dui vitae aliquet mollis, nunc ligula egestas nibh, an vitae tincidunt lectus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra leo quam, consectetur suscipit arcu bibendum in. Pellentesque pharetra est quis libero condimentum, rutrum volutpat odio accumsan. </p>
+                <p>Donec eget felis ut est fringilla iaculis molestie sit amet metus. Sed pellentesque hendrerit tellus non posuere. Sed odio urna, sodales id elit eu, aliquam ornare justo. Aliquam sapien nisl, auctor sit amet augue id, tempor ullamcorper orci. Suspendisse rhoncus convallis ipsum. Nunc sit amet viverra orci. In pulvinar pulvinar velit, facilisis gravida erat blandit vel. Etiam consequat, dui vitae aliquet mollis, nunc ligula egestas nibh, an vitae tincidunt lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p>Aliquam viverra leo quam, consectetur suscipit arcu bibendum in. Pellentesque pharetra est quis libero condimentum, rutrum volutpat odio accumsan. Donec eget felis ut est fringilla iaculis molestie sit amet metus. Sed pellentesque hendrerit tellus non posuere. Sed odio urna, sodales id elit eu, aliquam ornare justo. Aliquam sapien nisl, auctor sit amet augue id, tempor ullamcorper orci. Suspendisse rhoncus convallis ipsum. Nunc sit amet viverra orci. In pulvinar pulvinar velit, facilisis gravida erat blandit vel. Etiam consequat, dui vitae aliquet mollis, nunc ligula egestas nibh, an vitae tincidunt lectus.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">MESSAGEONWINE.COM</footer>
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="/bower_components/foundation-sites/dist/foundation.min.js"></script>
+        <script src="/js/app.min.js"></script>
+      </div>
     </main>
   </body>
 </html>
