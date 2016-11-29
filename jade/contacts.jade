@@ -3,23 +3,24 @@ doctype html
 html(lang="ru")
     include includes/head
     body
-        main.wrap
-            include includes/header
-            section.content.contacts
-                .row
-                    p.small-12.column.header.primary КОНТАКТИ
-                    p.column.small-12 Тел.:​ +38 098 98 240 20 Електронна пошта: messageonwine@gmail.com
-                    .small-12.row
-                        .large-6.column
-                            .contacts_map
-                        .large-6.column
-                            p Зворотній зв'язок
-                            form(action="")
-                                input(type="text" placeholder="Ім‘я")
-                                input(type="text" placeholder="Email")
-                                textarea(rows="6" placeholder="Ваше повідомлення")
-                                .row.align-middle
-                                    .column
-                                    .column
-                                        input.button(type="submit" value="ВІДПРАВИТИ")
-            include includes/footer
+        main.wrap.off-canvas-wrapper
+            .off-canvas-wrapper-inner(data-off-canvas-wrapper)
+                include includes/header
+                section.content.contacts
+                    .row
+                        p.small-12.column.header.primary КОНТАКТИ
+                        p.column.small-12 Тел.:​ +38 098 98 240 20 Електронна пошта: messageonwine@gmail.com
+                        .small-12.row.column
+                            .small-12.large-6.column
+                                .contacts_map
+                            .small-12.large-6.column
+                                p Зворотній зв'язок
+                                form(action="")
+                                    input(type="text" placeholder="Ім‘я")
+                                    input(type="text" placeholder="Email")
+                                    textarea(rows="6" placeholder="Ваше повідомлення")
+                                    .row.align-middle
+                                        .column
+                                        .column
+                                            input.button(type="submit" value="ВІДПРАВИТИ")
+                include includes/footer

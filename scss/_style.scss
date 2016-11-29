@@ -609,7 +609,12 @@ textarea {
     }
     &_map {
         height: 100%;
-        border-radius: 5px
+        border-radius: 5px;
+        z-index: 1;
+        @include breakpoint(medium down) {
+            height: 300px;
+            margin-bottom: 20px;
+        }
     }
     [type="submit"] {
         width: 100%;
@@ -678,6 +683,9 @@ textarea {
                 &_brief{
                     font-size: 16px;
                     line-height: 26px;
+                    @include breakpoint(medium down) {
+                        margin: 0;
+                    }
                 }
             }
         }

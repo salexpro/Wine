@@ -1305,7 +1305,9 @@ a:hover, a:focus { color: #fff; text-decoration: underline; }
 
 .contacts p { font-size: 20px; text-align: center; margin-bottom: 20px; }
 
-.contacts_map { height: 100%; border-radius: 5px; }
+.contacts_map { height: 100%; border-radius: 5px; z-index: 1; }
+
+@media screen and (max-width: 63.9375em) { .contacts_map { height: 300px; margin-bottom: 20px; } }
 
 .contacts [type="submit"] { width: 100%; }
 
@@ -1334,6 +1336,8 @@ a:hover, a:focus { color: #fff; text-decoration: underline; }
 .blog_item.full .blog_item_date { font-family: 'Comfortaa', cursive; letter-spacing: 2px; }
 
 .blog_item.full .blog_item_brief { font-size: 16px; line-height: 26px; }
+
+@media screen and (max-width: 63.9375em) { .blog_item.full .blog_item_brief { margin: 0; } }
 
 .blog_item_title { display: block; font-size: 24px; font-weight: 700; line-height: 30px; color: #fff; letter-spacing: 2px; margin-bottom: 15px; }
 
