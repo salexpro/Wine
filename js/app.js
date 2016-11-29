@@ -1,5 +1,28 @@
 $(document).foundation();
 
+// Off-canvas
+if (Foundation.MediaQuery.current == 'medium' || Foundation.MediaQuery.current == 'small') {
+    $('#nav').addClass('off-canvas position-right');
+    $('.head_nav .menu').addClass('vertical');
+}
+$(window).on('changed.zf.mediaquery', function(event, newSize, oldSize) {
+    console.log(newSize)
+    if (newSize == 'small' || newSize == 'medium') {
+        $('#nav').addClass('off-canvas position-right');
+        $('.head_nav .menu').addClass('vertical');
+    }
+    if (newSize != 'small' && newSize != 'medium') {
+        $('.off-canvas-wrapper-inner').removeClass('is-off-canvas-open is-open-right');
+        $('#nav').removeClass('off-canvas position-right');
+        $('.head_nav .menu').removeClass('vertical');
+    }
+});
+
+$('.total_user_select [type="radio"]').change(function(){
+    $('.total_user input:last').toggleClass('hide');
+})
+
+//Карта
 var geocoder;
 var map;
 
@@ -37,6 +60,3 @@ function initMap() {
     map.setMapTypeId('wine');
 }
 
-$('.total_user_select [type="radio"]').change(function(){
-    $('.total_user input:last').toggleClass('hide');
-})

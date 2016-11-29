@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Message on wine</title>
+    <meta name="viewport" content="width=device-width">
     <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
@@ -11,26 +12,68 @@
     <meta name="theme-color" content="#991a37">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&amp;amp;subset=cyrillic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400&amp;amp;subset=cyrillic">
+    <style>
+      @font-face {
+        font-family: 'Comfortaa';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Comfortaa Light'), local('Comfortaa-Light'), url(https://fonts.gstatic.com/s/comfortaa/v7/r_tUZNl0G8xCoOmp_JkSChdwxCXfZpKo5kWAx_74bHs.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: 'Comfortaa';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Comfortaa'), local('Comfortaa-Regular'), url(https://fonts.gstatic.com/s/comfortaa/v7/-DackuIFgo7Hfy3rR14C34X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: 'Comfortaa';
+        font-style: normal;
+        font-weight: 700;
+        src: local('Comfortaa Bold'), local('Comfortaa-Bold'), url(https://fonts.gstatic.com/s/comfortaa/v7/fND5XPYKrF2tQDwwfWZJIxdwxCXfZpKo5kWAx_74bHs.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Fira Sans Light'), local('FiraSans-Light'), url(https://fonts.gstatic.com/s/firasans/v6/VTBnrK42EiOBncVyQXZ7jxdwxCXfZpKo5kWAx_74bHs.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Fira Sans'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v6/T3abUOg4YgfjOby2l-QudoX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+    </style>
     <link rel="stylesheet" href="/css/app.css">
   </head>
   <body>
     <main class="wrap">
       <header class="head">
-        <div class="row column align-justify align-middle">
+        <div class="row column align-middle">
           <div class="head_logo"><a href="/"><img src="/img/logo.jpg" alt="Message on wine"></a></div>
-          <nav class="large-7 column align-middle head_nav">
-            <ul class="menu align-justify">
-              <li><a href="/about.html">Про сервіс</a></li>
-              <li><a href="/terms.html">Умови використання</a></li>
-              <li><a href="/blog.html">Блог</a></li>
-              <li><a href="/contacts.html">Контакти</a></li>
+          <div id="nav" data-off-canvas data-position="right" data-auto-focus="false" class="nav small-12 row align-justify">
+            <nav class="small-12 large-8 column align-middle head_nav">
+              <ul class="menu align-justify">
+                <li><a href="/about.html">Про сервіс</a></li>
+                <li><a href="/terms.html">Умови використання</a></li>
+                <li><a href="/blog.html">Блог</a></li>
+                <li><a href="/contacts.html">Контакти</a></li>
+              </ul>
+            </nav>
+            <ul class="menu head_lang">
+              <li class="active"><a href="#">Укр</a></li>
+              <li><a href="#">Eng</a></li>
+              <li><a href="#">Рус</a></li>
             </ul>
-          </nav>
-          <ul class="large-2 align-right menu head_lang">
-            <li class="active"><a href="#">Укр</a></li>
-            <li><a href="#">Eng</a></li>
-            <li><a href="#">Рус</a></li>
-          </ul>
+          </div>
+          <div data-toggle="nav" class="hide-for-large hamb">
+            <div class="hamb_inner"></div>
+          </div>
         </div>
       </header>
       <section class="content order delivery plan">
@@ -67,7 +110,7 @@
       <footer class="footer">MESSAGEONWINE.COM</footer>
       <div id="why" data-reveal data-close-on-click="true" data-animation-out="fade-out" class="reveal large reveal_why">
         <p class="header primary">Чому це платне?</p>
-        <div class="reveal_why_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula ipsum ac elementum lobortis. Quisque vel ornare ligula. Mauris feugiat ultrices nisl vel vehicula. Fusce in velit a massa tristique pulvinar id quis magna. Nunc orci sem, faucibus nec dignissim et, elementum sed odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut vel est sed metus laoreet sollicitudin eu nec augue.<br><br>Curabitur porta turpis non nisl fermentum, vel vulputate velit congue. Donec interdum turpis lorem. Nullam laoreet dui a purus sollicitudin, eu aliquet sapien efficitur. Suspendisse potenti. Nunc venenatis egestas arcu ac fringilla. Donec vitae sagittis diam. Cras ac neque auctor, facilisis lorem ut, pellentesque dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br><br>Etiam erat dui, molestie id sem vel, laoreet elementum dolor. Sed a elit non mauris dapibus condimentum quis id velit. Proin lobortis sed nunc id posuere. Cras laoreet enim eget mollis placerat. Ut sit amet libero justo. Sed porttitor gravida dui, in posuere nisi efficitur ac. Donec mattis pretium ornare. Aliquam ultrices mollis nunc vel hendrerit. Duis pulvinar tristique magna nec dictum. Aliquam sodales ornare nisi sit amet commodo. Duis convallis mollis viverra. Suspendisse a lacus purus.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula ipsum ac elementum lobortis. Quisque vel ornare ligula. Mauris feugiat ultrices nisl vel vehicula. Fusce in velit a massa tristique pulvinar id quis magna. Nunc orci sem, faucibus nec dignissim et, elementum sed odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut vel est sed metus laoreet sollicitudin eu nec augue.Curabitur porta turpis non nisl fermentum, vel vulputate velit congue. Donec interdum turpis lorem. Nullam laoreet dui a purus sollicitudin, eu aliquet sapien efficitur. <br><br>Suspendisse potenti. Nunc venenatis egestas arcu ac fringilla. Donec vitae sagittis diam. Cras ac neque auctor, facilisis lorem ut, pellentesque dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br><br>Etiam erat dui, molestie id sem vel, laoreet elementum dolor. Sed a elit non mauris dapibus condimentum quis id velit. Proin lobortis sed nunc id posuere. Cras laoreet enim eget mollis placerat. Ut sit amet libero justo. Sed porttitor gravida dui, in posuere nisi efficitur ac. Donec mattis pretium ornare. Aliquam ultrices mollis nunc vel hendrerit. Duis pulvinar tristique magna nec dictum. Aliquam sodales ornare nisi sit amet commodo. Duis convallis mollis viverra. Suspendisse a lacus purus.</div>
+        <div class="row column reveal_why_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula ipsum ac elementum lobortis. Quisque vel ornare ligula. Mauris feugiat ultrices nisl vel vehicula. Fusce in velit a massa tristique pulvinar id quis magna. Nunc orci sem, faucibus nec dignissim et, elementum sed odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut vel est sed metus laoreet sollicitudin eu nec augue.<br><br>Curabitur porta turpis non nisl fermentum, vel vulputate velit congue. Donec interdum turpis lorem. Nullam laoreet dui a purus sollicitudin, eu aliquet sapien efficitur. Suspendisse potenti. Nunc venenatis egestas arcu ac fringilla. Donec vitae sagittis diam. Cras ac neque auctor, facilisis lorem ut, pellentesque dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br><br>Etiam erat dui, molestie id sem vel, laoreet elementum dolor. Sed a elit non mauris dapibus condimentum quis id velit. Proin lobortis sed nunc id posuere. Cras laoreet enim eget mollis placerat. Ut sit amet libero justo. Sed porttitor gravida dui, in posuere nisi efficitur ac. Donec mattis pretium ornare. Aliquam ultrices mollis nunc vel hendrerit. Duis pulvinar tristique magna nec dictum. Aliquam sodales ornare nisi sit amet commodo. Duis convallis mollis viverra. Suspendisse a lacus purus.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula ipsum ac elementum lobortis. Quisque vel ornare ligula. Mauris feugiat ultrices nisl vel vehicula. Fusce in velit a massa tristique pulvinar id quis magna. Nunc orci sem, faucibus nec dignissim et, elementum sed odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut vel est sed metus laoreet sollicitudin eu nec augue.Curabitur porta turpis non nisl fermentum, vel vulputate velit congue. Donec interdum turpis lorem. Nullam laoreet dui a purus sollicitudin, eu aliquet sapien efficitur. </div>
         <button type="button" data-close aria-label="Закрити вікно" class="close-button"><span aria-hidden="true">&#215;</span></button>
       </div>
       <script src="/bower_components/jquery/dist/jquery.min.js"></script>

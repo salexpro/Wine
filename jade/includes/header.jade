@@ -1,38 +1,41 @@
 header.head
-    .row.column.align-justify.align-middle
+    .row.column.align-middle
         .head_logo
             a(href="/")
                 img(src="/img/logo.jpg", alt="Message on wine")
-        nav.large-7.column.align-middle.head_nav
-            ul.menu.align-justify
-                if (active=='about')
-                    li.active
-                        a(href="/about.html") Про сервіс
-                else
-                    li
-                        a(href="/about.html") Про сервіс
-                if (active=='terms')
-                    li.active
-                        a(href="/terms.html") Умови використання
-                else
-                    li
-                        a(href="/terms.html") Умови використання
-                if (active=='blog')
-                    li.active
-                        a(href="/blog.html") Блог
-                else
-                    li
-                        a(href="/blog.html") Блог
-                if (active=='contacts')
-                    li.active
-                        a(href="/contacts.html") Контакти
-                else
-                    li
-                        a(href="/contacts.html") Контакти
-        ul.large-2.align-right.menu.head_lang
-            li.active
-                a(href="#") Укр
-            li
-                a(href="#") Eng
-            li
-                a(href="#") Рус
+        #nav.nav.small-12.row.align-justify(data-off-canvas data-position="right" data-auto-focus="false")
+            nav.small-12.large-8.column.align-middle.head_nav
+                ul.menu.align-justify
+                    if (active=='about')
+                        li.active
+                            a(href="/about.html") Про сервіс
+                    else
+                        li
+                            a(href="/about.html") Про сервіс
+                    if (active=='terms')
+                        li.active
+                            a(href="/terms.html") Умови використання
+                    else
+                        li
+                            a(href="/terms.html") Умови використання
+                    if (active=='blog')
+                        li.active
+                            a(href="/blog.html") Блог
+                    else
+                        li
+                            a(href="/blog.html") Блог
+                    if (active=='contacts')
+                        li.active
+                            a(href="/contacts.html") Контакти
+                    else
+                        li
+                            a(href="/contacts.html") Контакти
+            ul.menu.head_lang
+                li.active
+                    a(href="#") Укр
+                li
+                    a(href="#") Eng
+                li
+                    a(href="#") Рус
+        .hide-for-large.hamb(data-toggle="nav")
+            .hamb_inner

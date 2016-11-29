@@ -3,30 +3,31 @@ doctype html
 html(lang="ru")
     include includes/head
     body
-        main.wrap
-            include includes/header
-            section.content.about
-                .header.primary Це дуже просто
-                .about_inner
-                    .about_step
-                        p
-                            | Спочатку обери ту пляшку, яку хочеш подарувати
-                    .about_step
-                        p
-                            | Завантаж своє відео / Прямо тут запиши відео / Вибери з нашої галереї
-                    .about_step
-                        p
-                            | Оформи доставку і трохи почекай реакції друзів
-                    .about_step
-                        .about_step_circle
-                            img(src="/img/bottle_min.png", alt="Пляшка")
-                    .about_step
-                        .about_step_video.main_video_container
-                            img(src="/img/video_placeholder.png", alt="")
-                            a.main_video_button(href="#")
-                                img(src="/img/play.png", alt="Програти")
-                    .about_step
-                        .about_step_circle
-                            img(src="/img/arrange.png", alt="Доставка")
-                a.button(href="/order.html") Розпочати
-            include includes/footer
+        main.wrap.off-canvas-wrapper
+            .off-canvas-wrapper-inner(data-off-canvas-wrapper)
+                include includes/header
+                section.content.about
+                    .header.primary Це дуже просто
+                    .about_inner
+                        .about_step
+                            p
+                                | Спочатку обери ту пляшку, яку хочеш подарувати
+                        .about_step
+                            p
+                                | Завантаж своє відео / Прямо тут запиши відео / Вибери з нашої галереї
+                        .about_step
+                            p
+                                | Оформи доставку і трохи почекай реакції друзів
+                        .about_step
+                            .about_step_circle
+                                img(src="/img/bottle_min.png", alt="Пляшка")
+                        .about_step
+                            .about_step_video.main_video_container
+                                img(src="/img/video_placeholder.png", alt="")
+                                a.main_video_button(href="#")
+                                    img(src="/img/play.png", alt="Програти")
+                        .about_step
+                            .about_step_circle
+                                img(src="/img/arrange.png", alt="Доставка")
+                    a.button(href="/order.html") Розпочати
+                include includes/footer
