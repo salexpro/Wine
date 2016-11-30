@@ -367,8 +367,6 @@ button { -webkit-appearance: none; -moz-appearance: none; background: transparen
 
 @media screen and (min-width: 40em) { .column, .columns { padding-left: 1.0714285714rem; padding-right: 1.0714285714rem; } }
 
-.column.row.row, .row.row.columns { float: none; display: block; }
-
 .row .column.row.row, .row .row.row.columns { padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0; }
 
 .small-1 { -webkit-box-flex: 0; -ms-flex: 0 0 8.3333333333%; flex: 0 0 8.3333333333%; max-width: 8.3333333333%; }
@@ -1599,6 +1597,8 @@ a:hover, a:focus { color: #fff; text-decoration: underline; }
 
 .video_filter .owl-wrapper-outer { border-radius: 5px; z-index: 1; }
 
+.video_filter .owl-wrapper.grabbing label { cursor: -webkit-grab; cursor: grab; }
+
 .video_filter .owl-buttons > div { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 
 .video_filter .owl-prev { left: -30px; }
@@ -1625,7 +1625,12 @@ a:hover, a:focus { color: #fff; text-decoration: underline; }
 
 .plan_select { text-align: center; margin-bottom: 65px; }
 
+@media screen and (max-width: 32.5em) { .plan_select { margin-bottom: 30px; }
+  .plan_select label:first-of-type { margin-bottom: 40px !important; } }
+
 .plan_select p { font-family: 'Fira Sans'; line-height: 22px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 40px; }
+
+@media screen and (max-width: 32.5em) { .plan_select p { margin-bottom: 20px; } }
 
 .plan_select [type="radio"] { display: none; }
 
@@ -1635,11 +1640,13 @@ a:hover, a:focus { color: #fff; text-decoration: underline; }
 
 .plan_select_label::before { content: ''; position: absolute; width: calc(50% + 28px); height: 25px; top: -25px; left: 50%; border-top: 1px solid rgba(233, 233, 233, 0.1); border-left: 1px solid rgba(233, 233, 233, 0.1); }
 
+@media screen and (max-width: 32.5em) { .plan_select_label::before { display: none; } }
+
 .plan_select_label::after { content: ''; display: block; margin: auto; width: 20px; height: 20px; background-color: #fff; border: 2px solid #e9e9e9; border-radius: 50%; }
 
 .plan_select_label:last-child::before { -webkit-transform: scale(-1, 1); transform: scale(-1, 1); left: auto; right: 50%; }
 
-.plan_select_label b { display: block; font-family: 'Fira Sans'; font-size: 30px; margin-top: 25px; margin-bottom: 20px; }
+.plan_select_label b { display: block; font-family: 'Fira Sans'; font-size: 30px; margin-top: 25px; margin-bottom: 20px; letter-spacing: 1px; }
 
 .plan_select_label img { position: absolute; right: -24px; bottom: -32px; }
 

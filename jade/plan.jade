@@ -3,51 +3,52 @@ doctype html
 html(lang="ru")
     include includes/head
     body
-        main.wrap
-            include includes/header
-            section.content.order.delivery.plan
-                .row
-                    .small-12.column.order_steps
-                        .order_step.selected
-                            | Оберіть що саме подарувати
-                        .order_step.selected
-                            | Додайте відеоповідомлення
-                        .order_step.selected
-                            | Оплата та відправка
-                    p.small-12.column.header.primary
-                        | ГАРНЕ ВІДЕО! ТЕПЕР ОБИРАЙ ПЛАН ПЕРЕГЛЯДІВ
-                        a.help(data-open="why")
-                            img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAERklEQVRIS6XXeYzdUxQH8M95ptOqpdUi+EeQ1lqJhIil1oi1VWnee1X8oxJrbRHxn0HiD4JQsYYI0pn3RpXapQS1JLZErKkl/kJiX4rp6LtyZ35j3sy8N6+4f72Xe+793nPO95zz/YXNWEl1P9JxOIg0h9IOpKnEAI1viU+JN7E21D7odGVMZpAsOYrGBTgWszpdhu/xIqU7Qt9L7exbgianzWbKNTgHU5sOf4bsyTf4A1tiJ8zDHk12A8S9bOwJq/NDxqwJoEl1Luk+HF5Y/o41WEnXq8z9OfQ0Rm5Jekqsn8Ff2X4pFmJ6sf8qm84Oqz5tRh0DmpT3JFZj78LoFUpXTxaq8V4UKclROqLY+5hYFGrrR2z/AU3Ks4gncUix+SDp4tD/82bkcoxJUp5BaQXprOGN9DpTTgkrf8z/mkCr2eiiYaN4iBnLwj2D/xZwNOzlbiKn6czizttDbfk/oEnlaDyLbtI6Bk4Oa35tB5gs3p3SLnT9wjYft3tcsnAbpj1d8GMjpeNzqmKYCB/VsRgDlI4LfetaASbl3YhrcSJm4E+8Q6mnXd6TSs7t80UVPMI+1UjK84hXMJOohdqS1oDVTK5HSXsV+7kUZhe/fyKdFPrfaH22UkMF2e6ISCqX4WbkMlgQ6jkc44gxFI0HcQY24ArSWiJ7cdPwg91P/ZwgTTxfPpl4YphDcVkG7UX27nO6DhphWPPB5KytGOgl9ietCfWLRwlTebyozbXMPKlVfocro/QWaXf05vC+RRyI1dQXt35p9vS97YlutvoxPJS9lZw4la1fJg5GH/Wl7c9/+ChxKuntSKpfknbFXaF+/uaWSHJUFzveityb/6R0Suh7oT3jK3fiPHyZw/sVdsYtoX755oAmuQZLN5AuwSCxPNTunuxsUrkFl+Lr/+RpUl5I5FxuIC4ItUyySVdSuQvnFp52zulENlaXk24jbgy1KzsDZk6MyWln9rYAzYS4Dle1KrEWJTOevdVLSTneibQg9D/V+eULpjN9Dr98Ep4Z6Gw/oU6bO5J6qFcnJ8QZ2zKYG3nu16uZvjw8kNthy5WGGkKlb7Qjxfx/1XuHa3PJATTeLRA2sGn/sOqL9qDlI4nnxvTe4qKshfJGMWXkPvpb6z5a3pK4njiBVMu5Df2bWtsOTZlncFgxTE4YmjKj7ax5nnqYtCz0b2x9WQ7Z6bND73eTeDhunlox0j6bQJdux+CTxKHFRRn4ov+mHBbNpHvF6AD3Gl0LJiiH4TAPibLH/p9GyoIgXUPMLx7/EZsWNYuzFmpw8Ry2uH+sGsxjqbGSKevaq8HB+ZSWkrIazNI0r85qcDS/Wfd295Cy7p02mrf4gsb7RNa9WZpmqbkzkb8A8tgaWbmE7iX1hP4fxue9g8IfovuFOKZJJUxWxllNvEC6I/S/3M5wUtBRz0/fl0bxLdOYO/FbprSexpt0rQ29H3bqUH8DD+2blaclU10AAAAASUVORK5CYII=", alt="")
-                    .small-12.column.row
-                        .large-6.column.plan_select
-                            p Більше підходить для особистих повідомлень
-                            input(type="radio" name="plan" id="plan25" value="25" checked)
-                            label.plan_select_label(for="plan25")
-                                | 25 переглядів
-                                b 49 ГРН
-                                img(src="/img/label.png", alt="Кращий вибiр!")
-                            input(type="radio" name="plan" id="plan50" value="50")
-                            label.plan_select_label(for="plan50")
-                                | 50 переглядів
-                                b 69 ГРН
-                        .large-6.column.plan_select
-                            p Більше підходить для корпоративних повідомлень
-                            input(type="radio" name="plan" id="plan100" value="100")
-                            label.plan_select_label(for="plan100")
-                                | 100 переглядів
-                                b 99 ГРН
-                                img(src="/img/label.png", alt="Кращий вибiр!")
-                            input(type="radio" name="plan" id="plan500" value="500")
-                            label.plan_select_label(for="plan500")
-                                | 500 переглядів
-                                b 399 ГРН
-                    p.small-12.column.header.secondary
-                        | Ти знаєш, що запам'ятовуються гарні емоції! Даруй людям настрій!
-                    .small-12.row.align-center.delivery_pager
-                        .column.shrink
-                            a.button.simple.left(href="/select.html")
-                                | НАЗАД
-                        .column.shrink
-                            a.button.simple.right(href="/total.html")
-                                | ДАЛІ
-            include includes/footer
+        main.wrap.off-canvas-wrapper
+            .off-canvas-wrapper-inner(data-off-canvas-wrapper)
+                include includes/header
+                section.content.order.delivery.plan
+                    .row
+                        .small-12.column.order_steps
+                            .order_step.selected
+                                | Оберіть що саме подарувати
+                            .order_step.selected
+                                | Додайте відеоповідомлення
+                            .order_step.selected
+                                | Оплата та відправка
+                        p.small-12.column.header.primary
+                            | ГАРНЕ ВІДЕО! ТЕПЕР ОБИРАЙ ПЛАН ПЕРЕГЛЯДІВ
+                            a.help(data-open="why")
+                                img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAERklEQVRIS6XXeYzdUxQH8M95ptOqpdUi+EeQ1lqJhIil1oi1VWnee1X8oxJrbRHxn0HiD4JQsYYI0pn3RpXapQS1JLZErKkl/kJiX4rp6LtyZ35j3sy8N6+4f72Xe+793nPO95zz/YXNWEl1P9JxOIg0h9IOpKnEAI1viU+JN7E21D7odGVMZpAsOYrGBTgWszpdhu/xIqU7Qt9L7exbgianzWbKNTgHU5sOf4bsyTf4A1tiJ8zDHk12A8S9bOwJq/NDxqwJoEl1Luk+HF5Y/o41WEnXq8z9OfQ0Rm5Jekqsn8Ff2X4pFmJ6sf8qm84Oqz5tRh0DmpT3JFZj78LoFUpXTxaq8V4UKclROqLY+5hYFGrrR2z/AU3Ks4gncUix+SDp4tD/82bkcoxJUp5BaQXprOGN9DpTTgkrf8z/mkCr2eiiYaN4iBnLwj2D/xZwNOzlbiKn6czizttDbfk/oEnlaDyLbtI6Bk4Oa35tB5gs3p3SLnT9wjYft3tcsnAbpj1d8GMjpeNzqmKYCB/VsRgDlI4LfetaASbl3YhrcSJm4E+8Q6mnXd6TSs7t80UVPMI+1UjK84hXMJOohdqS1oDVTK5HSXsV+7kUZhe/fyKdFPrfaH22UkMF2e6ISCqX4WbkMlgQ6jkc44gxFI0HcQY24ArSWiJ7cdPwg91P/ZwgTTxfPpl4YphDcVkG7UX27nO6DhphWPPB5KytGOgl9ietCfWLRwlTebyozbXMPKlVfocro/QWaXf05vC+RRyI1dQXt35p9vS97YlutvoxPJS9lZw4la1fJg5GH/Wl7c9/+ChxKuntSKpfknbFXaF+/uaWSHJUFzveityb/6R0Suh7oT3jK3fiPHyZw/sVdsYtoX755oAmuQZLN5AuwSCxPNTunuxsUrkFl+Lr/+RpUl5I5FxuIC4ItUyySVdSuQvnFp52zulENlaXk24jbgy1KzsDZk6MyWln9rYAzYS4Dle1KrEWJTOevdVLSTneibQg9D/V+eULpjN9Dr98Ep4Z6Gw/oU6bO5J6qFcnJ8QZ2zKYG3nu16uZvjw8kNthy5WGGkKlb7Qjxfx/1XuHa3PJATTeLRA2sGn/sOqL9qDlI4nnxvTe4qKshfJGMWXkPvpb6z5a3pK4njiBVMu5Df2bWtsOTZlncFgxTE4YmjKj7ax5nnqYtCz0b2x9WQ7Z6bND73eTeDhunlox0j6bQJdux+CTxKHFRRn4ov+mHBbNpHvF6AD3Gl0LJiiH4TAPibLH/p9GyoIgXUPMLx7/EZsWNYuzFmpw8Ry2uH+sGsxjqbGSKevaq8HB+ZSWkrIazNI0r85qcDS/Wfd295Cy7p02mrf4gsb7RNa9WZpmqbkzkb8A8tgaWbmE7iX1hP4fxue9g8IfovuFOKZJJUxWxllNvEC6I/S/3M5wUtBRz0/fl0bxLdOYO/FbprSexpt0rQ29H3bqUH8DD+2blaclU10AAAAASUVORK5CYII=", alt="")
+                        .small-12.column.row
+                            .small-12.large-6.column.plan_select
+                                p Більше підходить для особистих повідомлень
+                                input(type="radio" name="plan" id="plan25" value="25" checked)
+                                label.plan_select_label(for="plan25")
+                                    | 25 переглядів
+                                    b 49 ГРН
+                                    img(src="/img/label.png", alt="Кращий вибiр!")
+                                input(type="radio" name="plan" id="plan50" value="50")
+                                label.plan_select_label(for="plan50")
+                                    | 50 переглядів
+                                    b 69 ГРН
+                            .small-12.large-6.column.plan_select
+                                p Більше підходить для корпоративних повідомлень
+                                input(type="radio" name="plan" id="plan100" value="100")
+                                label.plan_select_label(for="plan100")
+                                    | 100 переглядів
+                                    b 99 ГРН
+                                    img(src="/img/label.png", alt="Кращий вибiр!")
+                                input(type="radio" name="plan" id="plan500" value="500")
+                                label.plan_select_label(for="plan500")
+                                    | 500 переглядів
+                                    b 399 ГРН
+                        p.small-12.column.header.secondary
+                            | Ти знаєш, що запам'ятовуються гарні емоції! Даруй людям настрій!
+                        .small-12.row.column.align-center.delivery_pager
+                            .column
+                                a.button.simple.left(href="/select.html")
+                                    | НАЗАД
+                            .column
+                                a.button.simple.right(href="/total.html")
+                                    | ДАЛІ
+                include includes/footer

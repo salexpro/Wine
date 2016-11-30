@@ -1336,9 +1336,16 @@ textarea {
             margin-right: auto;
         }
         .owl{
-            &-wrapper-outer{
-                border-radius: 5px;
-                z-index: 1;
+            &-wrapper{
+                &-outer{
+                    border-radius: 5px;
+                    z-index: 1;
+                }
+                &.grabbing{
+                    label{
+                        cursor: grab;
+                    }
+                }
             }
             &-buttons{
                 > div{
@@ -1406,12 +1413,21 @@ textarea {
     &_select{
         text-align: center;
         margin-bottom: 65px;
+        @include breakpoint(520 down) {
+            margin-bottom: 30px;
+            label:first-of-type{
+                margin-bottom: 40px !important;
+            }
+        }
         p{
             font-family: 'Fira Sans';
             line-height: 22px;
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 40px;
+            @include breakpoint(520 down) {
+                margin-bottom: 20px;
+            }
         }
         [type="radio"]{
             display: none;
@@ -1442,6 +1458,9 @@ textarea {
                 left: 50%;
                 border-top: 1px solid rgba(233,233,233,0.1);
                 border-left: 1px solid rgba(233,233,233,0.1);
+                @include breakpoint(520 down) {
+                    display: none;
+                }
             }
             &::after{
                 content: '';
@@ -1466,6 +1485,7 @@ textarea {
                 font-size: 30px;
                 margin-top: 25px;
                 margin-bottom: 20px;
+                letter-spacing: 1px;
             }
             img{
                 position: absolute;
