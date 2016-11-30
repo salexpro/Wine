@@ -1,8 +1,8 @@
 - var active = 'video'
 mixin video
-    .large-3.column
+    .small-12.medium-6.large-3.column
         .main_video_container.video_preview
-            img(src="//placehold.it/270x230/7a012a/FFF", alt="")
+            img(src="//unsplash.it/270/230/?random", alt="")
             a.main_video_button(href="#")
                 img(src="/img/play.png", alt="Програти")
             button.button.hollow ОБРАТИ ВІДЕО
@@ -10,65 +10,66 @@ doctype html
 html(lang="ru")
     include includes/head
     body
-        main.wrap
-            include includes/header
-            section.content.order.video
-                .row
-                    .small-12.column.order_steps
-                        .order_step.selected
-                            | Оберіть що саме подарувати
-                        .order_step.selected
-                            | Додайте відеоповідомлення
-                        .order_step
-                            | Оплата та відправка
-                    p.small-12.column.header.primary
-                        | Відео галерея
-                    .small-12.column
-                        .order_filter.video_filter
-                            .order_filter_type
-                                input#type1(type="radio", name="type", value="1")
-                                label(for="type1") День народження
-                            .order_filter_type
-                                input#type2(type="radio", name="type", value="2")
-                                label(for="type2") На весілля
-                            .order_filter_type
-                                input#type3(type="radio", name="type", value="3")
-                                label(for="type3") Коханій
-                            .order_filter_type
-                                input#type4(type="radio", name="type", value="4")
-                                label(for="type4") Колезі
-                            .order_filter_type
-                                input#type5(type="radio", name="type", value="5")
-                                label(for="type5") Другу
-                            .order_filter_type
-                                input#type6(type="radio", name="type", value="6")
-                                label(for="type6") Коханому
-                            .order_filter_type
-                                input#type7(type="radio", name="type", value="7" checked)
-                                label(for="type7") На новий рік
-                            .order_filter_type
-                                input#type8(type="radio", name="type", value="8")
-                                label(for="type8") Дякую
-                            .order_filter_type
-                                input#type9(type="radio", name="type", value="9")
-                                label(for="type9") Іду в гості
-                            .order_filter_type
-                                input#type10(type="radio", name="type", value="10")
-                                label(for="type10") Валент
-                        .row.video_gallery
-                            +video
-                            +video
-                            +video
-                            +video
-                            +video
-                            +video
-                            +video
-                            +video
-                        .row.align-center.delivery_pager.video_pager
-                            .column.shrink
-                                a.button.simple.left(href="/select.html")
-                                    | НАЗАД
-                            .column.shrink
-                                a.button.simple.right(href="/plan.html")
-                                    | ДАЛІ
-            include includes/footer
+        main.wrap.off-canvas-wrapper
+            .off-canvas-wrapper-inner(data-off-canvas-wrapper)
+                include includes/header
+                section.content.order.video
+                    .row
+                        .small-12.column.order_steps
+                            .order_step.selected
+                                | Оберіть що саме подарувати
+                            .order_step.selected
+                                | Додайте відеоповідомлення
+                            .order_step
+                                | Оплата та відправка
+                        p.small-12.column.header.primary
+                            | Відео галерея
+                        .small-12.column
+                            .order_filter.video_filter
+                                .order_filter_type
+                                    input#type1(type="radio", name="type", value="1" checked)
+                                    label(for="type1") День народження
+                                .order_filter_type
+                                    input#type2(type="radio", name="type", value="2")
+                                    label(for="type2") На весілля
+                                .order_filter_type
+                                    input#type3(type="radio", name="type", value="3")
+                                    label(for="type3") Коханій
+                                .order_filter_type
+                                    input#type4(type="radio", name="type", value="4")
+                                    label(for="type4") Колезі
+                                .order_filter_type
+                                    input#type5(type="radio", name="type", value="5")
+                                    label(for="type5") Другу
+                                .order_filter_type
+                                    input#type6(type="radio", name="type", value="6")
+                                    label(for="type6") Коханому
+                                .order_filter_type
+                                    input#type7(type="radio", name="type", value="7")
+                                    label(for="type7") На новий рік
+                                .order_filter_type
+                                    input#type8(type="radio", name="type", value="8")
+                                    label(for="type8") Дякую
+                                .order_filter_type
+                                    input#type9(type="radio", name="type", value="9")
+                                    label(for="type9") Іду в гості
+                                .order_filter_type
+                                    input#type10(type="radio", name="type", value="10")
+                                    label(for="type10") Валент
+                            .row.video_gallery
+                                +video
+                                +video
+                                +video
+                                +video
+                                +video
+                                +video
+                                +video
+                                +video
+                            .row.align-center.delivery_pager.video_pager
+                                .column
+                                    a.button.simple.left(href="/select.html")
+                                        | НАЗАД
+                                .column
+                                    a.button.simple.right(href="/plan.html")
+                                        | ДАЛІ
+                include includes/footer
