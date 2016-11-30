@@ -865,7 +865,6 @@ textarea {
         }
     }
     &_step{
-        // flex: 0 0 33.33%;
         width: calc(33.33% + 20px);
         display: flex;
         align-items: center;
@@ -977,9 +976,16 @@ textarea {
             letter-spacing: 1px;
             line-height: 50px; 
             user-select: none;
+            border-radius: 5px 0 0 5px;
+            height: 50px;
+            padding: 0;
+            line-height: 50px;
+            color: $dark-gray;
+            font-size: 14px;
             @include breakpoint(small down) {
                 flex: 0 0 100%;
                 border: 0;
+                border-radius: 5px 5px 0 0;
             }
             &__current{
                 height: 50px;
