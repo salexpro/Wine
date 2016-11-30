@@ -608,9 +608,11 @@ textarea {
     }
     &_map {
         height: 100%;
+        min-height: 428px;
         border-radius: 5px;
         z-index: 1;
         @include breakpoint(medium down) {
+            min-height: none;
             height: 300px;
             margin-bottom: 20px;
         }
@@ -1159,6 +1161,10 @@ textarea {
             margin-bottom: 18px;
         }
         .row{
+            flex-wrap: nowrap;
+            @include breakpoint(large down) {
+                flex-wrap: wrap;
+            }
             .column{
                 @include breakpoint(large down) {
                     flex: 1 1 50%;  
@@ -1170,6 +1176,7 @@ textarea {
             }
         }
         .button{
+            white-space: nowrap;
             @include breakpoint(small down) {
                 padding-right: 26px;
                 padding-left: 26px;

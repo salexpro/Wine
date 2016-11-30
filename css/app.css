@@ -1337,9 +1337,9 @@ a:hover, a:focus { color: #fff; text-decoration: underline; }
 
 .contacts p { font-size: 20px; text-align: center; margin-bottom: 20px; }
 
-.contacts_map { height: 100%; border-radius: 5px; z-index: 1; }
+.contacts_map { height: 100%; min-height: 428px; border-radius: 5px; z-index: 1; }
 
-@media screen and (max-width: 63.9375em) { .contacts_map { height: 300px; margin-bottom: 20px; } }
+@media screen and (max-width: 63.9375em) { .contacts_map { min-height: none; height: 300px; margin-bottom: 20px; } }
 
 .contacts [type="submit"] { width: 100%; }
 
@@ -1536,9 +1536,15 @@ a:hover, a:focus { color: #fff; text-decoration: underline; }
 
 .delivery_content .header.secondary { letter-spacing: 1px; font-size: 20px; text-align: left; margin-bottom: 18px; }
 
+.delivery_content .row { -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
+
+@media screen and (max-width: 74.9375em) { .delivery_content .row { -ms-flex-wrap: wrap; flex-wrap: wrap; } }
+
 @media screen and (max-width: 74.9375em) { .delivery_content .row .column, .delivery_content .row .columns { -webkit-box-flex: 1; -ms-flex: 1 1 50%; flex: 1 1 50%; margin: 10px 0; } }
 
 @media screen and (max-width: 39.9375em) { .delivery_content .row .column, .delivery_content .row .columns { -webkit-box-flex: 1; -ms-flex: 1 1 100%; flex: 1 1 100%; } }
+
+.delivery_content .button { white-space: nowrap; }
 
 @media screen and (max-width: 39.9375em) { .delivery_content .button { padding-right: 26px; padding-left: 26px; } }
 
