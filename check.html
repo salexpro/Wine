@@ -52,72 +52,74 @@
     <link rel="stylesheet" href="/css/app.css">
   </head>
   <body>
-    <main class="wrap">
-      <header class="head">
-        <div class="row column align-middle">
-          <div class="head_logo"><a href="/"><img src="/img/logo.jpg" alt="Message on wine"></a></div>
-          <div id="nav" data-off-canvas data-position="right" data-auto-focus="false" class="nav small-12 row align-justify">
-            <nav class="small-12 large-8 column align-middle head_nav">
-              <ul class="menu align-justify">
-                <li><a href="/about.html">Про сервіс</a></li>
-                <li><a href="/terms.html">Умови використання</a></li>
-                <li><a href="/blog.html">Блог</a></li>
-                <li><a href="/contacts.html">Контакти</a></li>
+    <main class="wrap off-canvas-wrapper">
+      <div data-off-canvas-wrapper class="off-canvas-wrapper-inner">
+        <header class="head">
+          <div class="row column align-middle">
+            <div class="head_logo"><a href="/"><img src="/img/logo.jpg" alt="Message on wine"></a></div>
+            <div id="nav" data-off-canvas data-position="right" data-auto-focus="false" class="nav small-12 row align-justify">
+              <nav class="small-12 large-8 column align-middle head_nav">
+                <ul class="menu align-justify">
+                  <li><a href="/about.html">Про сервіс</a></li>
+                  <li><a href="/terms.html">Умови використання</a></li>
+                  <li><a href="/blog.html">Блог</a></li>
+                  <li><a href="/contacts.html">Контакти</a></li>
+                </ul>
+              </nav>
+              <ul class="menu head_lang">
+                <li class="active"><a href="#">Укр</a></li>
+                <li><a href="#">Eng</a></li>
+                <li><a href="#">Рус</a></li>
               </ul>
-            </nav>
-            <ul class="menu head_lang">
-              <li class="active"><a href="#">Укр</a></li>
-              <li><a href="#">Eng</a></li>
-              <li><a href="#">Рус</a></li>
-            </ul>
-          </div>
-          <div data-toggle="nav" class="hide-for-large hamb">
-            <div class="hamb_inner"></div>
-          </div>
-        </div>
-      </header>
-      <section class="content delivery status">
-        <div class="row status_content">
-          <p class="small-12 column header primary">ТЕСТУЄМО ПОВІДОМЛЕННЯ:</p>
-          <div class="small-12 row column">
-            <div class="column check_product"><img src="/img/bottle_check.png" alt="Пляшка">
-              <div class="check_marker">
-                <p>Ваш маркер</p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAYCAYAAACBbx+6AAABDklEQVRYR9XWyxGCMBAG4D9UYg3g3VY4mfFmB2oH3oSTlKAd6B0cSrEBwQkzOqiBvBaIueSy2XzJJDvL8GeDCW+K+YYj3/lsTxFlHEXcgA8I4wDBjCPf+ohOEO0DPLIlyrIBv9BiXuGW+YRuY4XrDfYR/Y39AfuElmGlYB/QXdhO8JToPmwveAq0CqsEj4nWwWqBx0DrYrXBQ6JNsEbgIdCmWGMwJdoGawWmQNtircEu6ATRkQFnjuJk07N89BKmCVKE6wq46zZMAlujvurGyzxOYJFQ9KkV6osKQYF1ehLt06vQVFgycN9NU2JJwTI0NZYc3EYzsIXrBxvk08mSqt60aTVqxztXCZfNbdY+AQUxvxkW1uzsAAAAAElFTkSuQmCC" alt="Стрiлка донизу"><img src="/img/marker.jpg" alt="Маркер">
-              </div>
             </div>
-            <div class="column error_reasons check_steps">
-              <div class="reveal_how_step">
-                <div class="reveal_how_step_inner">
-                  <p>Завантаж безкоштовний додаток Looksar</p><a href="#"><img src="/img/app_store.png" alt="App Store"></a>&nbsp;<a href="#"><img src="/img/google_play.png" alt="Google Play"></a>
+            <div data-toggle="nav" class="hide-for-large hamb">
+              <div class="hamb_inner"></div>
+            </div>
+          </div>
+        </header>
+        <section class="content delivery status">
+          <div class="row status_content">
+            <p class="small-12 column header primary">ТЕСТУЄМО ПОВІДОМЛЕННЯ:</p>
+            <div class="small-12 row column">
+              <div class="small-12 medium-5 large-6 column check_product"><img src="/img/bottle_check.png" alt="Пляшка">
+                <div class="check_marker">
+                  <p>Ваш маркер</p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAYCAYAAACBbx+6AAABDklEQVRYR9XWyxGCMBAG4D9UYg3g3VY4mfFmB2oH3oSTlKAd6B0cSrEBwQkzOqiBvBaIueSy2XzJJDvL8GeDCW+K+YYj3/lsTxFlHEXcgA8I4wDBjCPf+ohOEO0DPLIlyrIBv9BiXuGW+YRuY4XrDfYR/Y39AfuElmGlYB/QXdhO8JToPmwveAq0CqsEj4nWwWqBx0DrYrXBQ6JNsEbgIdCmWGMwJdoGawWmQNtircEu6ATRkQFnjuJk07N89BKmCVKE6wq46zZMAlujvurGyzxOYJFQ9KkV6osKQYF1ehLt06vQVFgycN9NU2JJwTI0NZYc3EYzsIXrBxvk08mSqt60aTVqxztXCZfNbdY+AQUxvxkW1uzsAAAAAElFTkSuQmCC" alt="Стрiлка донизу"><img src="/img/marker.jpg" alt="Маркер">
                 </div>
               </div>
-              <div class="reveal_how_step">
-                <div class="reveal_how_step_inner">
-                  <p>Введи цей код</p>
-                  <input type="text" value="RTHL" readonly>
+              <div class="small-12 medium-7 large-6 column error_reasons check_steps">
+                <div class="reveal_how_step">
+                  <div class="reveal_how_step_inner">
+                    <p>Завантаж безкоштовний додаток Looksar</p><a href="#"><img src="/img/app_store.png" alt="App Store"></a>&nbsp;<a href="#"><img src="/img/google_play.png" alt="Google Play"></a>
+                  </div>
                 </div>
-              </div>
-              <div class="reveal_how_step">
-                <div class="reveal_how_step_inner">
-                  <p>Наведи смартфон на маркер, що зображений поряд з пляшкою на екрані</p>
-                  <div class="row delivery_pager error_back check_buttons">
-                    <div class="column shrink">
-                      <button class="button hollow">працює</button>
-                    </div>
-                    <div class="column shrink">
-                      <button class="button hollow">не працює</button>
+                <div class="reveal_how_step">
+                  <div class="reveal_how_step_inner">
+                    <p>Введи цей код</p>
+                    <input type="text" value="RTHL" readonly>
+                  </div>
+                </div>
+                <div class="reveal_how_step">
+                  <div class="reveal_how_step_inner">
+                    <p>Наведи смартфон на маркер, що зображений поряд з пляшкою на екрані</p>
+                    <div class="row delivery_pager check_buttons">
+                      <div class="column">
+                        <button class="button hollow">працює</button>
+                      </div>
+                      <div class="column">
+                        <button class="button hollow">не працює</button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <footer class="footer">MESSAGEONWINE.COM</footer>
-      <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-      <script src="/bower_components/foundation-sites/dist/foundation.min.js"></script>
-      <script src="/js/app.min.js"></script>
+        </section>
+        <footer class="footer">MESSAGEONWINE.COM</footer>
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="/bower_components/foundation-sites/dist/foundation.min.js"></script>
+        <script src="/js/app.min.js"></script>
+      </div>
     </main>
   </body>
 </html>

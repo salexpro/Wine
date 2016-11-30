@@ -1736,11 +1736,6 @@ textarea {
     }
     &_back{
         text-align: center;
-        .button{
-            width: 178px;
-            padding-left: 0;
-            padding-right: 0;
-        }
     }
 }
 
@@ -1748,6 +1743,10 @@ textarea {
     &_product{
         display: flex;
         align-items: center;
+        @include breakpoint(small down) {
+            margin-bottom: 30px;
+            justify-content: center;
+        }
     }
     &_marker{
         margin-left: 120px;
@@ -1755,6 +1754,9 @@ textarea {
         font-size: 20px;
         font-weight: 700;
         line-height: 30px;
+        @include breakpoint(medium down) {
+            margin-left: 15%;
+        }
         p{
             margin-bottom: 20px;
         }
@@ -1772,6 +1774,15 @@ textarea {
     }
     &_buttons{
         margin-top: 28px;
+        .column{
+            max-width: 208px;
+            @include breakpoint(small down) {
+                max-width: none;
+            }
+        }
+        @include breakpoint(small down) {
+            margin-left: -55px !important;
+        }
     }
 }
 
@@ -1891,6 +1902,10 @@ textarea {
                         font-size: 15px;
                         line-height: 30px;
                     }
+                }
+                img{
+                    display: inline-block;
+                    margin: 5px;
                 }
             }
             [readonly]{

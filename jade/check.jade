@@ -3,40 +3,41 @@ doctype html
 html(lang="ru")
     include includes/head
     body
-        main.wrap
-            include includes/header
-            section.content.delivery.status
-                .row.status_content
-                    p.small-12.column.header.primary
-                        | ТЕСТУЄМО ПОВІДОМЛЕННЯ:
-                    .small-12.row.column
-                        .column.check_product
-                            img(src="/img/bottle_check.png", alt="Пляшка")
-                            .check_marker
-                                p Ваш маркер
-                                img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAYCAYAAACBbx+6AAABDklEQVRYR9XWyxGCMBAG4D9UYg3g3VY4mfFmB2oH3oSTlKAd6B0cSrEBwQkzOqiBvBaIueSy2XzJJDvL8GeDCW+K+YYj3/lsTxFlHEXcgA8I4wDBjCPf+ohOEO0DPLIlyrIBv9BiXuGW+YRuY4XrDfYR/Y39AfuElmGlYB/QXdhO8JToPmwveAq0CqsEj4nWwWqBx0DrYrXBQ6JNsEbgIdCmWGMwJdoGawWmQNtircEu6ATRkQFnjuJk07N89BKmCVKE6wq46zZMAlujvurGyzxOYJFQ9KkV6osKQYF1ehLt06vQVFgycN9NU2JJwTI0NZYc3EYzsIXrBxvk08mSqt60aTVqxztXCZfNbdY+AQUxvxkW1uzsAAAAAElFTkSuQmCC", alt="Стрiлка донизу")
-                                img(src="/img/marker.jpg", alt="Маркер")
-                        .column.error_reasons.check_steps
-                            .reveal_how_step
-                                .reveal_how_step_inner
-                                    p Завантаж безкоштовний додаток Looksar
-                                    a(href="#")
-                                        img(src="/img/app_store.png", alt="App Store")
-                                    | &nbsp;
-                                    a(href="#")
-                                        img(src="/img/google_play.png", alt="Google Play")
-                            .reveal_how_step
-                                .reveal_how_step_inner
-                                    p Введи цей код
-                                    input(type="text" value="RTHL" readonly)
-                            .reveal_how_step
-                                .reveal_how_step_inner
-                                    p Наведи смартфон на маркер, що зображений поряд з пляшкою на екрані
-                                    .row.delivery_pager.error_back.check_buttons
-                                        .column.shrink
-                                            button.button.hollow
-                                                | працює
-                                        .column.shrink
-                                            button.button.hollow
-                                                | не працює
-            include includes/footer
+        main.wrap.off-canvas-wrapper
+            .off-canvas-wrapper-inner(data-off-canvas-wrapper)
+                include includes/header
+                section.content.delivery.status
+                    .row.status_content
+                        p.small-12.column.header.primary
+                            | ТЕСТУЄМО ПОВІДОМЛЕННЯ:
+                        .small-12.row.column
+                            .small-12.medium-5.large-6.column.check_product
+                                img(src="/img/bottle_check.png", alt="Пляшка")
+                                .check_marker
+                                    p Ваш маркер
+                                    img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAYCAYAAACBbx+6AAABDklEQVRYR9XWyxGCMBAG4D9UYg3g3VY4mfFmB2oH3oSTlKAd6B0cSrEBwQkzOqiBvBaIueSy2XzJJDvL8GeDCW+K+YYj3/lsTxFlHEXcgA8I4wDBjCPf+ohOEO0DPLIlyrIBv9BiXuGW+YRuY4XrDfYR/Y39AfuElmGlYB/QXdhO8JToPmwveAq0CqsEj4nWwWqBx0DrYrXBQ6JNsEbgIdCmWGMwJdoGawWmQNtircEu6ATRkQFnjuJk07N89BKmCVKE6wq46zZMAlujvurGyzxOYJFQ9KkV6osKQYF1ehLt06vQVFgycN9NU2JJwTI0NZYc3EYzsIXrBxvk08mSqt60aTVqxztXCZfNbdY+AQUxvxkW1uzsAAAAAElFTkSuQmCC", alt="Стрiлка донизу")
+                                    img(src="/img/marker.jpg", alt="Маркер")
+                            .small-12.medium-7.large-6.column.error_reasons.check_steps
+                                .reveal_how_step
+                                    .reveal_how_step_inner
+                                        p Завантаж безкоштовний додаток Looksar
+                                        a(href="#")
+                                            img(src="/img/app_store.png", alt="App Store")
+                                        | &nbsp;
+                                        a(href="#")
+                                            img(src="/img/google_play.png", alt="Google Play")
+                                .reveal_how_step
+                                    .reveal_how_step_inner
+                                        p Введи цей код
+                                        input(type="text" value="RTHL" readonly)
+                                .reveal_how_step
+                                    .reveal_how_step_inner
+                                        p Наведи смартфон на маркер, що зображений поряд з пляшкою на екрані
+                                        .row.delivery_pager.check_buttons
+                                            .column
+                                                button.button.hollow
+                                                    | працює
+                                            .column
+                                                button.button.hollow
+                                                    | не працює
+                include includes/footer
