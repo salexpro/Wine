@@ -18,9 +18,27 @@ $(window).on('changed.zf.mediaquery', function(event, newSize, oldSize) {
     }
 });
 
+//Amount
+$('.delivery_amount button').click(function(){
+    var curr = $('.delivery_amount [type="number"]');
+    var currval = parseInt(curr.val());
+    if($(this).text()=='+'&&currval<10){
+        curr.val(currval+1);
+    } 
+    if($(this).text()=='-'&&currval>1) {
+        curr.val(currval-1);
+    }
+})
+
+// Новый пользователь
 $('.total_user_select [type="radio"]').change(function(){
     $('.total_user input:last').toggleClass('hide');
 })
+
+// Custom select 
+if($('.order_filter select').length){
+    $('.order_filter select').select7();
+}
 
 // Owl
 var owl = $('.video_filter');
@@ -39,6 +57,8 @@ if(owl.length){
         navigationText: ['<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAgCAYAAAD0S5PyAAABYklEQVRIS6XVwUsVURiG8edxE9GiUimRChXTpEgjaBH0v1eigkakYAQKYRDlxo3gQsRXJubKmPd6ZsZZH36c75z3vCO3+JI8AR7b10jyDJhSN3shSWaBSXWr2kRnJMkc8ED9OpiiE5LkOXBP/dY8htZIkgXgrrr9/zm2QpIsAWPq7rCLKCJJXgJRv4+6yRuRJK+AM/XHTVEYiSRZBk7UvVKWhiJJ3gDH6n4JGJqTJG+BI/VnG+AakuQdcKgetAWuIDXwV/3VBbhEkrwHDtTfXYF/SJIPwL76pw8wQF4Dp6UsFHPSJpVFpFpQeh+tkBpaBO6oO13O51piR3VG650MFg5rr85IPVrVoxPql9JopSq4bPReO2mMVv1bnqobvUqpAU0DM+p6r3psQFPAPLCmpokVO7a5OMkj4AWw2oQ6IfWtTQJVeX8eQJ2RGhoHqg7+pJ73QmroIVB18cfeSA3dB1YuAF30jYy9du59AAAAAElFTkSuQmCC" alt="Назад">','<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAgCAYAAAD0S5PyAAABZklEQVRIS6XV0UsVQRTH8e83AkHopYdQBCUkEBMNyaDC9K/3QZFMsiwrpSREFPMh6CVPzOVcSb3X3R33ZWCX+XCWOec3RsQicKweUvlY9kXEC+BI/V7j9JCEngMn6kFX6BJJqPzaL/VbF+gKktAz4Le61xa6gSQ0D/xRP7eBBiIJPQUu1I9N0FAkodmyqh9ug25FEpoB7qvvh0GNSEJPgFH13SCoFZLQNPBA3boOtUYSegw8VDf/hzohCU0Bj9SNPtQZSWgSGFPXe6fX1APDvkfEBDClrlUjWdE4MH1XpPTQSDUSEaWbVXeqkIiYA/7256ozEhELOeGfqo44IgZmTetKMtDP1a9VbR8RS5m/+1UD2OYmaAqll8Ch+qMqlCLiFXCg/mwajUFpX969Br6oR03AjQGMiAIsA7vqcRvgCpLAG2BHPWkLXCIRcQ9YAbbV0y5AD0lgFXirnnUF+kipYEs9rwHKnn8MCpOG0VQABAAAAABJRU5ErkJggg==" alt="Вперед">']
     });
 }
+
+// 
 
 // Карта
 var geocoder;
@@ -76,9 +96,4 @@ function initMap() {
 
     map.mapTypes.set('wine', styledMap);
     map.setMapTypeId('wine');
-}
-
-// Custom select 
-if($('.order_filter select').length){
-    $('.order_filter select').select7();
 }

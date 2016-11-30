@@ -1369,7 +1369,7 @@ a:hover, a:focus { color: #fff; text-decoration: underline; }
 
 .blog_item.full .blog_item_brief { font-size: 16px; line-height: 26px; }
 
-@media screen and (max-width: 63.9375em) { .blog_item.full .blog_item_brief { margin: 0; } }
+@media screen and (max-width: 63.9375em) { .blog_item.full .blog_item_brief { margin-bottom: 0; } }
 
 .blog_item_title { display: block; font-size: 24px; font-weight: 700; line-height: 30px; color: #fff; letter-spacing: 2px; margin-bottom: 15px; }
 
