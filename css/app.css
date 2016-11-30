@@ -1551,9 +1551,17 @@ a:hover, a:focus { color: #fff; text-decoration: underline; }
 
 .select hr { width: 1px; height: 85%; background-color: rgba(233, 233, 233, 0.1); border: 0; }
 
+@media screen and (max-width: 39.9375em) { .select hr { display: none; } }
+
 .select_video { padding-top: 40px; text-align: center; }
 
-.select_video .button { padding: 6px 0; line-height: 24px; margin-bottom: 20px; }
+@media screen and (max-width: 39.9375em) { .select_video { -webkit-box-flex: 0; -ms-flex: 0 0 100%; flex: 0 0 100%; } }
+
+.select_video img { display: block; margin: auto; }
+
+.select_video .button { padding: 6px 8px; line-height: 24px; margin-bottom: 20px; }
+
+@media screen and (max-width: 39.9375em) { .select_video .button { padding: 6px 20px; } }
 
 .select_video p { color: rgba(255, 255, 255, 0.7); margin-top: 18px; font-family: 'Fira Sans'; font-weight: 300; line-height: 24px; letter-spacing: 2px; }
 
@@ -1745,9 +1753,11 @@ a:hover, a:focus { color: #fff; text-decoration: underline; }
 
 .reveal_more_mail { margin: auto; text-align: center; }
 
-.reveal_more_mail img { margin-right: 25px; }
+.reveal_more_mail img { margin: 0 20px; }
 
 .reveal_more [href^="mailto"] { color: #990134; font-size: 20px; font-weight: 700; letter-spacing: 1px; margin-top: 10px; display: inline-block; }
+
+@media screen and (max-width: 39.9375em) { .reveal_more [href^="mailto"] { font-size: 18px; } }
 
 .reveal_why_content { font-family: 'Fira Sans'; font-size: 16px; font-weight: 300; line-height: 26px; letter-spacing: 1px; color: #464646; }
 

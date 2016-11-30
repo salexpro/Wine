@@ -1286,14 +1286,27 @@ textarea {
         height: 85%;
         background-color: rgba(233,233,233,0.1);
         border: 0;
+        @include breakpoint(small down) {
+            display: none;
+        }
     }
     &_video{
         padding-top: 40px;
         text-align: center;
+        @include breakpoint(small down) {
+            flex: 0 0 100%;
+        }
+        img{
+            display: block;
+            margin: auto;
+        }
         .button{
-            padding: 6px 0;
+            padding: 6px 8px;
             line-height: 24px;
             margin-bottom: 20px;
+            @include breakpoint(small down) {
+                padding: 6px 20px;
+            }
         }
         p{
             color: rgba(255,255,255,0.7);
@@ -1850,7 +1863,7 @@ textarea {
             margin: auto;
             text-align: center;
             img{
-                margin-right: 25px;
+                margin: 0 20px;
             }
         }
         [href^="mailto"]{
@@ -1862,6 +1875,9 @@ textarea {
             letter-spacing: 1px;
             margin-top: 10px;
             display: inline-block;
+            @include breakpoint(small down) {
+                font-size: 18px;
+            }
         }
     }
     &_why{

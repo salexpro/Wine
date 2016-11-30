@@ -3,55 +3,56 @@ doctype html
 html(lang="ru")
     include includes/head
     body
-        main.wrap
-            include includes/header
-            section.content.delivery.select
-                .row
-                    .small-12.column.order_steps
-                        .order_step.selected
-                            | Оберіть що саме подарувати
-                        .order_step.selected
-                            | Додайте відеоповідомлення
-                        .order_step
-                            | Оплата та відправка
-                    p.small-12.column.header.primary
-                        span Класний вибір! 
-                        | Тепер давай зробимо повідомлення!
-                    p.column.select_hint
-                        | Для того, щоб ми зробили відеоповідомлення на обраній вами пляшці нам потрібен відеоролик, який буде на ній програватись.
-                        br
-                        | Задля цього, будь ласка, оберіть один з наведених нижче способів надання відео.
-                    .small-12.row
-                        .large-2.column.select_product
-                            img(src="/img/bottle_select.png", alt="Пляшка")
-                        .column.select_video
-                            a.button.simple(href="/videogallery.html")
-                                | заразвибрати відео з нашої галереї
-                            img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAARCAYAAAAlpHdJAAAArklEQVRIS8XVTQ6CMBCG4Y+QcB5iPJCuYNkj9AhuYeWBlHAUL0A1JdFI7c/MQHH2nedddQr8cQprdzjqBje9V0eHg2owXGa8R10blKcWd5U7wMIVzPWM8THjewV8w9b84LkDXPgHzxXgg7341gEhOIhvFRCDo/jagBScxKUBFJiEcwOoMBmnBnBgFp4K4MJsPBQggUW4GyCFxfg74IlSVZiUPRKSg7T42yUL1rx5AeDugRL1hL79AAAAAElFTkSuQmCC", alt="Стрiлка донизу")
-                            p
-                                | В нашій відео галереї ви можете знайти вже готові відео привітання для будь-якого випадку життя. Просто оберіть тематику вашого свята (день народження, новий рік, святий миколай і т.д.), та виберіть відео, котре підходить вам більш за все
-                        .column.shrink
-                            hr
-                        .column.select_video
-                            a.button.simple(href="#")
-                                | створити нове відео зараз
-                            img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAARCAYAAAAlpHdJAAAArklEQVRIS8XVTQ6CMBCG4Y+QcB5iPJCuYNkj9AhuYeWBlHAUL0A1JdFI7c/MQHH2nedddQr8cQprdzjqBje9V0eHg2owXGa8R10blKcWd5U7wMIVzPWM8THjewV8w9b84LkDXPgHzxXgg7341gEhOIhvFRCDo/jagBScxKUBFJiEcwOoMBmnBnBgFp4K4MJsPBQggUW4GyCFxfg74IlSVZiUPRKSg7T42yUL1rx5AeDugRL1hL79AAAAAElFTkSuQmCC", alt="Стрiлка донизу")
-                            p
-                                | Скористайтесь нашим онлайн відео редактором щоб створити прямо зараз чудове відео привітання. Але задля цього вам потрібно мати веб камеру на свому компьютері.
-                        .column.shrink
-                            hr
-                        .column.select_video
-                            input(type="file" class="hide" id="uplvideo")
-                            label.button.simple(for="uplvideo")
-                                | в мене є готове відео!  завантажити
-                            img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAARCAYAAAAlpHdJAAAArklEQVRIS8XVTQ6CMBCG4Y+QcB5iPJCuYNkj9AhuYeWBlHAUL0A1JdFI7c/MQHH2nedddQr8cQprdzjqBje9V0eHg2owXGa8R10blKcWd5U7wMIVzPWM8THjewV8w9b84LkDXPgHzxXgg7341gEhOIhvFRCDo/jagBScxKUBFJiEcwOoMBmnBnBgFp4K4MJsPBQggUW4GyCFxfg74IlSVZiUPRKSg7T42yUL1rx5AeDugRL1hL79AAAAAElFTkSuQmCC", alt="Стрiлка донизу")
-                            p 
-                                | Ви можета самі створти своє унікальне відео і використати його в якості вітального послання на обраному продукті.
-                                br
-                                br
-                                | Для завантаження допускаються файли:
-                                br
-                                | - mpg4, .mov, .avi
-                                br
-                                | - Не більше 50 Мб.   
-            include includes/footer
+        main.wrap.off-canvas-wrapper
+            .off-canvas-wrapper-inner(data-off-canvas-wrapper)
+                include includes/header
+                section.content.delivery.select
+                    .row
+                        .small-12.column.order_steps
+                            .order_step.selected
+                                | Оберіть що саме подарувати
+                            .order_step.selected
+                                | Додайте відеоповідомлення
+                            .order_step
+                                | Оплата та відправка
+                        p.small-12.column.header.primary
+                            span Класний вибір! 
+                            | Тепер давай зробимо повідомлення!
+                        p.column.select_hint
+                            | Для того, щоб ми зробили відеоповідомлення на обраній вами пляшці нам потрібен відеоролик, який буде на ній програватись.
+                            br
+                            | Задля цього, будь ласка, оберіть один з наведених нижче способів надання відео.
+                        .small-12.row.column
+                            .large-2.column.show-for-large.select_product
+                                img(src="/img/bottle_select.png", alt="Пляшка")
+                            .column.select_video
+                                a.button.simple(href="/videogallery.html")
+                                    | Зараз вибрати відео з нашої галереї
+                                img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAARCAYAAAAlpHdJAAAArklEQVRIS8XVTQ6CMBCG4Y+QcB5iPJCuYNkj9AhuYeWBlHAUL0A1JdFI7c/MQHH2nedddQr8cQprdzjqBje9V0eHg2owXGa8R10blKcWd5U7wMIVzPWM8THjewV8w9b84LkDXPgHzxXgg7341gEhOIhvFRCDo/jagBScxKUBFJiEcwOoMBmnBnBgFp4K4MJsPBQggUW4GyCFxfg74IlSVZiUPRKSg7T42yUL1rx5AeDugRL1hL79AAAAAElFTkSuQmCC", alt="Стрiлка донизу")
+                                p
+                                    | В нашій відео галереї ви можете знайти вже готові відео привітання для будь-якого випадку життя. Просто оберіть тематику вашого свята (день народження, новий рік, святий миколай і т.д.), та виберіть відео, котре підходить вам більш за все
+                            .column.shrink
+                                hr
+                            .column.select_video
+                                a.button.simple(href="#")
+                                    | створити нове відео зараз
+                                img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAARCAYAAAAlpHdJAAAArklEQVRIS8XVTQ6CMBCG4Y+QcB5iPJCuYNkj9AhuYeWBlHAUL0A1JdFI7c/MQHH2nedddQr8cQprdzjqBje9V0eHg2owXGa8R10blKcWd5U7wMIVzPWM8THjewV8w9b84LkDXPgHzxXgg7341gEhOIhvFRCDo/jagBScxKUBFJiEcwOoMBmnBnBgFp4K4MJsPBQggUW4GyCFxfg74IlSVZiUPRKSg7T42yUL1rx5AeDugRL1hL79AAAAAElFTkSuQmCC", alt="Стрiлка донизу")
+                                p
+                                    | Скористайтесь нашим онлайн відео редактором щоб створити прямо зараз чудове відео привітання. Але задля цього вам потрібно мати веб камеру на свому компьютері.
+                            .column.shrink
+                                hr
+                            .column.select_video
+                                input(type="file" class="hide" id="uplvideo")
+                                label.button.simple(for="uplvideo")
+                                    | в мене є готове відео!  завантажити
+                                img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAARCAYAAAAlpHdJAAAArklEQVRIS8XVTQ6CMBCG4Y+QcB5iPJCuYNkj9AhuYeWBlHAUL0A1JdFI7c/MQHH2nedddQr8cQprdzjqBje9V0eHg2owXGa8R10blKcWd5U7wMIVzPWM8THjewV8w9b84LkDXPgHzxXgg7341gEhOIhvFRCDo/jagBScxKUBFJiEcwOoMBmnBnBgFp4K4MJsPBQggUW4GyCFxfg74IlSVZiUPRKSg7T42yUL1rx5AeDugRL1hL79AAAAAElFTkSuQmCC", alt="Стрiлка донизу")
+                                p 
+                                    | Ви можета самі створти своє унікальне відео і використати його в якості вітального послання на обраному продукті.
+                                    br
+                                    br
+                                    | Для завантаження допускаються файли:
+                                    br
+                                    | - mpg4, .mov, .avi
+                                    br
+                                    | - Не більше 50 Мб.   
+                include includes/footer
