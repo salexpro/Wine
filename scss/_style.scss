@@ -1119,6 +1119,10 @@ textarea {
 .delivery{
     padding-top: 90px;
     padding-bottom: 60px;
+    @include breakpoint(medium down) {
+        padding-top: 55px;
+        padding-bottom: 30px;
+    }
     .header{
         &.primary{
             margin-bottom: 20px;
@@ -1131,6 +1135,9 @@ textarea {
             position: absolute;
             top: 0;
             right: 20px;
+            @include breakpoint(small down) {
+                right: 10px;
+            }
         }
     }
     &_content{
@@ -1141,6 +1148,23 @@ textarea {
             font-size: 20px;
             text-align: left;
             margin-bottom: 18px;
+        }
+        .row{
+            .column{
+                @include breakpoint(large down) {
+                    flex: 1 1 50%;  
+                    margin: 10px 0;
+                }
+                @include breakpoint(small down) {
+                    flex: 1 1 100%;
+                }
+            }
+        }
+        .button{
+            @include breakpoint(small down) {
+                padding-right: 26px;
+                padding-left: 26px;
+            }
         }
     }
     &_amount{
@@ -1172,17 +1196,28 @@ textarea {
             margin: 0;
             font-size: 20px;
             font-weight: 700;
+            @include breakpoint(small down) {
+                width: 80px;
+            }
         }
     }
     &_price{
         margin-top: 23px;
     }
     &_address{
+        @include breakpoint(large down) {
+            margin-top: 20px;
+        }
         &_inputs{
             input{
                 display: inline-block;
                 width: calc(50% - 5px);
                 margin-bottom: 14px;
+                @include breakpoint(small down) {
+                    display: block;
+                    width: 100%;
+                    float: none !important;
+                }
                 &:nth-child(even){
                     float: right;
                 }
@@ -1198,11 +1233,29 @@ textarea {
         font-size: 15px;
         letter-spacing: 2px;
         text-align: center;
+        @include breakpoint(medium down) {
+            margin-top: 20px;
+            span{
+                display: block;
+            }
+        }
     }
     &_pager{
         margin-top: 40px;
+        @include breakpoint(medium down) {
+            margin-top: 20px;
+        }
+        .column:first-child{
+            .button{
+                float: right;
+            }
+        }
         .button{
-            width: 178px;
+            width: 100%;
+            max-width: 178px;
+            min-width: 130px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
     }
 }
@@ -1795,14 +1848,20 @@ textarea {
         }
         &_mail{
             margin: auto;
+            text-align: center;
+            img{
+                margin-right: 25px;
+            }
         }
         [href^="mailto"]{
             color: $primary-color;
             font-size: 20px;
             font-weight: 700;
             // line-height: 55px;
-            margin-left: 25px;
+            // margin-left: 25px;
             letter-spacing: 1px;
+            margin-top: 10px;
+            display: inline-block;
         }
     }
     &_why{
