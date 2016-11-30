@@ -1660,7 +1660,9 @@ a:hover, a:focus { color: #fff; text-decoration: underline; }
 
 .total_order .help { margin-left: 15px; }
 
-.total_order_price { display: inline-block; font-weight: 700; letter-spacing: 3px; line-height: 14px; padding: 18px 38px; border: 1px solid rgba(233, 233, 233, 0.1); border-radius: 5px; margin-top: 20px; }
+.total_order_price { display: inline-block; font-weight: 700; letter-spacing: 3px; line-height: 14px; padding: 18px 5px; border: 1px solid rgba(233, 233, 233, 0.1); border-radius: 5px; margin-top: 20px; max-width: 280px; width: 100%; text-align: center; }
+
+@media screen and (max-width: 39.9375em) { .total_delivery { margin-bottom: 40px; } }
 
 .total_delivery_title { font-size: 20px; font-weight: 700; line-height: 24px; }
 
@@ -1676,7 +1678,13 @@ a:hover, a:focus { color: #fff; text-decoration: underline; }
 
 .total_payment::before { content: ''; position: absolute; width: 1px; height: 105%; background: rgba(233, 233, 233, 0.1); left: -1px; top: -2.5%; }
 
+.total_payment_methods { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; }
+
+.total_payment_methods img { width: calc(50% - 3px); }
+
 .total_user { margin-top: 40px; }
+
+@media screen and (max-width: 63.9375em) { .total_user { margin-top: 25px; } }
 
 .total_user_select { display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 15px; }
 
@@ -1695,6 +1703,8 @@ a:hover, a:focus { color: #fff; text-decoration: underline; }
 .total_user .hide { display: block !important; opacity: 0; z-index: -1; }
 
 .total .button { min-width: 280px; margin: auto; margin-top: 55px; }
+
+@media screen and (max-width: 39.9375em) { .total .button { margin-top: 20px; } }
 
 .status { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 

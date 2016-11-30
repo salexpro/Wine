@@ -1524,13 +1524,19 @@ textarea {
             font-weight: 700;
             letter-spacing: 3px;
             line-height: 14px;
-            padding: 18px 38px;
+            padding: 18px 5px;
             border: 1px solid rgba(233,233,233,0.1);
             border-radius: 5px;
             margin-top: 20px;
+            max-width: 280px;
+            width: 100%;
+            text-align: center;
         }
     }
     &_delivery{
+        @include breakpoint(small down) {
+            margin-bottom: 40px;
+        }
         &_title{
             font-size: 20px;
             font-weight: 700;
@@ -1565,9 +1571,20 @@ textarea {
         &_title{
             @extend .total_order_title;
         }
+        &_methods{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            img{
+                width: calc(50% - 3px);
+            }
+        }
     }
     &_user{
         margin-top: 40px;
+        @include breakpoint(medium down) {
+            margin-top: 25px;
+        }
         &_select{
             display: flex;
             margin-bottom: 15px;
@@ -1614,6 +1631,9 @@ textarea {
         min-width: 280px;
         margin: auto;
         margin-top: 55px;
+        @include breakpoint(small down) {
+            margin-top: 20px;
+        }
     }
 }
 
