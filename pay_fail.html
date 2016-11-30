@@ -52,48 +52,50 @@
     <link rel="stylesheet" href="/css/app.css">
   </head>
   <body>
-    <main class="wrap">
-      <header class="head">
-        <div class="row column align-middle">
-          <div class="head_logo"><a href="/"><img src="/img/logo.jpg" alt="Message on wine"></a></div>
-          <div id="nav" data-off-canvas data-position="right" data-auto-focus="false" class="nav small-12 row align-justify">
-            <nav class="small-12 large-8 column align-middle head_nav">
-              <ul class="menu align-justify">
-                <li><a href="/about.html">Про сервіс</a></li>
-                <li><a href="/terms.html">Умови використання</a></li>
-                <li><a href="/blog.html">Блог</a></li>
-                <li><a href="/contacts.html">Контакти</a></li>
+    <main class="wrap off-canvas-wrapper">
+      <div data-off-canvas-wrapper class="off-canvas-wrapper-inner">
+        <header class="head">
+          <div class="row column align-middle">
+            <div class="head_logo"><a href="/"><img src="/img/logo.jpg" alt="Message on wine"></a></div>
+            <div id="nav" data-off-canvas data-position="right" data-auto-focus="false" class="nav small-12 row align-justify">
+              <nav class="small-12 large-8 column align-middle head_nav">
+                <ul class="menu align-justify">
+                  <li><a href="/about.html">Про сервіс</a></li>
+                  <li><a href="/terms.html">Умови використання</a></li>
+                  <li><a href="/blog.html">Блог</a></li>
+                  <li><a href="/contacts.html">Контакти</a></li>
+                </ul>
+              </nav>
+              <ul class="menu head_lang">
+                <li class="active"><a href="#">Укр</a></li>
+                <li><a href="#">Eng</a></li>
+                <li><a href="#">Рус</a></li>
               </ul>
-            </nav>
-            <ul class="menu head_lang">
-              <li class="active"><a href="#">Укр</a></li>
-              <li><a href="#">Eng</a></li>
-              <li><a href="#">Рус</a></li>
-            </ul>
-          </div>
-          <div data-toggle="nav" class="hide-for-large hamb">
-            <div class="hamb_inner"></div>
-          </div>
-        </div>
-      </header>
-      <section class="content delivery status">
-        <div class="row status_content">
-          <p class="small-12 column header primary">Вибачте, але нажаль під час оплати сталася помилка і ми не отримали оплату за ваше замовлення</p>
-          <div class="small-12 column fail_text">Спробуйте, будь ласка, ще раз, або напишіть нам листа на messageonwine@gmail.com і ми будимо перевіряти вашу проблему</div>
-          <div class="small-12 column row align-center delivery_pager fail_buttons">
-            <div class="column shrink">
-              <button class="button hollow">відмінити</button>
             </div>
-            <div class="column shrink">
-              <button class="button hollow">ОплатИТИ</button>
+            <div data-toggle="nav" class="hide-for-large hamb">
+              <div class="hamb_inner"></div>
             </div>
           </div>
-        </div>
-      </section>
-      <footer class="footer">MESSAGEONWINE.COM</footer>
-      <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-      <script src="/bower_components/foundation-sites/dist/foundation.min.js"></script>
-      <script src="/js/app.min.js"></script>
+        </header>
+        <section class="content delivery status">
+          <div class="row status_content">
+            <p class="small-12 column header primary">Вибачте, але нажаль під час оплати сталася помилка і ми не отримали оплату за ваше замовлення</p>
+            <div class="small-12 column fail_text">Спробуйте, будь ласка, ще раз, або напишіть нам листа на <span>messageonwine@gmail.com </span>і ми будимо перевіряти вашу проблему</div>
+            <div class="small-12 column row align-center delivery_pager fail_buttons">
+              <div class="column">
+                <button class="button hollow">відмінити</button>
+              </div>
+              <div class="column">
+                <button class="button hollow">ОплатИТИ</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">MESSAGEONWINE.COM</footer>
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="/bower_components/foundation-sites/dist/foundation.min.js"></script>
+        <script src="/js/app.min.js"></script>
+      </div>
     </main>
   </body>
 </html>

@@ -3,26 +3,27 @@ doctype html
 html(lang="ru")
     include includes/head
     body
-        main.wrap
-            include includes/header
-            section.content.delivery.status
-                .row.status_content
-                    p.small-12.column.header.primary
-                        | Дякуємо!
-                        br
-                        | Твоє відео вже на пляшці. Пляшка вже в дорозі
-                    .small-12.row.column.success_options
-                        .large-4.column
-                            p Слідкувати за доставкою ти можеш тут
-                            a(href="//novaposhta.ua/tracking" target="_blank" rel="nofollow")
-                                img(src="/img/nova_poshta.png", alt="Нова Пошта")
-                        .large-4.column
-                            p Подаруй ще одну пляшку з відео!
-                            .success_text
-                                | Застосуй цей код 254378
-                                br
-                                | Він дає знижку на перегляди 5 грн
-                        .large-4.column
-                            p Перевір як працює твоє відео зараз
-                            a.button(href="/check.html") перевірити
-            include includes/footer
+        main.wrap.off-canvas-wrapper
+            .off-canvas-wrapper-inner(data-off-canvas-wrapper)
+                include includes/header
+                section.content.delivery.status
+                    .row.status_content
+                        p.small-12.column.header.primary
+                            | Дякуємо!
+                            br
+                            | Твоє відео вже на пляшці. Пляшка вже в дорозі
+                        .small-12.row.column.success_options
+                            .small-12.medium-4.column
+                                p Слідкувати за доставкою ти можеш тут
+                                a(href="//novaposhta.ua/tracking" target="_blank" rel="nofollow")
+                                    img(src="/img/nova_poshta.png", alt="Нова Пошта")
+                            .small-12.medium-4.column
+                                p Подаруй ще одну пляшку з відео!
+                                .success_text
+                                    | Застосуй цей код 254378
+                                    br
+                                    | Він дає знижку на перегляди 5 грн
+                            .small-12.medium-4.column
+                                p Перевір як працює твоє відео зараз
+                                a.button(href="/check.html") перевірити
+                include includes/footer

@@ -52,67 +52,69 @@
     <link rel="stylesheet" href="/css/app.css">
   </head>
   <body>
-    <main class="wrap">
-      <header class="head">
-        <div class="row column align-middle">
-          <div class="head_logo"><a href="/"><img src="/img/logo.jpg" alt="Message on wine"></a></div>
-          <div id="nav" data-off-canvas data-position="right" data-auto-focus="false" class="nav small-12 row align-justify">
-            <nav class="small-12 large-8 column align-middle head_nav">
-              <ul class="menu align-justify">
-                <li><a href="/about.html">Про сервіс</a></li>
-                <li><a href="/terms.html">Умови використання</a></li>
-                <li><a href="/blog.html">Блог</a></li>
-                <li><a href="/contacts.html">Контакти</a></li>
+    <main class="wrap off-canvas-wrapper">
+      <div data-off-canvas-wrapper class="off-canvas-wrapper-inner">
+        <header class="head">
+          <div class="row column align-middle">
+            <div class="head_logo"><a href="/"><img src="/img/logo.jpg" alt="Message on wine"></a></div>
+            <div id="nav" data-off-canvas data-position="right" data-auto-focus="false" class="nav small-12 row align-justify">
+              <nav class="small-12 large-8 column align-middle head_nav">
+                <ul class="menu align-justify">
+                  <li><a href="/about.html">Про сервіс</a></li>
+                  <li><a href="/terms.html">Умови використання</a></li>
+                  <li><a href="/blog.html">Блог</a></li>
+                  <li><a href="/contacts.html">Контакти</a></li>
+                </ul>
+              </nav>
+              <ul class="menu head_lang">
+                <li class="active"><a href="#">Укр</a></li>
+                <li><a href="#">Eng</a></li>
+                <li><a href="#">Рус</a></li>
               </ul>
-            </nav>
-            <ul class="menu head_lang">
-              <li class="active"><a href="#">Укр</a></li>
-              <li><a href="#">Eng</a></li>
-              <li><a href="#">Рус</a></li>
-            </ul>
+            </div>
+            <div data-toggle="nav" class="hide-for-large hamb">
+              <div class="hamb_inner"></div>
+            </div>
           </div>
-          <div data-toggle="nav" class="hide-for-large hamb">
-            <div class="hamb_inner"></div>
+        </header>
+        <section class="content delivery status error">
+          <div class="row status_content">
+            <p class="small-12 column header primary">Відео чомусь не працює</p>
+            <div class="small-12 column error_reasons">
+              <ol>
+                <li class="reveal_how_step">
+                  <div class="reveal_how_step_inner">
+                    <p>Перевір, будь ласка, чи достатньо світла там, де ти є</p>
+                  </div>
+                </li>
+                <li class="reveal_how_step">
+                  <div class="reveal_how_step_inner">
+                    <p>В мобільному працює інтернет? Якщо ні - тобі потрібен wi-fi або 3G</p>
+                  </div>
+                </li>
+                <li class="reveal_how_step">
+                  <div class="reveal_how_step_inner">
+                    <p>
+                       
+                      Перевір, чи правильно введений код  -  RTHL <a href="/check.html">ПЕРЕВІРИТИ ВІДЕО ЩЕ РАЗ</a>
+                    </p>
+                  </div>
+                </li>
+                <li class="reveal_how_step">
+                  <div class="reveal_how_step_inner">
+                    <p>Якщо ти впевнений, що все перевірив і відео не працює, напиши, будь ласка, нам листа на messageonwine@gmail.com</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+            <div class="small-12 column error_back"><a href="/check.html" class="button hollow">повернутись</a></div>
           </div>
-        </div>
-      </header>
-      <section class="content delivery status error">
-        <div class="row status_content">
-          <p class="small-12 column header primary">Відео чомусь не працює</p>
-          <div class="small-12 column error_reasons">
-            <ol>
-              <li class="reveal_how_step">
-                <div class="reveal_how_step_inner">
-                  <p>Перевір, будь ласка, чи достатньо світла там, де ти є</p>
-                </div>
-              </li>
-              <li class="reveal_how_step">
-                <div class="reveal_how_step_inner">
-                  <p>В мобільному працює інтернет? Якщо ні - тобі потрібен wi-fi або 3G</p>
-                </div>
-              </li>
-              <li class="reveal_how_step">
-                <div class="reveal_how_step_inner">
-                  <p>
-                     
-                    Перевір, чи правильно введений код  -  RTHL <a href="/check.html">ПЕРЕВІРИТИ ВІДЕО ЩЕ РАЗ</a>
-                  </p>
-                </div>
-              </li>
-              <li class="reveal_how_step">
-                <div class="reveal_how_step_inner">
-                  <p>Якщо ти впевнений, що все перевірив і відео не працює, напиши, будь ласка, нам листа на messageonwine@gmail.com</p>
-                </div>
-              </li>
-            </ol>
-          </div>
-          <div class="small-12 column error_back"><a href="/check.html" class="button hollow">повернутись</a></div>
-        </div>
-      </section>
-      <footer class="footer">MESSAGEONWINE.COM</footer>
-      <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-      <script src="/bower_components/foundation-sites/dist/foundation.min.js"></script>
-      <script src="/js/app.min.js"></script>
+        </section>
+        <footer class="footer">MESSAGEONWINE.COM</footer>
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="/bower_components/foundation-sites/dist/foundation.min.js"></script>
+        <script src="/js/app.min.js"></script>
+      </div>
     </main>
   </body>
 </html>

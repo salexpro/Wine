@@ -52,51 +52,53 @@
     <link rel="stylesheet" href="/css/app.css">
   </head>
   <body>
-    <main class="wrap">
-      <header class="head">
-        <div class="row column align-middle">
-          <div class="head_logo"><a href="/"><img src="/img/logo.jpg" alt="Message on wine"></a></div>
-          <div id="nav" data-off-canvas data-position="right" data-auto-focus="false" class="nav small-12 row align-justify">
-            <nav class="small-12 large-8 column align-middle head_nav">
-              <ul class="menu align-justify">
-                <li><a href="/about.html">Про сервіс</a></li>
-                <li><a href="/terms.html">Умови використання</a></li>
-                <li><a href="/blog.html">Блог</a></li>
-                <li><a href="/contacts.html">Контакти</a></li>
+    <main class="wrap off-canvas-wrapper">
+      <div data-off-canvas-wrapper class="off-canvas-wrapper-inner">
+        <header class="head">
+          <div class="row column align-middle">
+            <div class="head_logo"><a href="/"><img src="/img/logo.jpg" alt="Message on wine"></a></div>
+            <div id="nav" data-off-canvas data-position="right" data-auto-focus="false" class="nav small-12 row align-justify">
+              <nav class="small-12 large-8 column align-middle head_nav">
+                <ul class="menu align-justify">
+                  <li><a href="/about.html">Про сервіс</a></li>
+                  <li><a href="/terms.html">Умови використання</a></li>
+                  <li><a href="/blog.html">Блог</a></li>
+                  <li><a href="/contacts.html">Контакти</a></li>
+                </ul>
+              </nav>
+              <ul class="menu head_lang">
+                <li class="active"><a href="#">Укр</a></li>
+                <li><a href="#">Eng</a></li>
+                <li><a href="#">Рус</a></li>
               </ul>
-            </nav>
-            <ul class="menu head_lang">
-              <li class="active"><a href="#">Укр</a></li>
-              <li><a href="#">Eng</a></li>
-              <li><a href="#">Рус</a></li>
-            </ul>
-          </div>
-          <div data-toggle="nav" class="hide-for-large hamb">
-            <div class="hamb_inner"></div>
-          </div>
-        </div>
-      </header>
-      <section class="content delivery status">
-        <div class="row status_content">
-          <p class="small-12 column header primary">Дякуємо!<br>Твоє відео вже на пляшці. Пляшка вже в дорозі</p>
-          <div class="small-12 row column success_options">
-            <div class="large-4 column">
-              <p>Слідкувати за доставкою ти можеш тут</p><a href="//novaposhta.ua/tracking" target="_blank" rel="nofollow"><img src="/img/nova_poshta.png" alt="Нова Пошта"></a>
             </div>
-            <div class="large-4 column">
-              <p>Подаруй ще одну пляшку з відео!</p>
-              <div class="success_text">Застосуй цей код 254378<br>Він дає знижку на перегляди 5 грн</div>
-            </div>
-            <div class="large-4 column">
-              <p>Перевір як працює твоє відео зараз</p><a href="/check.html" class="button">перевірити</a>
+            <div data-toggle="nav" class="hide-for-large hamb">
+              <div class="hamb_inner"></div>
             </div>
           </div>
-        </div>
-      </section>
-      <footer class="footer">MESSAGEONWINE.COM</footer>
-      <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-      <script src="/bower_components/foundation-sites/dist/foundation.min.js"></script>
-      <script src="/js/app.min.js"></script>
+        </header>
+        <section class="content delivery status">
+          <div class="row status_content">
+            <p class="small-12 column header primary">Дякуємо!<br>Твоє відео вже на пляшці. Пляшка вже в дорозі</p>
+            <div class="small-12 row column success_options">
+              <div class="small-12 medium-4 column">
+                <p>Слідкувати за доставкою ти можеш тут</p><a href="//novaposhta.ua/tracking" target="_blank" rel="nofollow"><img src="/img/nova_poshta.png" alt="Нова Пошта"></a>
+              </div>
+              <div class="small-12 medium-4 column">
+                <p>Подаруй ще одну пляшку з відео!</p>
+                <div class="success_text">Застосуй цей код 254378<br>Він дає знижку на перегляди 5 грн</div>
+              </div>
+              <div class="small-12 medium-4 column">
+                <p>Перевір як працює твоє відео зараз</p><a href="/check.html" class="button">перевірити</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">MESSAGEONWINE.COM</footer>
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="/bower_components/foundation-sites/dist/foundation.min.js"></script>
+        <script src="/js/app.min.js"></script>
+      </div>
     </main>
   </body>
 </html>
