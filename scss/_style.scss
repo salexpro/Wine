@@ -1,3 +1,37 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('/fonts/Comfortaa/Comfortaa-Bold.eot');
+    src: url('/fonts/Comfortaa/Comfortaa-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Comfortaa/Comfortaa-Bold.woff2') format('woff2'),
+        url('/fonts/Comfortaa/Comfortaa-Bold.woff') format('woff'),
+        url('/fonts/Comfortaa/Comfortaa-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('/fonts/Comfortaa/Comfortaa-Light.eot');
+    src: url('/fonts/Comfortaa/Comfortaa-Light.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Comfortaa/Comfortaa-Light.woff2') format('woff2'),
+        url('/fonts/Comfortaa/Comfortaa-Light.woff') format('woff'),
+        url('/fonts/Comfortaa/Comfortaa-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('/fonts/Comfortaa/Comfortaa.eot');
+    src: url('/fonts/Comfortaa/Comfortaa.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Comfortaa/Comfortaa.woff2') format('woff2'),
+        url('/fonts/Comfortaa/Comfortaa.woff') format('woff'),
+        url('/fonts/Comfortaa/Comfortaa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 .wrap{
     min-width: 320px;
 }
@@ -921,7 +955,8 @@ textarea {
         align-items: center;
         justify-content: center;
         height: 50px;
-        background-image: linear-gradient(to left, $primary-color 0%, $primary-color 100%);
+        // background-image: linear-gradient(to left, $primary-color 0%, $primary-color 100%);
+        background-color: #802745;
         position: relative;       
         border-right: 20px solid transparent;
         background-repeat: no-repeat;
@@ -930,6 +965,7 @@ textarea {
         letter-spacing: 1px;
         padding-left: 20px;
         counter-increment: steps;
+        font-size: 16px;
         @include breakpoint(medium down) {
             padding-left: 15px;
             &:nth-last-child(-n+2){
@@ -943,7 +979,8 @@ textarea {
             justify-content: flex-start;
         }
         &.selected{
-            background-image: linear-gradient(to left, #870010 0%, #ff0056 100%);
+            // background-image: linear-gradient(to left, #870010 0%, #ff0056 100%);
+            background-color: $white;
             &::before{
                 background: $white;
                 color: $primary-color;

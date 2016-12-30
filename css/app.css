@@ -1129,6 +1129,12 @@ html.is-reveal-open, html.is-reveal-open body { min-height: 100%; overflow: hidd
   .large-order-5 { -webkit-box-ordinal-group: 6; -ms-flex-order: 5; order: 5; }
   .large-order-6 { -webkit-box-ordinal-group: 7; -ms-flex-order: 6; order: 6; } }
 
+@font-face { font-family: 'Comfortaa'; src: url("/fonts/Comfortaa/Comfortaa-Bold.eot"); src: url("/fonts/Comfortaa/Comfortaa-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Comfortaa/Comfortaa-Bold.woff2") format("woff2"), url("/fonts/Comfortaa/Comfortaa-Bold.woff") format("woff"), url("/fonts/Comfortaa/Comfortaa-Bold.ttf") format("truetype"); font-weight: 600; font-style: normal; }
+
+@font-face { font-family: 'Comfortaa'; src: url("/fonts/Comfortaa/Comfortaa-Light.eot"); src: url("/fonts/Comfortaa/Comfortaa-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/Comfortaa/Comfortaa-Light.woff2") format("woff2"), url("/fonts/Comfortaa/Comfortaa-Light.woff") format("woff"), url("/fonts/Comfortaa/Comfortaa-Light.ttf") format("truetype"); font-weight: 300; font-style: normal; }
+
+@font-face { font-family: 'Comfortaa'; src: url("/fonts/Comfortaa/Comfortaa.eot"); src: url("/fonts/Comfortaa/Comfortaa.eot?#iefix") format("embedded-opentype"), url("/fonts/Comfortaa/Comfortaa.woff2") format("woff2"), url("/fonts/Comfortaa/Comfortaa.woff") format("woff"), url("/fonts/Comfortaa/Comfortaa.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
 .wrap { min-width: 320px; }
 
 a { color: #fff; }
@@ -1459,14 +1465,14 @@ a:hover, a:focus { color: #fff; text-decoration: underline; }
 
 @media screen and (max-width: 39.9375em) { .order_steps { display: block; } }
 
-.order_step { width: calc(33.33% + 20px); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 50px; background-image: -webkit-linear-gradient(right, #990134 0%, #990134 100%); background-image: linear-gradient(to left, #990134 0%, #990134 100%); position: relative; border-right: 20px solid transparent; background-repeat: no-repeat; z-index: 3; font-weight: 700; letter-spacing: 1px; padding-left: 20px; counter-increment: steps; }
+.order_step { width: calc(33.33% + 20px); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 50px; background-color: #802745; position: relative; border-right: 20px solid transparent; background-repeat: no-repeat; z-index: 3; font-weight: 700; letter-spacing: 1px; padding-left: 20px; counter-increment: steps; font-size: 16px; }
 
 @media screen and (max-width: 63.9375em) { .order_step { padding-left: 15px; }
   .order_step:nth-last-child(-n+2) { padding-left: 30px; } }
 
 @media screen and (max-width: 39.9375em) { .order_step { width: 100%; margin: 0 !important; padding-left: 15% !important; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; } }
 
-.order_step.selected { background-image: -webkit-linear-gradient(right, #870010 0%, #ff0056 100%); background-image: linear-gradient(to left, #870010 0%, #ff0056 100%); }
+.order_step.selected { background-color: #fff; }
 
 .order_step.selected::before { background: #fff; color: #990134; }
 
