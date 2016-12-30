@@ -4238,6 +4238,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/create.png": {
+		"ft": 32768,
+		"iS": 5620,
+		"oA": 0,
+		"oAP": "\/img\/create.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/google_play.png": {
 		"ft": 32768,
 		"iS": 6549,
@@ -4315,6 +4323,22 @@
 		"iS": 3849,
 		"oA": 0,
 		"oAP": "\/img\/play.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/select.png": {
+		"ft": 32768,
+		"iS": 7067,
+		"oA": 0,
+		"oAP": "\/img\/select.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/upload.png": {
+		"ft": 32768,
+		"iS": 4945,
+		"oA": 0,
+		"oAP": "\/img\/upload.png",
 		"oF": 0,
 		"opt": 0
 		},
