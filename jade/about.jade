@@ -7,27 +7,62 @@ html(lang="ru")
             .off-canvas-wrapper-inner(data-off-canvas-wrapper)
                 include includes/header
                 section.content.about
-                    .header.primary Це дуже просто
-                    .about_inner
-                        .about_step
-                            p
-                                | Спочатку обери ту пляшку, яку хочеш подарувати
-                        .about_step
-                            p
-                                | Завантаж своє відео / Прямо тут запиши відео / Вибери з нашої галереї
-                        .about_step
-                            p
-                                | Оформи доставку і трохи почекай реакції друзів
-                        .about_step
-                            .about_step_circle
-                                img(src="/img/bottle_min.png", alt="Пляшка")
-                        .about_step
-                            .about_step_video.main_video_container
-                                img(src="/img/video_placeholder.png", alt="")
-                                a.main_video_button(href="#")
-                                    img(src="/img/play.png", alt="Програти")
-                        .about_step
-                            .about_step_circle
-                                img(src="/img/arrange.png", alt="Доставка")
-                    a.button(href="/order.html") Розпочати
+                    .row
+                        .column.about_tabs
+                            ul#howtabs.tabs(data-tabs)
+                                li.tabs-title.is-active
+                                    a(href="#how1" aria-selected="true") Как разместить видеосообщение на бутылке
+                                li.tabs-title
+                                    a(href="#how2") Как посмотреть видеосообщение
+                            .tabs-content(data-tabs-content="howtabs")
+                                #how1.tabs-panel.is-active
+                                    p.header.primary Пошаговая инструкция по использованию сервиса
+                                    .about_inner
+                                        .about_step
+                                            .about_step_circle
+                                                img(src="/img/bottle_min.png", alt="Пляшка")
+                                            p 
+                                                | Шаг 1 
+                                                span Выбери напиток
+                                        .about_step
+                                            .about_step_video.main_video_container
+                                                img(src="/img/video_placeholder.png", alt="")
+                                                a.main_video_button(href="#")
+                                                    img(src="/img/play.png", alt="Програти")
+                                            p
+                                                | Шаг 2
+                                                span Загрузи свое видео | Запиши видео | Выбери из нашей галереи
+                                        .about_step
+                                            .about_step_circle
+                                                img(src="/img/arrange.png", alt="Доставка")
+                                            p
+                                                | Шаг 3
+                                                span Оформи заказ
+                                #how2.tabs-panel
+                                    .small-12.row.column
+                                        .small-12.large-5.column.check_product.about_how_product
+                                            img(src="/img/bottle_big.png", alt="Пляшка")
+                                        .small-12.large-7.column.check_steps.about_how
+                                            p.header.third 
+                                                | Для просмотра вашего послания адресату достаточно лишь воспользоваться инструкцией на бутылке:
+                                            .reveal_how_step.about_how_step
+                                                img(src="/img/step1.png", alt="")
+                                                .reveal_how_step_inner
+                                                    p Установи бесплатное приложение Looksar на свой смартфон
+                                                    a(href="#")
+                                                        img(src="/img/app_store.png", alt="App Store")
+                                                    | &nbsp;
+                                                    a(href="#")
+                                                        img(src="/img/google_play.png", alt="Google Play")
+                                            .reveal_how_step.about_how_step
+                                                img(src="/img/step2.png", alt="")
+                                                .reveal_how_step_inner
+                                                    p Введи код
+                                                    input(type="text" value="rthl" readonly)
+                                            .reveal_how_step.about_how_step
+                                                img(src="/img/step3.png", alt="")
+                                                .reveal_how_step_inner
+                                                    p Наведи смартфон на этикетку бутылки
+                                                    img(src="/img/sticker.jpg", alt="")
+                            a.button.hollow.filled(href="/order.html") СОЗДАТЬ ПОДАРОК
                 include includes/footer

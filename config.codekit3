@@ -4334,6 +4334,38 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/step1.png": {
+		"ft": 32768,
+		"iS": 1774,
+		"oA": 0,
+		"oAP": "\/img\/step1.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/step2.png": {
+		"ft": 32768,
+		"iS": 3088,
+		"oA": 0,
+		"oAP": "\/img\/step2.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/step3.png": {
+		"ft": 32768,
+		"iS": 3078,
+		"oA": 0,
+		"oAP": "\/img\/step3.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/sticker.jpg": {
+		"ft": 16384,
+		"iS": 19956,
+		"oA": 0,
+		"oAP": "\/img\/sticker.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/upload.png": {
 		"ft": 32768,
 		"iS": 4945,
