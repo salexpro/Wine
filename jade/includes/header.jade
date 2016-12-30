@@ -1,35 +1,35 @@
 header.head
-    .row.column.align-middle
+    .row.column.align-middle.align-spaced
         .head_logo
             a(href="/")
                 img(src="/img/logo.jpg", alt="Message on wine")
         #nav.nav.small-12.row.align-justify(data-off-canvas data-position="right" data-auto-focus="false")
-            nav.small-12.large-8.column.align-middle.head_nav
+            nav.small-12.large-11.column.align-middle.head_nav
                 ul.menu.align-justify
                     if (active=='about')
                         li.active
-                            a(href="/about.html") Про сервіс
+                            a(href="/about.html") О нас
                     else
                         li
-                            a(href="/about.html") Про сервіс
-                    if (active=='terms')
-                        li.active
-                            a(href="/terms.html") Умови використання
-                    else
-                        li
-                            a(href="/terms.html") Умови використання
+                            a(href="/about.html") О нас
                     if (active=='blog')
                         li.active
-                            a(href="/blog.html") Блог
+                            a(href="/blog.html") Идеи для тебя
                     else
                         li
-                            a(href="/blog.html") Блог
+                            a(href="/blog.html") Идеи для тебя
+                    if (active=='terms')
+                        li.active
+                            a(href="/terms.html") Условия использования
+                    else
+                        li
+                            a(href="/terms.html") Условия использования
                     if (active=='contacts')
                         li.active
-                            a(href="/contacts.html") Контакти
+                            a(href="/contacts.html") Контакты
                     else
                         li
-                            a(href="/contacts.html") Контакти
+                            a(href="/contacts.html") Контакты
             ul.menu.head_lang
                 li.active
                     a(href="#") Укр
