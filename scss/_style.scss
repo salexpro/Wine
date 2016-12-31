@@ -34,12 +34,16 @@
 .tabs{
     width: 100%;
     border-radius: 10px 10px 0 0;
+    display: flex;
     &-title{
         position: relative;
         &:first-child{
             a{
                 border-radius: 10px 0 0 0;
                 margin-right: 25px;
+                @include breakpoint(large down) {
+                    margin: 0;
+                }
                 &::after{
                     content: '';
                     position: absolute;
@@ -50,6 +54,9 @@
                     border-right: 25px solid $white; 
                     border-bottom: 25px solid $white;
                     // transition: 200ms;
+                    @include breakpoint(large down) {
+                        display: none;
+                    }
                 }
             }       
         }
@@ -57,6 +64,9 @@
             a{
                 border-radius: 0 10px 0 0;
                 margin-left: 25px;
+                @include breakpoint(large down) {
+                    margin: 0;
+                }
             }
         }
         &.is-active{
@@ -72,6 +82,15 @@
         > a{
             text-decoration: none !important;
             // transition: 300ms;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // min-height: 62px;
+            @include breakpoint(small down) {
+                padding: 7px;
+                font-size: 16px;
+            }
         }
     }
 }
@@ -459,7 +478,7 @@ textarea {
             // align-items: flex-start;
             justify-content: center;
             padding: 60px 10px;
-            padding-bottom: 80px;
+            padding-bottom: 40px;
         }
     }
     &_video {
@@ -545,14 +564,22 @@ textarea {
         position: relative;
         width: 100%;
         margin-top: 35px;
+        @include breakpoint(medium down) {
+            margin-top: 0;
+        }
         .tabs-title{
             width: 50%;
         }
+        .tabs-panel{
+            @include breakpoint(medium down) {
+                padding: 20px 15px;
+            }
+        }   
         > .button {
             position: absolute;
             width: 280px;
             left: calc(50% - 140px);
-            bottom: -25 px;
+            bottom: -25px;
             font-size: 20px;
             padding: 15px 0;
         }
@@ -564,6 +591,11 @@ textarea {
         margin-left: -44px;
         margin-right: -44px;
         margin-bottom: 70px;
+        @include breakpoint(medium down) {
+            margin-bottom: 20px;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
     }
     .header.primary{
         font-size: 30px;
@@ -572,6 +604,10 @@ textarea {
         letter-spacing: 0;
         margin-bottom: 100px;
         margin-top: 20px;
+        @include breakpoint(medium down) {
+            margin: 0;
+            margin-bottom: 40px;
+        }
     }
     &_step {
         @include flex-grid-column(4);
@@ -644,6 +680,9 @@ textarea {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @include breakpoint(small down) {
+            margin-bottom: 40px;
+        }
         &_product{
             justify-content: center;
         }
@@ -757,22 +796,48 @@ textarea {
         line-height: 30px;
         text-transform: none;
         margin-bottom: 45px;
+        @include breakpoint(small down) {
+            margin-bottom: 20px;
+        }
+    }
+    .column{
+        img{
+           @include breakpoint(small down) {
+                margin-bottom: 10px;
+           } 
+        }
+        @include breakpoint(small down) {
+            margin-bottom: 20px;
+        }
     }
     &_place{
         margin-bottom: 80px;
+        @include breakpoint(small down) {
+            margin-bottom: 40px;
+        }
         .column{
+            
             &:first-child{
                 display: flex;
                 align-items: flex-end;
                 justify-content: center;
+                @include breakpoint(small down) {
+                    display: block;
+                }
                 p{
                     margin-left: 25px;
+                    @include breakpoint(small down) {
+                        margin: 0;
+                    }
                 }
             }
             &:nth-child(2){
                 margin-top: -4px;
                 p{
                     margin-top: 19px;
+                    @include breakpoint(small down) {
+                        margin: 0;
+                    }
                 }
                 position: relative;
                 &::before{
@@ -783,6 +848,9 @@ textarea {
                     background-color: $white;
                     top: 140px;
                     left: -29%;
+                    @include breakpoint(medium down) {
+                        display: none;
+                    }
                 }
                 &::after{
                     content: '';
@@ -792,21 +860,35 @@ textarea {
                     background-color: $white;
                     top: 140px;
                     right: -29%;
+                    @include breakpoint(medium down) {
+                        display: none;
+                    }
                 }
             }
             &:last-child{
                 display: flex;
+                flex-direction: row-reverse;
                 align-items: flex-end;
                 justify-content: center;
                 margin-top: -29px;
+                @include breakpoint(small down) {
+                    display: block;
+                    margin: 0;
+                }
                 p{
                     margin-right: 15px;
+                    @include breakpoint(small down) {
+                        margin: 0;
+                    }
                 }
             }
         }
     }
     &_how{
         margin-bottom: 110px;
+        @include breakpoint(small down) {
+            margin-bottom: 50px;
+        }
         .column{
             &:first-child{
                 img{
@@ -823,6 +905,9 @@ textarea {
                     background-color: $white;
                     top: 82px;
                     left: -33%;
+                    @include breakpoint(small down) {
+                        display: none;
+                    }
                 }
                 &::after{
                     content: '';
@@ -832,6 +917,9 @@ textarea {
                     background-color: $white;
                     top: 82px;
                     right: -33%;
+                    @include breakpoint(small down) {
+                        display: none;
+                    }
                 }
             }
         }
@@ -867,6 +955,9 @@ textarea {
         bottom: 55px;
         font-size: 20px;
         padding: 15px 0;
+        @include breakpoint(small down) {
+            bottom: 20px;
+        }   
     }
 }
 
@@ -1241,17 +1332,19 @@ textarea {
             font-size: 15px;
             margin-left: -10px;
             @include breakpoint(small down) {
-                flex: 0 0 100%;
+                flex: 0 0 100% !important;
+                margin: 0;
                 border: 0;
-                border-radius: 5px 5px 0 0;
             }
             &:first-of-type{
                 flex: 0 0 25%;
-                width: 25%;
                 margin: 0;
                 z-index: 5;
                 .select7__current{
                     border-radius: 10px;
+                    @include breakpoint(small down) {
+                        border-radius: 10px 10px 0 0;
+                    }
                 }
             }
             &:nth-of-type(2){
@@ -1283,10 +1376,7 @@ textarea {
                 color: $white;
                 background-color: #711026;
                 @include breakpoint(small down) {
-                    border-radius: 5px 5px 0 0;
-                }
-                &-value{
-                    border-radius: 10px;
+                    border-radius: 0;
                 }
             }
             &__caret{
@@ -1694,6 +1784,11 @@ textarea {
         align-content: flex-start;
     }
     &_product{
+        + .large-10{
+            @include breakpoint(medium down) {
+                margin: 0;
+            }
+        }
         img{
             max-width: 145px;
         }
@@ -1717,6 +1812,7 @@ textarea {
             margin-bottom: 50px;
         }
         .button{
+            padding: 0;
             padding-top: 17px;
             padding-bottom: 17px;
             display: block;
