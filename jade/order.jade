@@ -1,17 +1,20 @@
 - var active = 'order'
-mixin item(type)
-    .small-12.medium-6.large-3.column
-        .order_item
-            .order_item_type
-                img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAZCAYAAAA4/K6pAAACPUlEQVQ4T52TTUiUURSGnzP+QEFGP1CLkpxvwmgnrRLKtJzPoQiCkBAqqBYtMiha1KLSFkUESrlwFVhIURsjYpyZJkyCatEiF4GL+UMjXIQ0uzS/78R1xmHSb5yxu7z3fZ977j3vEUqsURoafcgTQX66zJ3p4Pusl1RKASL4LwoyCKiiwQ5S8TUBYlg3Fe4YkyCngySGKwaMcah6nqnnICfzgPtBEtcrBkSwAgLvgPq86ZMPDbWTyi6HeP5BFOsa8KBIPAecskm+KguI07DNwTcONC4TR2pxTrSS+V28v6KCKP67IDc83qsC54Ikh0oColjNQATY4N1eTYO02CSnl84LFYQJ1FWhr4GWUtkw+wpDn0me7wE316H8iuC/JUjvaub8mTF22SRfFABvCTS5EAfdXAHA3Du5wELrUTIzoiAxAsOgXZWZC6/vtUn0SP7jRoG6tQFILeC2SZTAPVDPmJYHygVTwUdgf3nxSoXpiAGkgV3/AwDGDMCEYkeFgEeKxgR5CFjABwP4AuwrD5BZH25TO6mpKFYYCIE8kxjWgMKlMoBfAlfMHJjMOItVsBW4LBEaDgg+k//1HhCTusfg9NlkJt9Qv6mGmpFc3DVdRfUReQlVG7H6gW4vgIscDpF4Hyaw14f2Cdg5nVy1SfQvzkKOXPsU9NhKiEyAfgXagJ1582CWRHcnOIVhirNni8Of28DZVVL5A3Qgy7q+Tr7N/zONSzdH2X1QcI8rNINuB3EFphUZV5yRDtITxVX+BVPZsNAqR43IAAAAAElFTkSuQmCC", alt="Тип") 
-                = type
-            a.order_item_info(data-open="info")
-                img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAEz0lEQVRIS62WS2xVVRSGv0PbK7VYq6VKQo1PqrE6IDx8UCq0kViMCkKrxhgYtGAwMQx8oImkwAAYGJVJI2DUOJCItY0DjINWLBqVFBSkWhVEDSBYqI2xl3v3Wmtvc67Q8Li9tyae6dl7f3vttda//og83/fUVDnCbEHrHX6qYJMcWizYacGOO+xrh3Yp0a4l/PxjruOi0X4eZt4thqwU/MOCVThUBDvgsCOCJQW71GGVgt0mWJFgA4a1n8ZeXcGxH7KdmxV2jPuWK7ZBsDLBeh22RbDuJAWnijn99zT26B6mFR7HTUiSLPdQL2izEKYr9qfiV63g980XAs+DBRouOUW0VvDPCXbEsJeuo/ydiO2W77nfg4JhrnlC8esEX6n4jYOcWN0K7uze82BDPLA+vpXidypueSVdWXPwCXPGz2VnKtsFNjO5yvCvK36O4TesZOCFi2DDLGxRbLNiPUl04TV8PHjhYT/RcMkJTrYKukSwt5TkmvkcTF+4biuVV6ZwHUqoVazlGQa3xmsykaVYNMWwLw2f8khtGR8dynbr3dx1tyI9DisQTFOE2gf49otsazdx1Y2esEshIXDnCwwcPAtr8/gnFVtayodvj5afr5h5vRF2CHaLw/qVdEMD/b+Mtn4TFUuV8KYR2p7l1Ioo8EiVIJ8r4bdiOqZHEHIVw25mVKfQOsV317GvL9faVhhXysReI1QGZFakLG72hC1GaCnmg8zb/p/fy0xs8YTNntAcGY3bPP4hY9zt49l+MBfoPRoLruXXVQ57VLB3TzJlY1OetniNiimC32/4zsjT2G+EZCFaF9E5lAu2l1nTFY0LpFjQ04LWzuNAb649r1BWZhR0e3xxDBsy6CmExRHbRxow2wH7mDU7jXYLVugwTWN197F/V568JS6jvN0INZGnKeWxzgLaH8tXHN9QUyNol2AJhzrB19/Lvs/yFckEJr7rCQ9FgaYhI/QUjCGyGKYjMHMOGwOsOlHKiXbD18Swfk9IjkPy5iyGGdblsISgLj0GWJyzQGG3xTkLNMUhLhDIW4191NSkR2DmUmjeyOJqDIT9Dt8RN3Wzx2f6LMH7OfvsX5jvEjQhmIsH6tw8OdvE1S2GjzW3OaMgAf+5wW+FVM+IaPWjJTyGuQwsLpAYFurnsmfUAokVpJxJvYZVOpiV0UZjcZuHJ5WwtJj2UbWxj3tie9AtaKb0BV83h72jln4bk5ca+qZibSs5uSIDCzTeZIRY9dMBXzuezqyqf4DZMw3/qcPGC5ZSwj219O7O9hJbqbwpHldKSHj8HU/zx6GR4RlrpGU00vcIhQsvZ/tF86yP6oRS1irYEsG/Vcrwmmr6LhKCeJ5FRB2Kr1W0+SlOvDEyz87eLM2i9f7MpA7I8lJ2/OdJvY0bqgT/umBzFL9+GUdfzGoLAo2JNLpW8c8r4YhDX6qgZMwepIgpTzjCOvnXdW0s4bLVTedEntVdDbNgmWAbFH+F4fcIuiWFdCXRUwX8OXwrffId1UWDjCtRisoFiT1li0OnScZd2arHOZzbXZ2b6L948GaHrlTCIsUqBMv4RsWOprBhxZcIOtmd8Y0OG1C03cGrTfwwdt94LnSA+VUOnR2LrmBTHTZJzowYhx0XbG8a61bcrvvpz+mI/wFPxvDOg38dBgAAAABJRU5ErkJggg==", alt="Информация")
-            img(src="/img/bottle.png", alt="Бутылка")
-            .order_item_price
-                | ЦІНА: 1399.50 грн
-            a.button.left.cart(href="/delivery.html")
-                | Придбати
+mixin item(title)
+    //- .small-12.medium-6.large-2.column
+    .order_item
+        //- .order_item_type
+        //-     img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAZCAYAAAA4/K6pAAACPUlEQVQ4T52TTUiUURSGnzP+QEFGP1CLkpxvwmgnrRLKtJzPoQiCkBAqqBYtMiha1KLSFkUESrlwFVhIURsjYpyZJkyCatEiF4GL+UMjXIQ0uzS/78R1xmHSb5yxu7z3fZ977j3vEUqsURoafcgTQX66zJ3p4Pusl1RKASL4LwoyCKiiwQ5S8TUBYlg3Fe4YkyCngySGKwaMcah6nqnnICfzgPtBEtcrBkSwAgLvgPq86ZMPDbWTyi6HeP5BFOsa8KBIPAecskm+KguI07DNwTcONC4TR2pxTrSS+V28v6KCKP67IDc83qsC54Ikh0oColjNQATY4N1eTYO02CSnl84LFYQJ1FWhr4GWUtkw+wpDn0me7wE316H8iuC/JUjvaub8mTF22SRfFABvCTS5EAfdXAHA3Du5wELrUTIzoiAxAsOgXZWZC6/vtUn0SP7jRoG6tQFILeC2SZTAPVDPmJYHygVTwUdgf3nxSoXpiAGkgV3/AwDGDMCEYkeFgEeKxgR5CFjABwP4AuwrD5BZH25TO6mpKFYYCIE8kxjWgMKlMoBfAlfMHJjMOItVsBW4LBEaDgg+k//1HhCTusfg9NlkJt9Qv6mGmpFc3DVdRfUReQlVG7H6gW4vgIscDpF4Hyaw14f2Cdg5nVy1SfQvzkKOXPsU9NhKiEyAfgXagJ1582CWRHcnOIVhirNni8Of28DZVVL5A3Qgy7q+Tr7N/zONSzdH2X1QcI8rNINuB3EFphUZV5yRDtITxVX+BVPZsNAqR43IAAAAAElFTkSuQmCC", alt="Тип") 
+        //-     = type
+        a.order_item_title(href="#")
+            = title
+        img(src="/img/wine.jpg", alt="Бутылка")
+        .order_item_price
+            | цена: 230.00 грн
+        a.order_item_select(href="/delivery.html")
+            img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAATCAYAAACUef2IAAACj0lEQVQ4T43VWcigYxQH8N+xhYlSQkiaXNhCJJJ9uSCFQZYsSc2QJWUpCTcoS0nhYriwlhvbJERCzRiMrSSklNzZl+ymo//X847P1/d947l63/d5zv/5n//5n/OWjazuvhYX4kr8jAexqqpuXCy0Ftvs7r2wBtsN8B/wLH7BMVW1bqH4BYG7O3sP43y8gxPwB17AUXgaZ1fVn/OBLwYcoFXYEqdUVZ5199F4KY84p6qe+t/A3b0NnsBJSb2qTp0d3N3J5AK8jtOr6tu54PMy7u5z8Th+wxFV9e4c4D3xxtB+eVU9sFHg7t4Jr2Bv3FZVN8yX6nDLHfgcx1bVF7PPVXcvw6HYHI/icNyDT3DGKNrOWD8CN8VXo4iR5CDchCexHCnmBwH+EruOoLvwGu7E1ViKexew1PVDjuzfij1wyzj7fYAvxlXYFz+NRngLB+Ju7DAOxwVZU13i6WuwGvvjPmyPz/I8c6i7TxupTEFJZ4s5TOcCT9t/DRmn94uq6qEJ+AA8h12GP8M465ChZxxw8gBI5+X8bngfv+IwbIIfcWJVrZ2Al+AZHD+KdCa2xmN4EZeO7tsW+4xinYdL8Cmex1ZYO5rp6w0+7u7bcd08wAm6HMkiwPshFkyD5MKPx+Xp0JW5rKpm5sHM6u6z8MjQNozDIO9hfMVgE+AUKsBhnAsnxpthxdQss4FjlzRGtIu3JykydALw5iKMX8U3GQFVlYG1wTphnEtexnGISwKctg7wipgemSEZpTePqReN00jx/ts4sqoyAf8FHnLE4EnzvaFQvPwdMncz7VL5XB6dd8SH+B0H4/6qumyS9j9DqLt3H3+ItPjfw0pp9eidv0e8HNZhFa/ne/yebDKMPpqA/wEiLdHC8Ab22AAAAABJRU5ErkJggg==", alt="")
+            | выбрать
+        a.order_item_info(data-open="info")
+            img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAC0ElEQVQ4T42UTUhUURTH/+c5TqkVTZt4b0SJgj4UWhhzp01EUNRKXGSpLRyVuVOLvqhVBBFtNVo5b2rGIlIrCjd9B9WinDcRBWFWiIg4VxeBgRGpOSfmzRgz4xvxrB7n/M/vnY97L6GIhb2+EDG1A9iVL+GPAEU9qirciPsLhelU6AgbviYC9dp+wigznhJ4GCAGaBvABwFsycS5VSYTt3IZecCI7u9m4hCARyWadrpjYnDEqYHrG32bFkq0TgI3AIhJZaU7ydaQ/ViEMdAWUlZPsVHk+k3d1wyiOwB6pLLaMk0BiHj9jcx8l4gCwWT8Zm7SJUAzDNEK0HhQxV8uHZH/CIH7F3NtoGkIBvBKKmtfYcI9HC6ZNsb/AhiWytrhVLnpFY/BOBRUlkYRQ7QxEHW7Zz2BsU8/nRK6K/17tdT8qFQfxp3iXZW7yypSqd9gnCHTEN8AVEhlVTqJI4Z4DqA8BUSXm61piK8A1qaBDKarcjJ+1hGo+1uYOD3XUamsrcWWZeq+KyC6YAMZ3BFSiWhRsSHeAOyVKpE5fw4WNkSAgNjKgF5/AszlUlm1xYARr7+VmXsyLQOdUlnnila4AqCpi8sgXCTT8I0AWqlU8eplWn6XXdzOZTRfAGwgUxdBEEzXnGtd+4+3M0vOYU2Ne3p6zXsAZR7Pr9rGoaG5IppZAs7/P9gMPAspK33x88y0F4I99rViJIKTlijURAwxwEC9R1W5bGBYF8eIcJuApqCy+nMTTF0cII3W274FzASn4k9y42FD1BMwAIaUk1bk/2tjGiIGIMDg5pBK9BWbVa4/ovsamOghAX1BZTXbXeRVk4WC8CBF2qnjE4NJJ7BZXadj3tUF4ChAvVLFWxZ1Tg9sO4FuZAWfifkFa9oII5W+UZsJ2A8gs22iEzIZ78796RJgOmjW1ZViynUSjPTDub2gyu8Miq1yr74WGHv9p7CDf7JyIiNiGFIXAAAAAElFTkSuQmCC", alt="Информация")
 doctype html
 html(lang="ru")
     include includes/head
@@ -23,34 +26,54 @@ html(lang="ru")
                     .row
                         .small-12.column.order_steps
                             .order_step.selected
-                                | Оберіть що саме подарувати
+                                | Выберите напиток
                             .order_step
-                                | Додайте відеоповідомлення
+                                | Добавьте видеосообщение
                             .order_step
-                                | Оплата та відправка
+                                | Оформите заказ
                         p.small-12.column.header.primary
-                            | Давай спочатку оберемо пляшку
+                            | Выбери напиток для подарка
                             a.help(data-open="how")
-                                img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAERklEQVRIS6XXeYzdUxQH8M95ptOqpdUi+EeQ1lqJhIil1oi1VWnee1X8oxJrbRHxn0HiD4JQsYYI0pn3RpXapQS1JLZErKkl/kJiX4rp6LtyZ35j3sy8N6+4f72Xe+793nPO95zz/YXNWEl1P9JxOIg0h9IOpKnEAI1viU+JN7E21D7odGVMZpAsOYrGBTgWszpdhu/xIqU7Qt9L7exbgianzWbKNTgHU5sOf4bsyTf4A1tiJ8zDHk12A8S9bOwJq/NDxqwJoEl1Luk+HF5Y/o41WEnXq8z9OfQ0Rm5Jekqsn8Ff2X4pFmJ6sf8qm84Oqz5tRh0DmpT3JFZj78LoFUpXTxaq8V4UKclROqLY+5hYFGrrR2z/AU3Ks4gncUix+SDp4tD/82bkcoxJUp5BaQXprOGN9DpTTgkrf8z/mkCr2eiiYaN4iBnLwj2D/xZwNOzlbiKn6czizttDbfk/oEnlaDyLbtI6Bk4Oa35tB5gs3p3SLnT9wjYft3tcsnAbpj1d8GMjpeNzqmKYCB/VsRgDlI4LfetaASbl3YhrcSJm4E+8Q6mnXd6TSs7t80UVPMI+1UjK84hXMJOohdqS1oDVTK5HSXsV+7kUZhe/fyKdFPrfaH22UkMF2e6ISCqX4WbkMlgQ6jkc44gxFI0HcQY24ArSWiJ7cdPwg91P/ZwgTTxfPpl4YphDcVkG7UX27nO6DhphWPPB5KytGOgl9ietCfWLRwlTebyozbXMPKlVfocro/QWaXf05vC+RRyI1dQXt35p9vS97YlutvoxPJS9lZw4la1fJg5GH/Wl7c9/+ChxKuntSKpfknbFXaF+/uaWSHJUFzveityb/6R0Suh7oT3jK3fiPHyZw/sVdsYtoX755oAmuQZLN5AuwSCxPNTunuxsUrkFl+Lr/+RpUl5I5FxuIC4ItUyySVdSuQvnFp52zulENlaXk24jbgy1KzsDZk6MyWln9rYAzYS4Dle1KrEWJTOevdVLSTneibQg9D/V+eULpjN9Dr98Ep4Z6Gw/oU6bO5J6qFcnJ8QZ2zKYG3nu16uZvjw8kNthy5WGGkKlb7Qjxfx/1XuHa3PJATTeLRA2sGn/sOqL9qDlI4nnxvTe4qKshfJGMWXkPvpb6z5a3pK4njiBVMu5Df2bWtsOTZlncFgxTE4YmjKj7ax5nnqYtCz0b2x9WQ7Z6bND73eTeDhunlox0j6bQJdux+CTxKHFRRn4ov+mHBbNpHvF6AD3Gl0LJiiH4TAPibLH/p9GyoIgXUPMLx7/EZsWNYuzFmpw8Ry2uH+sGsxjqbGSKevaq8HB+ZSWkrIazNI0r85qcDS/Wfd295Cy7p02mrf4gsb7RNa9WZpmqbkzkb8A8tgaWbmE7iX1hP4fxue9g8IfovuFOKZJJUxWxllNvEC6I/S/3M5wUtBRz0/fl0bxLdOYO/FbprSexpt0rQ29H3bqUH8DD+2blaclU10AAAAASUVORK5CYII=", alt="")
-                        .small-12.column.order_filter
-                            select.select7
-                                option Вино
+                                img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAADO0lEQVRIS52Wa+iecxjHP59MyCmbLKNQi7zghYhIeSMv5PDCKXLK9s9sSUMOZYaEMlOYw0zDapmkEUmSF+QFkhcrOUUoLIccohlfXc/u+9/z/+9+nvuZ76un576u3/d3Xb/vdZAeJNkfuBw4DzgB2HPIZRvwAfACsF79cdxxjvqYZC7wQENUZt8D7wAfA78B+wBHAicDhzTnPAdcq/7QdW4nWZJLgA2Nw4PAw+rnYy52GHA1cHNjM6WunW2/E1mSexqnl4Er1J/6Ut1+T1LRPgWcDzyiLhv2nUGW5F7gpiJT75uUZLZdkqWVDWCNWr8HmCZLchGwEbhFLdKdkORgYAVwHPAP8CZwh/p3B+E1FV2lV318mizJHsBfwOvqGSOIzgY2A98BHwJ7AacBPwPHqN92EJZgLgAOUH8ZRJak/XOOWjeegSTzG5J16qKhN6oyKGV+ox4x4pIB3lBPdyiqGfkddkyyvkpA7RJUiWETML9L8knuBG4bRJekFPMQMFetlHS91Z/Av+reHVGfBLwLLOwqj6FgVhbZ+8Dh6oGj1Jek8v6H+koHWUn9SmB3dfuIy34JbC+yyukm9cJdlXqS44H3gBvV+8dcttQ41ZLdrlZuJ0aSalPVvqonVmQjkWQ5sKolW66unpQpyVFNj1yrTvX5JVkMPNGSrVDv6nMakvzXQJVJFXkvklwHrG7JNqoX93rtqMl9gV+BReq6CX3WAEuKrLrBArUKtxdJjgU+As5UX+112HHBzwaZaB8P2E+tbjAWTWT1BhtGza3hA5LMAap33l1kVai/16BUr+8j29XvSW4tIuCgtje+BJzV1Y5mH56kpvcS4NkJlVh1/LZ6akvWRrdZPbenZrYC1W22qTUtxtXXoKcOotKtw/PsKuBJYJlac6gTSU4ELgOeV98aY3cp8Axwg7qq7GZP6iKpobdULbn+LySpyzzdpLp+D9A1MlrCWngWqzVUJ0KS3YBHy6+iUiuF0xi1XdWmVE6FlcBjaq1yo1I7ryGoZakwnbpesjJIcmiztJzTOHxaqgI+aUqlRLUQOAU4urF5rXmCL7puNXJJbY2TLABKPLURV/eYjS3AiyUu9atx+f4PKvZn6SFzh/QAAAAASUVORK5CYII=", alt="")
+                        .large-8.column.order_filter
+                            select.select7(placeholder="Вино")
+                                option 
+                                option Красное
+                                option Белое
+                                option Розовое
+                            select.select7(placeholder="Шампаское")
+                                option ти
+                                option Віскі
+                            select.select7(placeholder="Виски")
+                                option Виски
                                 option Шампанське
                                 option Віскі
-                            .order_filter_label
-                                | Тип
-                            .order_filter_type
-                                input(type="radio" name="type" value="1" id="type1")
-                                label(for="type1") Біле
-                            .order_filter_type
-                                input(type="radio" name="type" value="2" id="type2" checked)
-                                label(for="type2") Червоне
-                            .order_filter_type
-                                input(type="radio" name="type" value="3" id="type3")
-                                label(for="type3") Рожеве
+                            select.select7(placeholder="Коньяк")
+                                option Коньяк
+                                option Шампанське
+                                option Віскі    
+                            //- .order_filter_label
+                            //-     | Тип
+                            //- .order_filter_type
+                            //-     input(type="radio" name="type" value="1" id="type1")
+                            //-     label(for="type1") Біле
+                            //- .order_filter_type
+                            //-     input(type="radio" name="type" value="2" id="type2" checked)
+                            //-     label(for="type2") Червоне
+                            //- .order_filter_type
+                            //-     input(type="radio" name="type" value="3" id="type3")
+                            //-     label(for="type3") Рожеве
                         .row.small-12.column.order_items
-                            +item('C')
-                            +item('Н/C')
-                            +item('C')
-                            +item('C')
+                            +item('Вино Orvieto Classico Ruffino 0.75 л')
+                            +item('Вино Cape Red 0.75л')
+                            +item('Вино Cotes du Rhone La Griveliere Pre Anselme 0.75л')
+                            +item('Вино Wolf trap 0.75л')
+                            +item('Вино Cape Red 0.75л')
+                            +item('Вино Cape Red 0.75л')
+                            +item('Вино Orvieto Classico Ruffino 0.75 л')
+                            +item('Вино Cape Red 0.75л')
+                            +item('Вино Cotes du Rhone La Griveliere Pre Anselme 0.75л')
+                            +item('Вино Wolf trap 0.75л')
+                            +item('Вино Cape Red 0.75л')
+                            +item('Вино Cape Red 0.75л')
                 include includes/footer

@@ -4436,6 +4436,14 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/img\/wine.jpg": {
+		"ft": 16384,
+		"iS": 13645,
+		"oA": 0,
+		"oAP": "\/img\/wine.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/wine_types.jpg": {
 		"ft": 16384,
 		"iS": 333249,
