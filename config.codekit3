@@ -4174,6 +4174,12 @@
 		"oAP": "\/fonts\/Comfortaa\/Comfortaa.woff2",
 		"oF": 0
 		},
+	"\/how.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/how.html",
+		"oF": 0
+		},
 	"\/img\/app_store.png": {
 		"ft": 32768,
 		"iS": 5168,
@@ -4251,6 +4257,54 @@
 		"iS": 6549,
 		"oA": 0,
 		"oAP": "\/img\/google_play.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/how\/how1.png": {
+		"ft": 32768,
+		"iS": 4082,
+		"oA": 0,
+		"oAP": "\/img\/how\/how1.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/how\/how2.png": {
+		"ft": 32768,
+		"iS": 2915,
+		"oA": 0,
+		"oAP": "\/img\/how\/how2.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/how\/how3.png": {
+		"ft": 32768,
+		"iS": 7177,
+		"oA": 0,
+		"oAP": "\/img\/how\/how3.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/how\/how4.png": {
+		"ft": 32768,
+		"iS": 813,
+		"oA": 0,
+		"oAP": "\/img\/how\/how4.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/how\/how5.png": {
+		"ft": 32768,
+		"iS": 1546,
+		"oA": 0,
+		"oAP": "\/img\/how\/how5.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/how\/how6.png": {
+		"ft": 32768,
+		"iS": 1639,
+		"oA": 0,
+		"oAP": "\/img\/how\/how6.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -4457,6 +4511,14 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/error.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jade\/how.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/how.html",
 		"oF": 0,
 		"oS": 0
 		},
