@@ -37,6 +37,7 @@
     display: flex;
     &-title{
         position: relative;
+        float: none;
         &:first-child{
             a{
                 border-radius: 10px 0 0 0;
@@ -81,15 +82,15 @@
         }
         > a{
             text-decoration: none !important;
-            // transition: 300ms;
-            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            // min-height: 62px;
+            height: 100%;
+            border-right: 0;
             @include breakpoint(small down) {
                 padding: 7px;
                 font-size: 16px;
+                min-height: 62px;
             }
         }
     }
@@ -1391,10 +1392,6 @@ textarea {
                 padding-bottom: 0;
                 border-radius: 10px;
                 border: 0;
-                @include breakpoint(small down) {
-                    border-radius: 5px;
-                    box-sizing: border-box;
-                }
             }
             &__option {
                 height: 40px;
@@ -1406,7 +1403,6 @@ textarea {
                 border-radius: 0 0 10px 10px;
                 margin-top: -10px;
                 padding-top: 10px;
-                
                 position: relative;
                 &::before{
                     display: none;

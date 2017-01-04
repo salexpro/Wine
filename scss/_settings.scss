@@ -517,7 +517,7 @@ $tab-item-background-hover: none;
 $tab-item-padding: 1.08rem 1.5rem;
 $tab-expand-max: 6;
 $tab-content-background: $white;
-$tab-content-border: 0;
+$tab-content-border: none;
 $tab-content-color: foreground($tab-background, $primary-color);
 $tab-content-padding: 50px 44px;
 

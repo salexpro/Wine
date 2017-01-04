@@ -59,21 +59,14 @@ if(owl.length){
 }
 
 var orderowl = $('.order_items');
-
-orderowl.owlCarousel({
-    items: 6,
-    navigation: true,
-    // itemsCustom: [
-    //     [0, 1],
-    //     [440, 2],
-    //     [640, 3],
-    //     [810, 4],
-    //     [1000, 5],
-    //     [1200, 6],
-    // ],
-    margin: 20,
-    navigationText: ['<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAA4CAYAAADuMJi0AAABIElEQVRYR73W7W3DMAyE4eMmySLtEEm3THZo+7MZioUD2IhjW1+8owfQA0Gy+BoSP3f/sCxvwgDcU8AZA/AlB1eY2bcUfMem45OBe5gMPMIkYAmjgzWMCrZgNPAFu5rZT+kxCd/SHiy8w14sBI5gw+AoNgRGsG4winWBDKwZZGFNIBOrgmysCCqwQ1CF7YJKbAOqsRWYgS1gFvYE3f0E4AGgOjwZlT6BZwB/AC5m9stYtDrx3f0TwC0DXRIjC101TQa6iSg1ulttSvQwE1VosUsVaDWE2WgVnH5iJtoEMtFmkIV2gQy0G4yiQ2AEHQZH0RA4gobBXpQC9qA0sBWlgi0oHayhErCEysA3dGleKbiHysENqi7tef15iKfs8BX9B+WGEQjsyqLdAAAAAElFTkSuQmCC" alt="Назад">','<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAA4CAYAAADuMJi0AAABGklEQVRYR73YzQ3CMAwFYHsoOBZ2gC2BIWAdhjBK1SJa2vw47znXHD75OZESq5kNqvqSoKVm9haRSxSawLOI3KJQTUlGoiMYiX7BKHQBRqB/IBvdBJnoLshCs+CEnkTkjrqnRRCNVoFItBpEoU0gAm0Ge1EX2IO6QS/aBXrQbrAVhYAtKAysRaFgDQoHSygFzKE0cA+lglsoHVyhhyhwEJGHiBzpYPosTdhVVZ9UcI2leGngFkYD9zAKmMPgYAmDgjUYDKzFIGAL1g22Yl2gB3ODXswF9mDNYC/WBCKwahCFVYFIrAiisSzIwHZBFrYJMrE/kI0tQDObB0Dj6yptMtY8oA3BxgqjKpvTmofs1Bh/WzNWyOzZ+hx8AJZTFIPLBMqyAAAAAElFTkSuQmCC" alt="Вперед">']
-});
+if(orderowl.length){
+    orderowl.owlCarousel({
+        items: 6,
+        navigation: true,
+        margin: 20,
+        navigationText: ['<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAA4CAYAAADuMJi0AAABIElEQVRYR73W7W3DMAyE4eMmySLtEEm3THZo+7MZioUD2IhjW1+8owfQA0Gy+BoSP3f/sCxvwgDcU8AZA/AlB1eY2bcUfMem45OBe5gMPMIkYAmjgzWMCrZgNPAFu5rZT+kxCd/SHiy8w14sBI5gw+AoNgRGsG4winWBDKwZZGFNIBOrgmysCCqwQ1CF7YJKbAOqsRWYgS1gFvYE3f0E4AGgOjwZlT6BZwB/AC5m9stYtDrx3f0TwC0DXRIjC101TQa6iSg1ulttSvQwE1VosUsVaDWE2WgVnH5iJtoEMtFmkIV2gQy0G4yiQ2AEHQZH0RA4gobBXpQC9qA0sBWlgi0oHayhErCEysA3dGleKbiHysENqi7tef15iKfs8BX9B+WGEQjsyqLdAAAAAElFTkSuQmCC" alt="Назад">','<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAA4CAYAAADuMJi0AAABGklEQVRYR73YzQ3CMAwFYHsoOBZ2gC2BIWAdhjBK1SJa2vw47znXHD75OZESq5kNqvqSoKVm9haRSxSawLOI3KJQTUlGoiMYiX7BKHQBRqB/IBvdBJnoLshCs+CEnkTkjrqnRRCNVoFItBpEoU0gAm0Ge1EX2IO6QS/aBXrQbrAVhYAtKAysRaFgDQoHSygFzKE0cA+lglsoHVyhhyhwEJGHiBzpYPosTdhVVZ9UcI2leGngFkYD9zAKmMPgYAmDgjUYDKzFIGAL1g22Yl2gB3ODXswF9mDNYC/WBCKwahCFVYFIrAiisSzIwHZBFrYJMrE/kI0tQDObB0Dj6yptMtY8oA3BxgqjKpvTmofs1Bh/WzNWyOzZ+hx8AJZTFIPLBMqyAAAAAElFTkSuQmCC" alt="Вперед">']
+    });
+}
 
 
 // Карта
